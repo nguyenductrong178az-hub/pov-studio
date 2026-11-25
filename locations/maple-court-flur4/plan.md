@@ -69,11 +69,11 @@ Mỗi đường được kiểm tra theo từng cm, tính cả bán kính thân 
 
 | ID | Ai | Câu thoại | Thời gian | Các điểm (x; y) | Dài | Kiểm tra | Mô tả |
 |---|---|---|---|---|---|---|---|
-| weg-4c | ICH | 08–09 | 31,3–33,5 s | (6,20; 1,75) → (6,20; 1,40) → (4,20; 1,20) → (3,00; 1,10) | 3,56 m | ✅ | Đi nhanh, khom người về phía 4C, 5 bước trên thảm cũ (có tiếng bước chân). Dừng cách cửa 4C 0,7 m. |
-| weg-rosa | ICH | 10–11 | 38,0–41,0 s | (3,00; 1,10) → (4,60; 0,95) → (5,70; 0,85) | 2,71 m | ✅ | Nghe tiếng xích, quay lại, bước về phía cửa 4A của Rosa. Dừng cách khe cửa 0,7 m. |
-| weg-zurueck | ICH | 13–14 | 53,8–54,6 s | (5,70; 0,85) → (6,20; 1,40) → (6,20; 1,75) | 1,09 m | ✅ | Rosa đóng cửa; TÔI quay về 4B (2 bước, tiếp tục trong sơ đồ 4B). |
-| weg-okafor | OKAFOR | M01–M14 | 77,0–82,0 s | (11,60; 0,60) → (10,60; 0,70) → (9,90; 0,75) | 1,71 m | ✅ | Lên những bậc cuối, dừng ở đầu cầu thang. |
-| weg-tyler | TYLER | M04 | 76,0–78,0 s | (10,30; 1,00) → (6,80; 0,95) → (3,50; 0,95) | 6,80 m | ✅ | Chạy từ cầu thang qua trước cửa 4B (TÔI vẫn đang ở trong ngưỡng cửa, y ≥ 1,8) tới gần 4C. |
+| weg-4c | ICH | 08–09 | 34,6–37,1 s | (6,20; 1,75) → (6,20; 1,40) → (4,20; 1,20) → (3,00; 1,10) | 3,56 m | ✅ | Đi nhanh, khom người về phía 4C, 5 bước trên thảm cũ (có tiếng bước chân). Dừng cách cửa 4C 0,7 m. |
+| weg-rosa | ICH | 10–11 | 41,4–43,3 s | (3,00; 1,10) → (4,60; 0,95) → (5,70; 0,85) | 2,71 m | ✅ | Nghe tiếng xích, quay lại, bước về phía cửa 4A của Rosa. Dừng cách khe cửa 0,7 m. |
+| weg-zurueck | ICH | 13–14 | 60,2–61,0 s | (5,70; 0,85) → (6,20; 1,40) → (6,20; 1,75) | 1,09 m | ✅ | Rosa đóng cửa; TÔI quay về 4B (2 bước, tiếp tục trong sơ đồ 4B). |
+| weg-okafor | OKAFOR | M01–M14 | 85,9–90,9 s | (11,60; 0,60) → (10,60; 0,70) → (9,90; 0,75) | 1,71 m | ✅ | Lên những bậc cuối, dừng ở đầu cầu thang. |
+| weg-tyler | TYLER | M04 | 84,9–86,9 s | (10,30; 1,00) → (6,80; 0,95) → (3,50; 0,95) | 6,80 m | ✅ | Chạy từ cầu thang qua trước cửa 4B (TÔI vẫn đang ở trong ngưỡng cửa, y ≥ 1,8) tới gần 4C. |
 
 ## Vị trí máy quay theo từng góc quay
 
@@ -81,9 +81,10 @@ Toàn bộ là góc nhìn thứ nhất (POV) với ống kính fisheye 0.5x (gó
 
 | Góc | Câu | Thời gian | Vị trí (x; y; z) | Yaw | Pitch | FOV | Nhân vật trong khung | Thấy gì | Tay làm gì |
 |---|---|---|---|---|---|---|---|---|---|
-| F1 | 09 | 33,5–37,0 s | (3,00; 1,10; 1,60) | -35° → -35° | -12° | 115° | – | GIỮA KHUNG: cửa 4C – tay nắm sạch bóng giữa lớp bụi, ổ khoá móc mới tinh, khe sáng xanh dưới cửa. Camera nhìn xuống khe cửa rồi lên tay nắm. | Tay phải chìa ra gần tay nắm nhưng không chạm; tay trái điện thoại bật đèn pin chiếu vào ổ khoá. |
-| F2 | 10–13 | 37,0–53,8 s | (3,00; 1,10; 1,60) | +150° → +170° | -3° | 115° | ROSA (+105°), MRS_LEE (-150°), TYLER (+107°), DEB (+96°), OKAFOR (+93°) | GIỮA KHUNG: khe cửa có xích của 4A, nửa mặt Rosa. 46–49 s: tay Rosa đưa vòng cổ mèo 'PICKLE – 4B' qua khe (cận). Cửa 4C ở mép phải khung khi TÔI ngoái lại (~44 s) – ánh xanh dưới khe vẫn sáng. | Tay trái giơ điện thoại hạ đèn pin xuống sàn (lịch sự), tay phải đỡ lấy vòng cổ mèo. |
-| F3 | 19–21 + M01–M20 + thẻ kết | 76,5–93,8 s | (6,20; 1,62; 1,60) | -80° → +95° | +0° | 115° | MRS_LEE (-111°), TYLER (-104°), RAY (-106°), DEB (+126°), BRIANNA (+100°), OKAFOR (+101°) | 76,5–80: GIỮA KHUNG cửa 4C (yaw −80): khe sáng xanh TẮT; bà Lee ló ra ở 4D, Tyler chạy qua rồi khựng trước 4C. 80–84: lia sang Đông (yaw +95): Ray, Deb cạnh Rosa, Brianna, Okafor ở đầu cầu thang, mọi người mặc đồ ngủ, đèn tường chập chờn. 84–87,8: cúi xuống điện thoại – các mạng '4C_CAM_…' biến mất từng cái; ngẩng lên lại cửa 4C ở GIỮA KHUNG. 87,8–93,8: thẻ kết phủ mờ lên cảnh hành lang (hàng xóm vẫn trong hình, tiếng xì xào tiếp tục). | Tay trái nắm khung cửa 4B (đứng ở ngưỡng), tay phải điện thoại bật loa gọi 911. |
+| F0 | (khoảng lặng trước 09) | 34,6–37,2 s | (6,20; 1,60; 1,60) | -100° → -55° | -5° | 115° | MRS_LEE (-110°), TYLER (-104°), RAY (-106°) | Ra khỏi 4B, đi nhanh về phía 4C: cửa 4C dần vào GIỮA KHUNG; bước chân trên thảm, camera nhún. | Tay trái kéo cửa 4B khép hờ sau lưng rồi vung theo bước; tay phải điện thoại bật đèn pin chiếu về phía trước. |
+| F1 | 09 | 37,2–40,7 s | (3,00; 1,10; 1,60) | -35° → -35° | -12° | 115° | – | GIỮA KHUNG: cửa 4C – tay nắm sạch bóng giữa lớp bụi, ổ khoá móc mới tinh, khe sáng xanh dưới cửa. Camera nhìn xuống khe cửa rồi lên tay nắm. | Tay phải chìa ra gần tay nắm nhưng không chạm; tay trái điện thoại bật đèn pin chiếu vào ổ khoá. |
+| F2 | 10–13 | 40,7–61,0 s | (3,00; 1,10; 1,60) | +150° → +170° | -3° | 115° | ROSA (+105°), MRS_LEE (-150°), TYLER (+107°), DEB (+96°), OKAFOR (+93°) | GIỮA KHUNG: khe cửa có xích của 4A, nửa mặt Rosa. 46–49 s: tay Rosa đưa vòng cổ mèo 'PICKLE – 4B' qua khe (cận). Cửa 4C ở mép phải khung khi TÔI ngoái lại (~44 s) – ánh xanh dưới khe vẫn sáng. | Tay trái giơ điện thoại hạ đèn pin xuống sàn (lịch sự), tay phải đỡ lấy vòng cổ mèo. |
+| F3 | 19–21 + M01–M20 + thẻ kết | 86,5–105,4 s | (6,20; 1,62; 1,60) | -80° → +95° | +0° | 115° | MRS_LEE (-111°), TYLER (-104°), RAY (-106°), DEB (+126°), BRIANNA (+100°), OKAFOR (+101°) | 76,5–80: GIỮA KHUNG cửa 4C (yaw −80): khe sáng xanh TẮT; bà Lee ló ra ở 4D, Tyler chạy qua rồi khựng trước 4C. 80–84: lia sang Đông (yaw +95): Ray, Deb cạnh Rosa, Brianna, Okafor ở đầu cầu thang, mọi người mặc đồ ngủ, đèn tường chập chờn. 84–87,8: cúi xuống điện thoại – các mạng '4C_CAM_…' biến mất từng cái; ngẩng lên lại cửa 4C ở GIỮA KHUNG. 87,8–93,8: thẻ kết phủ mờ lên cảnh hành lang (hàng xóm vẫn trong hình, tiếng xì xào tiếp tục). | Tay trái nắm khung cửa 4B (đứng ở ngưỡng), tay phải điện thoại bật loa gọi 911. |
 
 ## Bên ngoài
 

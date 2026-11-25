@@ -1,0 +1,271 @@
+{
+ "knocks": [
+  {
+   "t": 0.15,
+   "gain": 1.0
+  },
+  {
+   "t": 0.51,
+   "gain": 0.95
+  },
+  {
+   "t": 0.87,
+   "gain": 1.0
+  }
+ ],
+ "myknocks": [
+  {
+   "t": 21.152,
+   "gain": 0.8
+  },
+  {
+   "t": 21.452,
+   "gain": 0.8
+  },
+  {
+   "t": 21.752,
+   "gain": 0.8
+  }
+ ],
+ "buzz": [
+  22.232,
+  25.834
+ ],
+ "door": [
+  {
+   "t": 34.226,
+   "kind": "open"
+  },
+  {
+   "t": 85.005,
+   "kind": "open"
+  }
+ ],
+ "chain": [
+  {
+   "t": 40.76,
+   "kind": "open"
+  },
+  {
+   "t": 59.647,
+   "kind": "close"
+  }
+ ],
+ "steps": [
+  {
+   "t": 32.295,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 32.795,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 33.295,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 33.795,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 34.295,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 34.795,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 35.295,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 35.795,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 36.295,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 36.795,
+   "foot": "R",
+   "gain": 0.7,
+   "surface": "carpet"
+  },
+  {
+   "t": 41.548,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 42.028,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 42.508,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 42.988,
+   "foot": "R",
+   "gain": 0.7,
+   "surface": "carpet"
+  },
+  {
+   "t": 60.378,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 60.838,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "carpet"
+  },
+  {
+   "t": 61.298,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 61.758,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 62.218,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 62.678,
+   "foot": "R",
+   "gain": 0.7,
+   "surface": "wood"
+  },
+  {
+   "t": 76.323,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 76.823,
+   "foot": "R",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 77.323,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 77.823,
+   "foot": "R",
+   "gain": 0.7,
+   "surface": "wood"
+  },
+  {
+   "t": 85.452,
+   "foot": "L",
+   "gain": 1.0,
+   "surface": "wood"
+  },
+  {
+   "t": 85.872,
+   "foot": "R",
+   "gain": 0.7,
+   "surface": "wood"
+  }
+ ],
+ "shakes": [
+  {
+   "t": 0.15,
+   "amp": 1.4
+  },
+  {
+   "t": 84.255,
+   "amp": 3.0
+  }
+ ],
+ "ring": [
+  76.098,
+  77.198
+ ],
+ "impact": 84.255,
+ "silence_before_impact": [
+  83.205,
+  84.255
+ ],
+ "walks": {
+  "weg-tuer": [
+   32.12,
+   34.576
+  ],
+  "weg-4c": [
+   34.576,
+   37.12
+  ],
+  "weg-rosa": [
+   41.38,
+   43.3
+  ],
+  "weg-zurueck": [
+   60.217,
+   60.953
+  ],
+  "weg-schrank": [
+   60.953,
+   62.977
+  ],
+  "weg-tuer-2": [
+   76.148,
+   78.148
+  ],
+  "weg-schwelle": [
+   85.305,
+   86.145
+  ]
+ },
+ "durations": {
+  "knock": 0.3,
+  "myknock": 0.2,
+  "buzz": 0.75,
+  "door": 0.3,
+  "chain": 0.5,
+  "ring": 1.0,
+  "impact": 0.9,
+  "step": 0.26
+ }
+}

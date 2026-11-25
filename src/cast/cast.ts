@@ -115,4 +115,5 @@ const BASE_CAST: FigureDef[] = [
 ];
 
 import { NACHTZUG_CAST } from "./nachtzug";
-export const CAST: FigureDef[] = [...BASE_CAST, ...NACHTZUG_CAST];
+import { NEXTDOOR_CAST } from "./nextdoor";
+export const CAST: FigureDef[] = [...BASE_CAST, ...NACHTZUG_CAST, ...NEXTDOOR_CAST];

@@ -115,7 +115,9 @@ const SEAT = 0.48 / FIG_TO_M;
 export const Figure: React.FC<{
   f: FigureDef; style: JunoStyle; rotationY?: number; position?: V3; scale?: number;
   pose?: "stand" | "sit"; walk?: number; headYaw?: number; lift?: number; torsoYaw?: number;
-}> = ({ f, style, rotationY = 0, position = [0, 0, 0], scale = 1, pose = "stand", walk = 0, headYaw = 0, lift = 0, torsoYaw = 0 }) => {
+  /** 0…1 – miệng mở theo âm lượng của file giọng (khớp môi) */
+  talk?: number;
+}> = ({ f, style, rotationY = 0, position = [0, 0, 0], scale = 1, pose = "stand", walk = 0, headYaw = 0, lift = 0, torsoYaw = 0, talk = 0 }) => {
   const sit = pose === "sit";
   setLowPoly(!!style.texture.facet);
   const h = f.body.hip, b = f.body.build, R = f.body.headR;
@@ -318,6 +320,18 @@ export const Figure: React.FC<{
         <Part geo={G.sphere(0.016)} color={hw.accent ?? mix(hw.color, "#000", 0.2)} position={[0, R * 0.55, 0]} />
       </group>
     );
+  if (hw.type === "headscarf")
+    // khăn trùm buộc nút trên đỉnh trán, mép trước lộ ba ống lô cuốn tóc (màu accent của khăn)
+    headwear = (
+      <group position={[0, R * 0.3, -R * 0.05]} rotation={[-0.32, 0, 0]}>
+        <Part geo={G.cap(R * 1.12, Math.PI * 0.5)} color={hw.color} kind="cloth" scale={[1.03, 1.0, 1.05]} doubleSide />
+        <Part geo={G.torus(R * 1.12, 0.028, Math.PI * 2)} color={mix(hw.color, "#000", 0.1)} kind="cloth" position={[0, R * 0.02, 0]} rotation={[Math.PI / 2, 0, 0]} scale={[1.03, 1.05, 1]} />
+        <Part geo={G.sphere(1)} color={hw.color} kind="cloth" position={[0, R * 0.95, R * 0.38]} scale={[R * 0.3, R * 0.2, R * 0.24]} />
+        {[-0.5, 0, 0.5].map((yaw, i) => (
+          <Part key={i} geo={G.cyl(R * 0.12, R * 0.36)} color={hw.accent ?? "#e8a0b4"} kind="cloth" position={surf(R * 1.06, yaw, -0.02)} rotation={[0, yaw, Math.PI / 2]} />
+        ))}
+      </group>
+    );
   if (hw.type === "hood")
     headwear = (
       <>
@@ -334,7 +348,15 @@ export const Figure: React.FC<{
   // ---------- Mund ----------
   let mouth: React.ReactNode;
   const mp = surf(R * 0.985, 0.03, -0.36);
-  if (f.mouth === "flat") mouth = <group position={mp} rotation={[0.36, 0.03, 0.04]}><Part geo={G.capsule(0.0055, 0.03)} color="#a4524b" unlit rotation={[0, 0, Math.PI / 2]} /></group>;
+  if (talk > 0.04)
+    // khớp môi: miệng mở thành hình bầu dục, độ mở theo âm lượng của chính file giọng
+    mouth = (
+      <group position={mp} rotation={[0.36, 0.03, 0]}>
+        <Part geo={G.sphere(1)} color="#5a2a28" unlit scale={[0.026 - 0.004 * talk, 0.006 + 0.022 * talk, 0.008]} outline={0} />
+        <Part geo={G.sphere(1)} color="#c86a6a" unlit position={[0, -0.004 - 0.008 * talk, 0.002]} scale={[0.014, 0.004 + 0.006 * talk, 0.006]} outline={0} />
+      </group>
+    );
+  else if (f.mouth === "flat") mouth = <group position={mp} rotation={[0.36, 0.03, 0.04]}><Part geo={G.capsule(0.0055, 0.03)} color="#a4524b" unlit rotation={[0, 0, Math.PI / 2]} /></group>;
   else if (f.mouth === "grin")
     mouth = (
       <group position={mp} rotation={[0.36, 0.03, 0]}>
@@ -408,9 +430,18 @@ export const Figure: React.FC<{
         {/* ---------- Oberteil ---------- */}
         <Part geo={G.capsule(0.23 * b, 0.26)} color={f.top.color} kind="cloth" position={[0, h + 0.3, 0]} scale={[1.15, 1, 0.85]} />
         <Part geo={G.cyl(0.245 * b, 0.1)} color={f.top.type === "open" ? f.top.color : f.top.color} kind="cloth" position={[0, h - 0.02, 0]} scale={[1.15, 1, 0.85]} />
-        {(f.top.type === "open" || f.top.type === "coat") && (
+        {(f.top.type === "open" || f.top.type === "coat" || f.top.type === "robe") && (
           <Part geo={G.sphere(1)} color={f.top.inner ?? "#f1efea"} kind="cloth" position={[0, h + 0.3, 0.17 * b]} scale={[0.1 * b, 0.36, 0.05]} />
         )}
+        {f.top.type === "robe" && !sit && (
+          <Part geo={G.cylT(0.255 * b, 0.31 * b, 0.62)} color={f.top.color} kind="cloth" position={[0, h - 0.3, 0]} scale={[1.15, 1, 0.85]} />
+        )}
+        {f.top.type === "robe" && (
+          <Part geo={G.torus(0.25 * b, 0.026, Math.PI * 2)} color={f.accent} kind="cloth" position={[0, h + 0.08, 0]} rotation={[Math.PI / 2, 0, 0]} scale={[1.17, 0.87, 1]} />
+        )}
+        {f.top.type === "robe" && [-1, 1].map((sd) => (
+          <Part key={`r${sd}`} geo={G.box(0.1, 0.34, 0.02)} color={mix(f.top.color, "#ffffff", 0.12)} kind="cloth" position={[sd * 0.1 * b, h + 0.46, 0.19 * b]} rotation={[-0.2, 0, sd * 0.38]} />
+        ))}
         {f.top.type === "coat" && !sit && (
           <Part geo={G.cylT(0.255 * b, 0.29 * b, 0.42)} color={f.top.color} kind="cloth" position={[0, h - 0.2, 0]} scale={[1.15, 1, 0.85]} />
         )}

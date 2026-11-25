@@ -8,7 +8,9 @@
 # "#! pause <giây> <nhãn>" = khoảng lặng TRƯỚC câu kế tiếp cho hiệu ứng có nguồn nhìn thấy được:
 #   knock = tiếng gõ trên tường (khung ảnh trên tường nảy lên theo từng tiếng), myknock_buzz = khớp tay TÔI gõ tường 3 lần rồi điện thoại rung,
 #   buzz = điện thoại rung trong tay, ring = điện thoại đổ chuông, walk = bước chân TÔI trên thảm cũ,
-#   chain = xích cửa căn 4A (chain_walk = Rosa đóng cửa rồi TÔI đi về 4B), impact = 1 s im lặng tuyệt đối rồi một tiếng "rầm" từ trong 4C (tường rung, đèn dưới khe cửa tắt).
+#   walk = TÔI đi từ giường ra tận cửa 4C (bước chân chỉ nằm trong khoảng lặng, không đè lên thoại),
+#   chain = xích cửa căn 4A rồi TÔI bước về phía Rosa (chain_walk = Rosa đóng cửa rồi TÔI đi về tủ quần áo 4B),
+#   ring = điện thoại đổ chuông trong lúc TÔI đi từ tủ ra cửa 4B, impact = 1 s im lặng tuyệt đối rồi một tiếng "rầm" từ trong 4C (tường rung, đèn dưới khe cửa tắt).
 # Giọng qua điện thoại (PRUITT, DISPATCH): nguồn nhìn thấy được là điện thoại bật loa trong tay TÔI.
 # Tiếng xì xào (crowd.md, 20 câu): chỉ ở Beat 6 và dưới thẻ kết, khi hàng xóm đứng ngoài hành lang trong hình.
 
@@ -28,16 +30,16 @@
 # Người xem biết, TÔI chưa biết: đèn đỏ trên trần nháy đúng lúc tin nhắn đến (ở mép trên khung hình).
 #! pause 2.0 myknock_buzz
 @ME [whispers, shocked]: Unknown number. "Don't knock back."
-#! pause 0.6 buzz
+#! pause 1.0 buzz
 @ME [whispers, panicked]: "Nice green hoodie. Go to sleep."
 @ME [breathing fast, whispers]: They can see me.
 
 ## Beat 3 · ~33 s · Cửa 4C (cú lật 2: căn "bỏ trống" đang có người dùng)
 # Camera biết thở: đi 7 bước ra hành lang, nhìn xuống thảm, tay đẩy cửa, nhìn trần có bóng đèn chập chờn.
 # Gặt: "Only I got a key" – ổ khoá 4C mới tinh, sáng bóng.
-#! pause 2.2 walk
+#! pause 5.6 walk
 @ME [whispers]: No dust on the knob. And a brand-new padlock.
-#! pause 0.5 chain
+#! pause 2.6 chain
 @ROSA [whispers, frightened]: Honey, get away from there. Not at midnight.
 @ROSA [whispers, grim]: Every new tenant hears it. For a month.
 
@@ -49,17 +51,19 @@
 ## Beat 5 · ~64 s · Mẩu giấy (cú lật 4: gặt mẩu giấy vàng + đầu báo khói)
 # Đi về 4B, tay bóc mẩu giấy vàng: "IT'S NOT A SMOKE DETECTOR. – J". Camera ngẩng lên: thấu kính trong đầu báo khói xoay theo TÔI.
 # Nguyên nhân lớn hé lộ: danh sách Wi-Fi trên điện thoại – camera ở MỌI căn hộ trong toà nhà, kể cả căn của Rosa.
-#! pause 2.2 chain_walk
+#! pause 3.6 chain_walk
 @ME [whispers]: Jenna's note. "It's not a smoke detector."
 @ME [whispers, horrified]: There's a lens in it. It's turning. Following me.
 @ME [shaking, whispers]: "Four-C Cam Four-B." Every unit has one.
-#! pause 0.4 ring
+#! pause 2.4 ring
 
 ## Beat 6 · ~77 s · Cuộc gọi lại (cú lật 5: chủ nhà chính là người xem)
 # Gặt: "Only I got a key". TÔI chưa từng nói với ông ta là mình ra hành lang.
 @PRUITT [on speakerphone, calm, cold]: Why were you out in the hallway, kid?
 @ME [terrified, whispers]: I never told you I left my room.
-#! pause 1.0 impact
+
+## Beat 7 · sau tiếng "rầm" – cả tầng thức dậy (tiếng xì xào của hàng xóm bắt đầu từ đây)
+#! pause 3.2 impact
 # Sau tiếng "rầm": đèn xanh dưới khe cửa 4C tắt. TÔI bước ra ngưỡng cửa 4B: cả tầng bị đánh thức – hàng xóm mặc đồ ngủ
 # mở cửa, vài người từ tầng 3 lên cầu thang (6 người, xem crowd.md, ai cũng có mặt trong hình). Trên điện thoại,
 # các mạng "4C_CAM_…" biến mất từng cái một.

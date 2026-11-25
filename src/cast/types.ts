@@ -1,7 +1,7 @@
 // Figuren-Baukasten für Stil B (Soft-3D). Jede Figur = ein Datensatz.
 export type HairStyle = "bob" | "bun" | "long" | "afro" | "puffs" | "short" | "fringe" | "tousled" | "braids";
-export type Headwear = "none" | "beanie" | "capBack" | "headband" | "hood" | "flatcap";
-export type Top = "sweater" | "hoodie" | "open" | "puffer" | "coat"; // open = offene Jacke/Hemd über Shirt
+export type Headwear = "none" | "beanie" | "capBack" | "headband" | "hood" | "flatcap" | "headscarf";
+export type Top = "sweater" | "hoodie" | "open" | "puffer" | "coat" | "robe"; // robe = áo choàng ngủ dài có đai // open = offene Jacke/Hemd über Shirt
 export type Bottom = "cargo" | "jeans" | "skirt" | "joggers";
 export type Mouth = "smile" | "grin" | "flat" | "smirk";
 export type HandProp = "phone" | "camera" | "mug" | "marker" | "radio" | "boltcutter" | "none";

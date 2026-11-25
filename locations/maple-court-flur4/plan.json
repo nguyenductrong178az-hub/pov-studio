@@ -203,7 +203,7 @@
     2.5,
     0.22
    ],
-   "appear": 75.6,
+   "appear": 84.555,
    "note": "Bà cụ 4D, ló ra ở cửa đối diện 4C, tay nắm chặt cổ áo choàng. Không bước ra."
   },
   "TYLER": {
@@ -213,7 +213,7 @@
     3.5,
     0.95
    ],
-   "appear": 76.0,
+   "appear": 84.855,
    "note": "Lên cầu thang trước nhất, chạy về phía 4C rồi khựng lại cách cửa 1 m (người đứng sững)."
   },
   "RAY": {
@@ -223,7 +223,7 @@
     4.6,
     1.15
    ],
-   "appear": 78.0,
+   "appear": 86.955,
    "note": "Đứng giữa hành lang, chống nạnh, gọi điện; ở 'Should we knock?' bước nửa bước về 4C (người muốn giúp)."
   },
   "DEB": {
@@ -233,7 +233,7 @@
     7.6,
     0.6
    ],
-   "appear": 77.0,
+   "appear": 85.855,
    "note": "Đứng gần 4A cạnh Rosa, tay đặt lên vai Rosa; nhìn TÔI ('Look at him')."
   },
   "BRIANNA": {
@@ -243,7 +243,7 @@
     8.6,
     1.2
    ],
-   "appear": 77.4,
+   "appear": 86.155,
    "note": "Đứng gần đầu cầu thang, ôm điện thoại, lùi dần về phía cầu thang (người muốn chạy)."
   },
   "OKAFOR": {
@@ -253,7 +253,7 @@
     11.6,
     0.6
    ],
-   "appear": 77.0,
+   "appear": 85.855,
    "note": "Lên cầu thang chậm, tay vịn lan can; dừng ở đầu cầu thang."
   }
  },
@@ -262,9 +262,9 @@
    "id": "weg-4c",
    "who": "ICH",
    "lines": "08–09",
-   "time": "31,3–33,5 s",
-   "t0": 31.3,
-   "t1": 33.5,
+   "time": "34,6–37,1 s",
+   "t0": 34.576,
+   "t1": 37.12,
    "points": [
     [
      6.2,
@@ -289,9 +289,9 @@
    "id": "weg-rosa",
    "who": "ICH",
    "lines": "10–11",
-   "time": "38,0–41,0 s",
-   "t0": 38.0,
-   "t1": 41.0,
+   "time": "41,4–43,3 s",
+   "t0": 41.38,
+   "t1": 43.3,
    "points": [
     [
      3.0,
@@ -312,9 +312,9 @@
    "id": "weg-zurueck",
    "who": "ICH",
    "lines": "13–14",
-   "time": "53,8–54,6 s",
-   "t0": 53.8,
-   "t1": 54.6,
+   "time": "60,2–61,0 s",
+   "t0": 60.217,
+   "t1": 60.953,
    "points": [
     [
      5.7,
@@ -335,9 +335,9 @@
    "id": "weg-okafor",
    "who": "OKAFOR",
    "lines": "M01–M14",
-   "time": "77,0–82,0 s",
-   "t0": 77.0,
-   "t1": 82.0,
+   "time": "85,9–90,9 s",
+   "t0": 85.855,
+   "t1": 90.855,
    "points": [
     [
      11.6,
@@ -358,9 +358,9 @@
    "id": "weg-tyler",
    "who": "TYLER",
    "lines": "M04",
-   "time": "76,0–78,0 s",
-   "t0": 76.0,
-   "t1": 78.0,
+   "time": "84,9–86,9 s",
+   "t0": 84.855,
+   "t1": 86.855,
    "points": [
     [
      10.3,
@@ -380,11 +380,49 @@
  ],
  "cameras": [
   {
+   "id": "F0",
+   "lines": "(khoảng lặng trước 09)",
+   "time": "34,6–37,2 s",
+   "t0": 34.576,
+   "t1": 37.22,
+   "pos": [
+    6.2,
+    1.6,
+    1.6
+   ],
+   "yaw": [
+    -100,
+    -55
+   ],
+   "pitch": -5,
+   "fov": 115,
+   "path": [
+    [
+     6.2,
+     1.75
+    ],
+    [
+     6.2,
+     1.4
+    ],
+    [
+     4.2,
+     1.2
+    ],
+    [
+     3.0,
+     1.1
+    ]
+   ],
+   "sees": "Ra khỏi 4B, đi nhanh về phía 4C: cửa 4C dần vào GIỮA KHUNG; bước chân trên thảm, camera nhún.",
+   "hands": "Tay trái kéo cửa 4B khép hờ sau lưng rồi vung theo bước; tay phải điện thoại bật đèn pin chiếu về phía trước."
+  },
+  {
    "id": "F1",
    "lines": "09",
-   "time": "33,5–37,0 s",
-   "t0": 33.5,
-   "t1": 37.0,
+   "time": "37,2–40,7 s",
+   "t0": 37.22,
+   "t1": 40.68,
    "pos": [
     3.0,
     1.1,
@@ -402,9 +440,9 @@
   {
    "id": "F2",
    "lines": "10–13",
-   "time": "37,0–53,8 s",
-   "t0": 37.0,
-   "t1": 53.8,
+   "time": "40,7–61,0 s",
+   "t0": 40.68,
+   "t1": 60.953,
    "pos": [
     3.0,
     1.1,
@@ -436,9 +474,9 @@
   {
    "id": "F3",
    "lines": "19–21 + M01–M20 + thẻ kết",
-   "time": "76,5–93,8 s",
-   "t0": 76.5,
-   "t1": 93.8,
+   "time": "86,5–105,4 s",
+   "t0": 86.455,
+   "t1": 105.43,
    "pos": [
     6.2,
     1.62,

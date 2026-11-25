@@ -198,9 +198,9 @@
    "id": "weg-tuer",
    "who": "ICH",
    "lines": "08",
-   "time": "29,3–31,3 s",
-   "t0": 29.3,
-   "t1": 31.3,
+   "time": "32,1–34,6 s",
+   "t0": 32.12,
+   "t1": 34.576,
    "points": [
     [
      1.6,
@@ -225,9 +225,9 @@
    "id": "weg-schrank",
    "who": "ICH",
    "lines": "13–14",
-   "time": "54,6–56,6 s",
-   "t0": 54.6,
-   "t1": 56.6,
+   "time": "61,0–63,0 s",
+   "t0": 60.953,
+   "t1": 62.977,
    "points": [
     [
      1.2,
@@ -248,9 +248,9 @@
    "id": "weg-tuer-2",
    "who": "ICH",
    "lines": "18–19",
-   "time": "74,3–76,5 s",
-   "t0": 74.3,
-   "t1": 76.5,
+   "time": "76,1–78,1 s",
+   "t0": 76.148,
+   "t1": 78.148,
    "points": [
     [
      3.2,
@@ -262,10 +262,29 @@
     ],
     [
      1.2,
-     0.1
+     0.45
     ]
    ],
    "note": "Sau tiếng 'rầm': lao ra cửa, giật cửa mở, đứng ở ngưỡng cửa. 4 bước nhanh."
+  },
+  {
+   "id": "weg-schwelle",
+   "who": "ICH",
+   "lines": "(khoảng lặng trước 19)",
+   "time": "85,3–86,1 s",
+   "t0": 85.305,
+   "t1": 86.145,
+   "points": [
+    [
+     1.2,
+     0.45
+    ],
+    [
+     1.2,
+     -0.33
+    ]
+   ],
+   "note": "Sau tiếng 'rầm': mở cửa, 2 bước ra đứng ở ngưỡng cửa 4B (bước chân nằm sau tiếng rầm, trước câu 19)."
   }
  ],
  "cameras": [
@@ -274,7 +293,7 @@
    "lines": "01–05",
    "time": "0,0–21,0 s",
    "t0": 0.0,
-   "t1": 21.0,
+   "t1": 21.032,
    "pos": [
     1.6,
     3.25,
@@ -292,9 +311,9 @@
   {
    "id": "A2",
    "lines": "06–08",
-   "time": "21,0–29,3 s",
-   "t0": 21.0,
-   "t1": 29.3,
+   "time": "21,0–31,6 s",
+   "t0": 21.032,
+   "t1": 31.62,
    "pos": [
     0.9,
     3.7,
@@ -312,9 +331,9 @@
   {
    "id": "A3",
    "lines": "08",
-   "time": "29,3–31,3 s",
-   "t0": 29.3,
-   "t1": 31.3,
+   "time": "31,6–34,6 s",
+   "t0": 31.62,
+   "t1": 34.576,
    "pos": [
     1.6,
     2.6,
@@ -346,9 +365,9 @@
   {
    "id": "A4",
    "lines": "14–16",
-   "time": "56,6–68,9 s",
-   "t0": 56.6,
-   "t1": 68.9,
+   "time": "61,0–76,0 s",
+   "t0": 60.953,
+   "t1": 76.048,
    "pos": [
     3.2,
     1.5,
@@ -360,46 +379,42 @@
    ],
    "pitch": 0,
    "fov": 115,
-   "sees": "56,6–59,9: GIỮA KHUNG mẩu giấy vàng trên khung tủ (cận, đọc được). 59,9–64,4: ngẩng lên (yaw −42, pitch +48) – đầu báo khói ở GIỮA KHUNG, thấu kính đen xoay theo, đèn đỏ. 64,4–68,9: cúi xuống điện thoại (pitch −40): danh sách Wi-Fi '4C_CAM_4B', '4C_CAM_4A', '4C_CAM_4D'… ",
-   "hands": "Tay phải bóc mẩu giấy, giữ trước mặt; rồi tay trái giơ điện thoại lên, ngón cái cuộn danh sách."
+   "sees": "Bước vào, đi thẳng tới tủ (bước chân trên sàn gỗ). Rồi GIỮA KHUNG mẩu giấy vàng trên khung tủ (cận, đọc được). Rồi ngẩng lên (yaw −42, pitch +48): đầu báo khói ở GIỮA KHUNG, thấu kính đen xoay theo, đèn đỏ. Rồi cúi xuống điện thoại (pitch −40): danh sách Wi-Fi '4C_CAM_4B', '4C_CAM_4A', '4C_CAM_4D'…",
+   "hands": "Tay phải bóc mẩu giấy, giữ trước mặt; rồi tay trái giơ điện thoại lên, ngón cái cuộn danh sách.",
+   "path": [
+    [
+     1.2,
+     0.05
+    ],
+    [
+     1.2,
+     0.7
+    ],
+    [
+     3.2,
+     1.5
+    ]
+   ]
   },
   {
    "id": "A5",
    "lines": "17–18",
-   "time": "68,9–74,3 s",
-   "t0": 68.9,
-   "t1": 74.3,
+   "time": "76,0–83,3 s",
+   "t0": 76.048,
+   "t1": 83.255,
    "pos": [
     3.2,
     1.5,
     1.6
    ],
    "yaw": [
-    -127,
-    -110
-   ],
-   "pitch": -5,
-   "fov": 115,
-   "sees": "GIỮA KHUNG: cửa 4B (đang khép) – Pruitt gọi lại; TÔI nhìn về phía cửa vì sợ có người ngoài đó. Đầu báo khói vẫn ở mép trên khung.",
-   "hands": "Tay trái điện thoại bật loa (màn hình 'MR. PRUITT – LANDLORD'), tay phải nắm chặt mẩu giấy."
-  },
-  {
-   "id": "A6",
-   "lines": "19",
-   "time": "74,3–76,5 s",
-   "t0": 74.3,
-   "t1": 76.5,
-   "pos": [
-    3.0,
-    1.4,
-    1.6
-   ],
-   "yaw": [
     -125,
     180
    ],
-   "pitch": 0,
+   "pitch": -5,
    "fov": 115,
+   "sees": "Chuông điện thoại reo; TÔI đi từ tủ ra sát cửa 4B (4 bước), dừng ngay sau cánh cửa đóng: cửa 4B ở GIỮA KHUNG trong cuộc gọi của Pruitt ('Why were you out in the hallway, kid?') – như thể ông ta đứng ngay ngoài kia. Đầu báo khói ở mép trên khi ngẩng.",
+   "hands": "Tay trái điện thoại bật loa (màn hình 'MR. PRUITT – LANDLORD'), tay phải nắm chặt mẩu giấy.",
    "path": [
     [
      3.2,
@@ -411,11 +426,39 @@
     ],
     [
      1.2,
-     0.1
+     0.45
     ]
+   ]
+  },
+  {
+   "id": "A6",
+   "lines": "19",
+   "time": "83,3–86,5 s",
+   "t0": 83.255,
+   "t1": 86.455,
+   "pos": [
+    1.2,
+    0.45,
+    1.6
    ],
-   "sees": "74,3–75,3: 1 s im lặng tuyệt đối, khung đứng yên. 75,3: tiếng 'rầm' – cả phòng rung, khung ảnh rơi khỏi tường Tây (thấy ở mép phải), đèn đỏ đầu báo khói tắt. Lao ra cửa.",
-   "hands": "Tay trái giật cửa mở vào trong; tay phải điện thoại."
+   "yaw": [
+    180,
+    180
+   ],
+   "pitch": 0,
+   "fov": 115,
+   "sees": "1 s im lặng tuyệt đối, khung đứng yên trên cánh cửa 4B. Tiếng 'rầm': cả phòng rung, khung ảnh trên tường Tây rơi (mép trái), đèn đỏ đầu báo khói tắt. Tay trái mở cửa vào trong, 2 bước ra ngưỡng cửa: hành lang hiện ra, cửa 4C ở GIỮA KHUNG.",
+   "hands": "Tay trái giật cửa mở vào trong; tay phải điện thoại.",
+   "path": [
+    [
+     1.2,
+     0.45
+    ],
+    [
+     1.2,
+     0.06
+    ]
+   ]
   }
  ],
  "moves": [],

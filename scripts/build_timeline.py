@@ -140,9 +140,9 @@ def main():
         b = l.get("beat")
         b0 = beats.get(b, 0.0)
         nxt = next((beats[k] for k in beat_keys if k > b), total if (a.crowd_into_card and b == last_beat) else card_start)
-        lanes = cursor.setdefault(b, [b0 + 1.2] * max(1, a.crowd_lanes))
+        lanes = cursor.setdefault(b, [b0 + (1.2 if a.crowd_lanes <= 1 else 0.6) + 0.45 * i for i in range(max(1, a.crowd_lanes))])
         li = min(range(len(lanes)), key=lanes.__getitem__)
-        t0 = max(lanes[li], b0 + 1.2)
+        t0 = max(lanes[li], b0 + (1.2 if a.crowd_lanes <= 1 else 0.6))
         if t0 + (e0 - s0) > nxt:
             warnings.append(f"Gemurmel {l['id']} ragt über Beat {b} hinaus ({t0:.1f}–{t0 + e0 - s0:.1f} s, Beat endet {nxt:.1f} s)")
         out_crowd.append({"id": l["id"], "speaker": l["speaker"], "text": l["text"], "file": l["file"], "beat": b,

@@ -1,10 +1,10 @@
 # The Neighbor Next Door · Tập 1 „Midnight" – tiếng xì xào của hàng xóm (20 câu)
-# Chỉ dùng ở Beat 6 và dưới thẻ kết: sau tiếng "rầm" từ 4C, hàng xóm ra hành lang tầng 4, ai cũng có mặt trong hình
+# Chỉ dùng ở Beat 7 và dưới thẻ kết: sau tiếng "rầm" từ 4C, hàng xóm ra hành lang tầng 4, ai cũng có mặt trong hình
 # (đúng luật: không có âm thanh không có nguồn). Trộn nhỏ (~22 %), 2–3 giọng chồng lên nhau, trái/phải xen kẽ.
 # Mỗi câu có thẻ cảm xúc tiếng Anh. Gieo thêm cho cú lật: đầu báo khói của mọi nhà cùng tắt, Wi-Fi mất (camera đang bị tắt).
 # Người: OKAFOR (ông ~65, tầng 3), BRIANNA (~25), DEB (~50), TYLER (~28), MRS_LEE (~80), RAY (~45).
 
-## Beat 6
+## Beat 7
 @OKAFOR [groggy, annoyed]: What on earth was that?
 @BRIANNA [scared]: Did something fall? My whole ceiling shook.
 @DEB [worried]: Is everybody okay up here?
