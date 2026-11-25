@@ -642,7 +642,7 @@
     },
     {
       "before": "06",
-      "label": "myknock",
+      "label": "myknock_buzz",
       "start": 21.032,
       "end": 23.032
     },
@@ -666,7 +666,7 @@
     },
     {
       "before": "14",
-      "label": "chain",
+      "label": "chain_walk",
       "start": 53.785,
       "end": 55.985
     },

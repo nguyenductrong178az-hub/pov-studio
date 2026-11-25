@@ -6,9 +6,9 @@
 # TÔI (ME) ở căn 4B, mới dọn vào 6 ngày. Chỉ thấy tay và tay áo hoodie xanh lá (được gieo: "Green hoodie").
 # Độ dài mục tiêu 1:30 (theo yêu cầu của anh; CLAUDE.md ghi 1:45–2:15). Cú lật mỗi 15–20 s.
 # "#! pause <giây> <nhãn>" = khoảng lặng TRƯỚC câu kế tiếp cho hiệu ứng có nguồn nhìn thấy được:
-#   knock = tiếng gõ trên tường (khung ảnh trên tường nảy lên theo từng tiếng), myknock-buzz = khớp tay TÔI gõ tường 3 lần rồi điện thoại rung,
+#   knock = tiếng gõ trên tường (khung ảnh trên tường nảy lên theo từng tiếng), myknock_buzz = khớp tay TÔI gõ tường 3 lần rồi điện thoại rung,
 #   buzz = điện thoại rung trong tay, ring = điện thoại đổ chuông, walk = bước chân TÔI trên thảm cũ,
-#   chain = xích cửa căn 4A (chain-walk = Rosa đóng cửa rồi TÔI đi về 4B), impact = 1 s im lặng tuyệt đối rồi một tiếng "rầm" từ trong 4C (tường rung, đèn dưới khe cửa tắt).
+#   chain = xích cửa căn 4A (chain_walk = Rosa đóng cửa rồi TÔI đi về 4B), impact = 1 s im lặng tuyệt đối rồi một tiếng "rầm" từ trong 4C (tường rung, đèn dưới khe cửa tắt).
 # Giọng qua điện thoại (PRUITT, DISPATCH): nguồn nhìn thấy được là điện thoại bật loa trong tay TÔI.
 # Tiếng xì xào (crowd.md, 20 câu): chỉ ở Beat 6 và dưới thẻ kết, khi hàng xóm đứng ngoài hành lang trong hình.
 
@@ -26,7 +26,7 @@
 ## Beat 2 · ~17 s · Gõ lại (cú lật 1: bên kia đang NHÌN TÔI)
 # Cú lật: không phải ma, không phải ống nước – có người, và người đó thấy TÔI.
 # Người xem biết, TÔI chưa biết: đèn đỏ trên trần nháy đúng lúc tin nhắn đến (ở mép trên khung hình).
-#! pause 2.0 myknock-buzz
+#! pause 2.0 myknock_buzz
 @ME [whispers, shocked]: Unknown number. "Don't knock back."
 #! pause 0.6 buzz
 @ME [whispers, panicked]: "Nice green hoodie. Go to sleep."
@@ -49,7 +49,7 @@
 ## Beat 5 · ~64 s · Mẩu giấy (cú lật 4: gặt mẩu giấy vàng + đầu báo khói)
 # Đi về 4B, tay bóc mẩu giấy vàng: "IT'S NOT A SMOKE DETECTOR. – J". Camera ngẩng lên: thấu kính trong đầu báo khói xoay theo TÔI.
 # Nguyên nhân lớn hé lộ: danh sách Wi-Fi trên điện thoại – camera ở MỌI căn hộ trong toà nhà, kể cả căn của Rosa.
-#! pause 2.2 chain-walk
+#! pause 2.2 chain_walk
 @ME [whispers]: Jenna's note. "It's not a smoke detector."
 @ME [whispers, horrified]: There's a lens in it. It's turning. Following me.
 @ME [shaking, whispers]: "Four-C Cam Four-B." Every unit has one.

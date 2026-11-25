@@ -169,6 +169,8 @@ def validate(p):
         ch = p["characters"][key]
         if ch.get("offscreen"):
             return None
+        if ch.get("appear") is not None and t < ch["appear"]:
+            return None  # chưa có mặt trong cảnh (ví dụ hàng xóm chỉ ra hành lang sau tiếng "rầm")
         pos = char_pos(p, key)
         for q in sorted([q for q in p["paths"] if q["who"] == key and q.get("area") != "ngoài"], key=lambda q: q.get("t0", 0)):
             if t >= q.get("t1", q.get("t0", 0)):
@@ -307,6 +309,19 @@ def draw(p, out_png):
                 xx = q0[0] + (9 if pos == 0 else -9)
                 g.line([(xx, q0[1]), (xx, q1[1])], fill="#b5532a", width=5)
                 g.text((xx + (8 if pos == 0 else -110), (q0[1] + q1[1]) / 2 - 8), d["id"], fill="#b5532a", font=font)
+            continue
+        if axis == "x":
+            # cửa trên tường Bắc/Nam: cánh vuông góc với tường, cung 90° vẽ bằng đường gấp khúc
+            hinge_x = b if d["hinge"] == "phía Đông" else a
+            free_x = a if hinge_x == b else b
+            into = -1 if pos > 0 else 1  # hướng vào trong phòng (trục y thế giới)
+            dirw = into if d.get("inward") else -into
+            leaf = T(hinge_x, pos + dirw * d["width"])
+            g.line([T(hinge_x, pos), leaf], fill="#b5532a", width=4)
+            pts = [T(hinge_x + (free_x - hinge_x) * math.sin(k / 20 * math.pi / 2),
+                     pos + dirw * d["width"] * math.cos(k / 20 * math.pi / 2)) for k in range(21)]
+            g.line(pts, fill="#b5532a", width=2)
+            g.text((leaf[0] + 4, leaf[1] - (14 if dirw > 0 else 0)), d["id"], fill="#b5532a", font=font)
             continue
         hinge_y = b if d["hinge"] == "phía Bắc" else a
         hx, hy = T(pos, hinge_y)
