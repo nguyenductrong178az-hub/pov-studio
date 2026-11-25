@@ -131,6 +131,13 @@ Regel: gedämpfte, erdige Töne + **genau eine** kräftige Akzentfarbe pro Figur
 | **Bia** | Turnaround in Stil D fertig, wartet auf Freigabe | zwei Haar-Puffs | dunkelbraun `#2b1d16` | Sweatshirt mint `#8fd1b4`, Jogger grau `#b9b6b0` | Lila `#7a5cc8` | goldene Creolen, lila Haargummis | 1 : 4, klein, rund | Stufe 4 `#c68a62` | dunkelbraun `#4a2e1c` |
 | **Mika** (Testfigur Stilprobe, `src/stile/richtungen.ts`) | Turnaround in Stil D fertig, wartet auf Freigabe | zerzaustes Kurzhaar, keine Kopfbedeckung | silber-flieder `#c9c3d6` | Pullover ochsenblut `#7a2e35`, Cargohose sand `#b8a27c` | Kobalt `#3b5bd6` | Uhr, kobaltblaues Handy, kobalt Socken | 1 : 5, mittel | Stufe 3 `#dba783` | graugrün `#7d8f6a` |
 | **Thiago** | Turnaround in Stil D fertig, wartet auf Freigabe | langer schräger Pony über dem rechten Auge, Kapuze hinten | blauschwarz `#1c1f2a` | Hoodie dunkelgrün `#2f4a3a`, Cargohose `#34343a` | Cyan `#4fb3c8` | Kabel-Kopfhörer, cyan Socken | 1 : 5, groß, dünn | Stufe 6 `#6e4429` | bernstein `#9a6a2a` |
+| **Rosa Alvarez** (4A, Midnight) | freigegeben 25.11.2026 | Kopftuch petrol + 3 rosa Lockenwickler | schwarz-grau `#3a3633` | Morgenmantel rosa `#c48a92` | Smaragd `#2f8f5b` | runde Brille, Kette | 1 : 4, klein, rund | Stufe 3 | bernstein `#9a6a2a` |
+| **Mrs. Lee** (4D) | freigegeben 25.11.2026 | kurzer Bob | silber `#d9dbe2` | Strickjacke graugrün `#8aa58a` | Rosa `#d9708f` | eckige Brille, Uhr | 1 : 4, klein, dünn | Stufe 2 | dunkelbraun `#3a2a20` |
+| **Tyler** | freigegeben 25.11.2026 | zerzaustes Kurzhaar | schwarz `#1e1a18` | Hoodie grau `#8f9396`, Pyjamahose rot | Orange `#e07b2a` | Stoppelbart, orange Handy | 1 : 5, groß | Stufe 4 | braun `#4a3020` |
+| **Ray** | freigegeben 25.11.2026 | Kurzhaar | grau meliert `#6a6660` | Flanell offen petrol `#2f5f66` | Gelb `#e3b53a` | Stoppelbart, Uhr, gelbes Handy | 1 : 5, breit | Stufe 5 | oliv `#6a7a45` |
+| **Deb** | freigegeben 25.11.2026 | Bob | rotbraun `#7a3a22` | Daunenjacke steinblau `#4d6480`, rosa Pyjamahose | Magenta `#c2457a` | Uhr | 1 : 5, mittel | Stufe 1 | kastanie `#7a6a3a` |
+| **Brianna** | freigegeben 25.11.2026 | hoher Dutt | schwarz `#151212` | Hoodie himmelblau `#8fb8de` | Lindgrün `#9bc53d` | grünes Handy, grüne Socken | 1 : 4.5, schlank | Stufe 5 | bernstein `#7a4a20` |
+| **Mr. Okafor** | freigegeben 25.11.2026 | kurzes graues Haar | grau `#9a9a9e` | Morgenmantel navy `#2c3a5a` | Weinrot `#8c2f39` | eckige Brille, grauer Bart | 1 : 5, kräftig | Stufe 6 | dunkelbraun `#2a1a12` |
 
 Code: `src/cast/cast.ts` (Daten), `src/cast/Figure.tsx` (Baukasten). Render: `npm run render:cast` → `out/cast/`.
 
