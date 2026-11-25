@@ -84,6 +84,7 @@ for s in st:
     s["surface"] = "carpet" if s["t"] < t_in else "wood"
 ev["steps"] += st
 WALKS["weg-zurueck"], WALKS["weg-schrank"] = (seg["walk0"], t_in), (t_in, seg["t1"])
+ev["door"].append({"t": r3(c["end"] - 0.3), "kind": "close"})  # cánh cửa 4B khép lại sau lưng TÔI (hình: 62,2–62,95 s)
 # 4) chuông điện thoại, TÔI đi từ tủ ra sát cửa 4B
 c = PZ["ring"]
 ev["ring"] = [r3(c["start"] + 0.05), r3(c["start"] + 1.15)]
@@ -100,6 +101,7 @@ ev["door"].append({"t": r3(ev["impact"] + 0.75), "kind": "open"})
 seg, st = walk(ev["impact"] + 1.05, pi["end"] - 0.05, plen(path(p4b, "weg-schwelle")["points"]), cadence=0.42)
 ev["steps"] += st[:2]
 WALKS["weg-schwelle"] = (seg["walk0"], seg["walk0"] + 2 * 0.42)
+ev["door"].sort(key=lambda d: d["t"])
 ev["walks"] = {k: [r3(a), r3(b)] for k, (a, b) in WALKS.items()}
 
 # ---------------------------------------------------------------- không đè lên thoại ----

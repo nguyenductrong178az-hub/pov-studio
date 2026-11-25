@@ -11,6 +11,7 @@ import { CAST } from "./cast/cast";
 import { CastLineup, CastView, CVIEWS } from "./cast/Views";
 import { KlassenzimmerRaw } from "./scenes/klassenzimmer/Scene";
 import { NachtzugRaw, DURATION_S as NZ_DUR } from "./scenes/nachtzug/Scene";
+import { NextdoorRaw, DURATION_S as ND_DUR } from "./scenes/nextdoor/Scene";
 import { StilFigur, StilGesicht, StilPalette, STIL_IDS } from "./stile/Views";
 import { DURATION_S } from "./scenes/klassenzimmer/timeline";
 
@@ -53,6 +54,8 @@ export const RemotionRoot: React.FC = () => (
     ))}
     <Composition id="Nachtzug-Raw" component={NachtzugRaw} durationInFrames={Math.ceil(NZ_DUR * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
     <Still id="Nachtzug-Probe" component={NachtzugRaw} defaultProps={{ at: 2.0 }} width={WIDTH} height={HEIGHT} />
+    <Composition id="Nextdoor-Raw" component={NextdoorRaw} durationInFrames={Math.ceil(ND_DUR * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
+    <Still id="Nextdoor-Probe" component={NextdoorRaw} defaultProps={{ at: 2.0 }} width={WIDTH} height={HEIGHT} />
     <Composition id="Klassenzimmer-Raw" component={KlassenzimmerRaw} durationInFrames={DURATION_S * FPS} fps={FPS} width={WIDTH} height={HEIGHT} />
   </>
 );
