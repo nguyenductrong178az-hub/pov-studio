@@ -33,7 +33,7 @@
  ],
  "door": [
   {
-   "t": 34.226,
+   "t": 33.55,
    "kind": "open"
   },
   {
@@ -57,61 +57,61 @@
  ],
  "steps": [
   {
-   "t": 32.295,
+   "t": 31.897,
    "foot": "L",
    "gain": 1.0,
    "surface": "wood"
   },
   {
-   "t": 32.795,
+   "t": 32.317,
    "foot": "R",
    "gain": 1.0,
    "surface": "wood"
   },
   {
-   "t": 33.295,
+   "t": 32.737,
    "foot": "L",
-   "gain": 1.0,
+   "gain": 0.7,
    "surface": "wood"
   },
   {
-   "t": 33.795,
-   "foot": "R",
-   "gain": 1.0,
+   "t": 33.85,
+   "foot": "L",
+   "gain": 0.6,
    "surface": "wood"
   },
   {
-   "t": 34.295,
+   "t": 34.95,
    "foot": "L",
-   "gain": 1.0,
+   "gain": 0.9,
    "surface": "wood"
   },
   {
-   "t": 34.795,
+   "t": 35.35,
    "foot": "R",
-   "gain": 1.0,
-   "surface": "carpet"
+   "gain": 0.9,
+   "surface": "wood"
   },
   {
-   "t": 35.295,
+   "t": 35.69,
    "foot": "L",
    "gain": 1.0,
    "surface": "carpet"
   },
   {
-   "t": 35.795,
+   "t": 36.09,
    "foot": "R",
    "gain": 1.0,
    "surface": "carpet"
   },
   {
-   "t": 36.295,
+   "t": 36.49,
    "foot": "L",
    "gain": 1.0,
    "surface": "carpet"
   },
   {
-   "t": 36.795,
+   "t": 36.89,
    "foot": "R",
    "gain": 0.7,
    "surface": "carpet"
@@ -227,6 +227,12 @@
   76.098,
   77.198
  ],
+ "doorplay": {
+  "knob": 33.55,
+  "crack": 33.7,
+  "wide0": 34.4,
+  "wide1": 34.95
+ },
  "impact": 84.255,
  "silence_before_impact": [
   83.205,
@@ -234,12 +240,12 @@
  ],
  "walks": {
   "weg-tuer": [
-   32.12,
-   34.576
+   31.75,
+   33.2
   ],
   "weg-4c": [
-   34.576,
-   37.12
+   34.85,
+   37.15
   ],
   "weg-rosa": [
    41.38,

@@ -58,16 +58,24 @@ def plen(pts):
 
 
 path = lambda plan, pid: next(q for q in plan["paths"] if q["id"] == pid)
-# 1) giường → cửa 4B → cửa 4C (khoảng lặng "walk")
+# 1) giường → cửa 4B → cửa 4C (khoảng lặng "walk" 31,62–37,22). Cửa mở VÀO TRONG (kéo về phía mình), có đủ động tác:
+#    đi tới cách cửa ~0,6 m → tay chạm/nắm tay nắm → xoay (tiếng chốt) → kéo hé một khe, dừng dè chừng → kéo rộng → bước qua ngưỡng ra hành lang → đi tới 4C.
 w = PZ["walk"]
+T_ROOM0, T_ROOM1 = 31.75, 33.2          # đi trong phòng tới điểm đứng trước cửa
+T_KNOB, T_CRACK, T_WIDE0, T_WIDE1 = 33.55, 33.7, 34.4, 34.95   # xoay tay nắm · bắt đầu hé · bắt đầu kéo rộng · cửa mở rộng
+T_BACK, T_THRU0, T_HALL0 = 33.85, 34.85, 35.55                  # lùi 1 bước khi kéo · bắt đầu bước qua cửa · bắt đầu đi trong hành lang
 d1, d2 = plen(path(p4b, "weg-tuer")["points"]), plen(path(pfl, "weg-4c")["points"])
-seg, st = walk(w["start"], w["end"], d1 + d2, cadence=0.5, stand=0.5)
-t_door = seg["walk0"] + (seg["t1"] - seg["walk0"]) * d1 / (d1 + d2)
-for s in st:
-    s["surface"] = "wood" if s["t"] < t_door else "carpet"
+seg, st = walk(T_ROOM0, T_ROOM1, 2.7, cadence=0.42)
 ev["steps"] += st
-ev["door"].append({"t": r3(t_door - 0.35), "kind": "open"})
-WALKS = {"weg-tuer": (seg["walk0"], t_door), "weg-4c": (t_door, seg["t1"])}
+WALKS = {"weg-tuer": (seg["walk0"], T_ROOM1)}
+ev["steps"].append({"t": T_BACK, "foot": "L", "gain": 0.6, "surface": "wood"})   # lùi nửa bước khi kéo cửa
+for i, tt in enumerate((T_THRU0 + 0.1, T_THRU0 + 0.5)):
+    ev["steps"].append({"t": r3(tt), "foot": "LR"[i % 2], "gain": 0.9, "surface": "wood"})
+seg, st = walk(T_HALL0, w["end"] - 0.1, d2, cadence=0.4, surface="carpet")
+ev["steps"] += st
+WALKS["weg-4c"] = (T_THRU0, seg["t1"])
+ev["door"].append({"t": T_KNOB, "kind": "open"})       # tiếng chốt/tay nắm xoay (hình: tay xoay tay nắm)
+ev["doorplay"] = {"knob": T_KNOB, "crack": T_CRACK, "wide0": T_WIDE0, "wide1": T_WIDE1}
 # 2) xích cửa 4A, rồi TÔI bước về phía Rosa
 c = PZ["chain"]
 ev["chain"].append({"t": r3(c["start"] + 0.08), "kind": "open"})

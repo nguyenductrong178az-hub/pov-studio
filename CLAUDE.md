@@ -228,6 +228,32 @@ Code: `src/cast/cast.ts` (Daten), `src/cast/Figure.tsx` (Baukasten). Render: `np
 - Không có bề mặt nhấp nháy hay đường kẻ chạy ngang tường.
 - Mối nguy nằm ở giữa khung hình.
 
+## Quy tắc tư thế tay POV (bắt buộc, chủ kênh 25.11.2026)
+- **Không tự động vẽ tay phải cầm điện thoại ở mọi khung hình.** Chỉ giơ điện thoại khi cảnh có hành động trực tiếp liên quan (nhận/gọi cuộc gọi, đọc tin nhắn, xem Wi-Fi, gọi 911, đèn pin khi cần soi).
+- Khi không dùng điện thoại, tay phải hạ thấp ra ngoài mép khung hình, buông dọc hông, hoặc cùng tay trái làm việc (mở/đẩy cửa, cầm thẻ, chống/vịn).
+- **Tay trái (áo tay xanh lá) chỉ vào khung khi thực sự chạm / mở / cầm vật**; lúc không tương tác thì ra ngoài rìa khung.
+- **Có những đoạn không hiện bàn tay nào:** khi chỉ nhìn quanh, ngước lên trần, đứng im nghe ngóng, bỏ cả hai tay khỏi khung sẽ rùng rợn và chân thật hơn.
+- **Giảm số lần hiện màn hình có chữ/số (12:00, 911, Wi-Fi):** chỉ sáng màn hình khi phục vụ trực tiếp tình tiết sợ hãi/khẩn cấp; tránh lặp lại cùng một khung có điện thoại ở góc dưới phải.
+- Giữ nguyên bảng màu trầm tối, nét phẳng cel-shaded, ánh sáng căng thẳng của phim kinh dị POV.
+
+## Quy tắc mở cửa & cầm điện thoại ở góc nhìn thứ nhất (bắt buộc, chủ kênh 25.11.2026)
+### Mở cửa (cửa mở VÀO TRONG, rồi bước ra)
+1. **Mở hé dè chừng (hồi hộp):** tay đưa tới nắm tay nắm → xoay nhẹ → kéo/đẩy cho cửa hé một khe nhỏ, **dừng lại** một nhịp; qua khe lộ ra một vệt sáng mờ và bóng tối phía sau.
+2. **Mở hẳn:** sau nhịp dừng, tay đẩy/kéo cửa mở rộng, lộ rõ không gian và ánh sáng phía sau.
+3. **Ba ý cốt lõi khi viết cảnh:** (a) tay chạm tay nắm rồi xoay/đẩy; (b) ghi rõ mức mở: hé khe nhỏ hay mở rộng; (c) ghi rõ chiều mở (vào trong/ra ngoài) và vệt sáng/bóng tối lộ ra.
+4. **Camera không bao giờ xuyên qua cánh cửa đóng.** Thứ tự bắt buộc: đi tới cách cửa ~0,6–0,9 m và DỪNG → tay chạm tay nắm → xoay (tiếng chốt cùng khung hình) → hé → kéo rộng (camera lùi nửa bước khi kéo cửa vào trong) → bước qua ngưỡng ra hành lang. Cánh cửa mở vào trong thì quét về phía người đứng: vị trí đứng phải ngoài bán kính cánh cửa (0,9 m quanh bản lề).
+5. Tay nắm nằm đâu thì dùng tay phía đó (tay nắm lệch trái màn hình → tay trái). Camera nhìn xuống tay nắm khi chạm.
+6. **Thời gian:** đoạn đi + mở cửa + bước ra phải dựng theo `scripts/nextdoor_timing.py` (khoảng lặng giữa hai câu thoại), bước chân và tiếng chốt trùng khung hình.
+
+### Cảnh cầm điện thoại (tay phải)
+> Mô tả chuẩn: tay phải đưa từ dưới phải lên, cầm chiếc điện thoại viền cam hơi nghiêng, màn hình hướng thẳng về phía người xem hiển thị cuộc gọi đến; ngón cái giữ ở cạnh dưới phải, các ngón còn lại vòng qua cạnh trái và thấy rõ từng ngón; phong cách 2D phẳng, tối giản.
+- Dùng mô tả này cho mọi cảnh giơ điện thoại (gọi, nhắn, 911, Wi-Fi, đèn pin). Kiểm tra bằng ảnh thử: thấy ngón cái ở dưới phải và các ngón vòng cạnh trái.
+
+### Nhật ký lỗi (đừng lặp lại)
+- **25.11.2026, Midnight 0:33–0:35:** cửa 4B mở trong lúc camera đã tới đúng mặt phẳng cửa → camera xuyên qua cánh cửa đóng, hành lang hiện đột ngột, không có động tác tay. Sửa: đi tới sát cửa và dừng, tay nắm–xoay–hé–kéo rộng–bước ra (mục trên). Tay phải cầm điện thoại chỉ lên lại sau khi ra hành lang (đèn pin).
+- **25.11.2026, Midnight bản 1:** tay phải cầm điện thoại ở gần mọi khung hình, hai ống tay áo luôn chĩa vào → đã sửa theo mục "Quy tắc tư thế tay POV".
+- **25.11.2026:** tiến trình render nền bị chết mỗi khi phiên cloud kết nối lại → luôn render theo từng đoạn 300 khung, có thể làm tiếp (`scripts/build-nextdoor-chunked.sh`, biến `RANGE=lo-hi` để chạy một cụm), tách tiến trình bằng double-fork, và ghi file cuối ra `.part.mp4` rồi mới đổi tên (một file mp4 bị ngắt giữa chừng sẽ thiếu moov atom).
+
 ## Kamera und Hände
 - Hände tun immer etwas: Handy, Tür, Geländer. Nie eine erstarrte Hand.
 

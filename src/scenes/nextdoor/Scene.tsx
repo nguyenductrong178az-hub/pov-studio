@@ -206,12 +206,14 @@ const labelTex = (text: string, w = 128, h = 64, bg = "#0000", fg = "#f2f2f2", s
 
 // ================================================================ HÀNH LANG ====
 // Thời gian cửa
+const DP = (sfx as unknown as { doorplay: { knob: number; crack: number; wide0: number; wide1: number } }).doorplay;
+// Cửa 4B mở VÀO TRONG (kéo về phía mình): hé 12° (dè chừng, dừng lại) → kéo rộng ~80°; khép lại ở 62,9 s; mở ra lúc sau tiếng rầm
 const doorAngle4B = (t: number) => {
   const opens = DOORS.filter((d) => d.kind === "open"), close = DOORS.find((d) => d.kind === "close")!.t;
-  const open1 = opens[0].t - 0.15, open2 = opens[1].t - 0.1;
-  const a1 = smooth(t, open1, open1 + 0.55) * (1 - smooth(t, close - 0.7, close + 0.05));
-  const a2 = smooth(t, open2, open2 + 0.38);
-  return deg(97) * Math.max(a1, a2);
+  const open2 = opens[1].t - 0.1;
+  const a1 = (deg(18) * smooth(t, DP.crack, DP.crack + 0.4) + deg(62) * smooth(t, DP.wide0, DP.wide1)) * (1 - smooth(t, close - 0.7, close + 0.05));
+  const a2 = deg(97) * smooth(t, open2, open2 + 0.38);
+  return Math.max(a1, a2);
 };
 const doorAngle4A = (t: number) => {
   const chain = smooth(t, T_CHAIN_OPEN - 0.12, T_CHAIN_OPEN + 0.25) * (1 - smooth(t, T_CHAIN_CLOSE - 0.25, T_CHAIN_CLOSE)) * deg(34);
@@ -273,6 +275,9 @@ const Hall: React.FC<{ t: number }> = ({ t }) => {
         <mesh position={[0.45, 1.8, 0.026]} scale={[0.34, 0.17, 1]}><planeGeometry args={[1, 1]} /><meshBasicMaterial map={nums["4B"]} transparent depthWrite={false} side={THREE.DoubleSide} /></mesh>
         <mesh position={[0.78, 0.98, 0.04]}><sphereGeometry args={[0.03, 12, 8]} /><meshBasicMaterial color={C.brassDirty} /></mesh>
       </DoorLeaf>
+      {/* vệt sáng vàng từ hành lang tràn qua khe cửa khi hé (33,7–40 s) */}
+      {t < 40 && <Glow tex={glow} at={[6.4, 2.75, 0.012]} size={[0.5 + 1.6 * Math.min(1, doorAngle4B(t) / deg(40)), 0.4 + 2.2 * Math.min(1, doorAngle4B(t) / deg(40))]} color="#ffcf80" opacity={0.7 * Math.min(1, doorAngle4B(t) / deg(10))} />}
+      {t > 33 && t < 36 && <Glow tex={glow} at={[6.55, 1.97, 1.0]} size={[0.3 + 0.5 * Math.min(1, doorAngle4B(t) / deg(40)), 2.0]} color="#ffe2a0" opacity={0.85 * Math.min(1, doorAngle4B(t) / deg(8))} on="wallN" />}
       {/* giày của Jenna trên thảm chùi chân phía phải cửa 4B (gieo trước) */}
       {[0, 1].map((k) => (
         <group key={k}>
@@ -576,6 +581,7 @@ const B = (x: number, y: number): P2 => [x + OX, y + OY];
 
 const D4C: V3 = [2.5, 1.8, 1.05], KNOB: V3 = [2.88, 1.8, 0.95], LOCK: V3 = [2.8, 1.8, 1.22], GLOW: V3 = [2.5, 1.8, 0.05];
 const ROSAF: V3 = [6.18, -0.3, 1.32], SHOES: V3 = [6.9, 1.6, 0.1], DOOR_IN: V3 = [6.2, 1.95, 1.1], DOOR_OUT: V3 = [6.2, 1.8, 1.1];
+const KNOB_B: V3 = [6.53, 1.95, 1.0];
 const LAMP: V3 = [5.28, OY + 2.68, 0.8];
 const SHOTS: Shot[] = [
   { id: "A1", t0: camPlan("A1", planB).t0, t1: camPlan("A1", planB).t1, pos: [...B(1.6, 3.25), 1.05] as V3, holds: [
@@ -583,9 +589,13 @@ const SHOTS: Shot[] = [
     { t: 15.4, aim: FRAME_AT }, { t: 18.0, aim: LAMP }, { t: 19.3, aim: FRAME_AT } ] },
   { id: "A2", t0: camPlan("A2", planB).t0, t1: camPlan("A2", planB).t1, pos: [...B(0.72, 3.7), 1.15] as V3, holds: [
     { t: 21.03, aim: FRAME_AT }, { t: 23.3, yaw: -88, pitch: -36 }, { t: 26.5, yaw: -62, pitch: -55 }, { t: 29.4, yaw: -88, pitch: -30 } ] },
-  { id: "A3", t0: camPlan("A3", planB).t0, t1: camPlan("A3", planB).t1, pos: [...B(1.6, 3.25), 1.6] as V3, legs: [legOf(pathB("weg-tuer"), [OX, OY])],
-    z: (t) => lerp(1.1, 1.6, smooth(t, 31.9, 32.9)), holds: [{ t: 31.62, aim: DOOR_IN }] },
-  { id: "F0", t0: camPlan("F0", planH).t0, t1: camPlan("F0", planH).t1, pos: [6.2, 1.75, 1.6], legs: [legOf(pathH("weg-4c"))], holds: [{ t: 34.576, yaw: -100, pitch: -5 }, { t: 35.4, aim: D4C }] },
+  { id: "A3", t0: camPlan("A3", planB).t0, t1: 35.55, pos: [...B(1.6, 3.25), 1.6] as V3, legs: [
+      { pts: [B(1.6, 3.25), B(1.6, 2.6), B(1.45, 0.85)], t0: 31.75, t1: 33.2 },   // đi tới cách cửa ~0,6 m
+      { pts: [B(1.45, 0.85), B(1.45, 1.18)], t0: 33.8, t1: 34.2 },                // lùi nửa bước khi kéo cửa vào trong
+      { pts: [B(1.45, 1.18), [6.3, 2.0], [6.2, 1.75]], t0: 34.85, t1: 35.55 } ],   // bước qua ngưỡng ra hành lang
+    z: (t) => lerp(1.1, 1.6, smooth(t, 31.9, 32.9)), holds: [
+      { t: 31.62, aim: DOOR_IN }, { t: 33.0, aim: KNOB_B }, { t: 34.05, aim: [6.75, 1.95, 1.15] }, { t: 34.7, aim: DOOR_IN }, { t: 35.2, yaw: -100, pitch: -5 } ] },
+  { id: "F0", t0: 35.55, t1: camPlan("F0", planH).t1, pos: [6.2, 1.75, 1.6], legs: [{ pts: pathH("weg-4c").points, t0: 35.55, t1: 37.15 }], holds: [{ t: 35.55, yaw: -100, pitch: -5 }, { t: 36.5, aim: D4C }] },
   { id: "F1", t0: camPlan("F1", planH).t0, t1: camPlan("F1", planH).t1, pos: [3.0, 1.1, 1.6], holds: [{ t: 37.22, aim: GLOW }, { t: 38.0, aim: KNOB }, { t: 39.2, aim: LOCK }] },
   { id: "F2", t0: camPlan("F2", planH).t0, t1: camPlan("F2", planH).t1, pos: [3.0, 1.1, 1.6], legs: [legOf(pathH("weg-rosa")), legOf(pathH("weg-zurueck"))], holds: [
     { t: 40.68, aim: D4C }, { t: 41.6, aim: ROSAF }, { t: 44.2, aim: GLOW }, { t: 45.3, aim: ROSAF }, { t: 46.4, aim: [5.9, 0.15, 1.2] }, { t: 48.7, aim: ROSAF },
@@ -693,7 +703,7 @@ const drawPhone = (key: string, n = 6) => makeTex(360, 720, (c) => {
 const screenAt = (t: number): { key: string; n?: number } => {
   if (t < 5.6) return { key: "calling" };
   if (t < 21) return { key: "incall" };
-  if (t < BUZZ[0]) return { key: "lock" };
+  if (t < BUZZ[0]) return { key: "msg1" };
   if (t < BUZZ[1]) return { key: "msg1" };
   if (t < 31.7) return { key: "msg2" };
   if (t < 62.6) return { key: "flash" };
@@ -719,26 +729,31 @@ const kf = (t: number, keys: number[][]) => {
   return keys[keys.length - 1].slice(1);
 };
 // tay trái: [t, x, y, z, rx, curl]  (toạ độ camera: x phải, y lên, −z phía trước)
+const LOFF = [-0.5, -0.7, -0.3, 0, 0.3];
+const ROFF = [0.45, -0.75, -0.3, 0.4];
+const K = (t: number, v: number[]) => [t, ...v];
 const LEFT: number[][] = [
-  [0, -0.24, -0.27, -0.42, -0.1, 0.35], [19.6, -0.24, -0.27, -0.42, -0.1, 0.35], [20.6, -0.10, -0.04, -0.68, 0.6, 1.0], [22.0, -0.10, -0.04, -0.68, 0.6, 1.0],
-  [22.8, -0.22, -0.22, -0.40, -0.1, 0.4], [26.0, -0.22, -0.22, -0.40, -0.1, 0.4], [26.9, -0.02, -0.30, -0.38, 0.2, 0.7], [28.8, -0.02, -0.30, -0.38, 0.2, 0.7],
-  [29.8, -0.20, -0.20, -0.40, 0, 0.4], [31.7, -0.20, -0.20, -0.40, 0, 0.4], [32.3, -0.24, -0.30, -0.35, -0.3, 0.2], [33.6, -0.24, -0.30, -0.35, -0.3, 0.2],
-  [33.95, -0.09, -0.10, -0.55, 0.3, 0.7], [34.4, -0.08, -0.10, -0.42, 0.2, 0.95], [35.1, -0.24, -0.28, -0.40, -0.2, 0.3], [37.3, -0.24, -0.28, -0.40, -0.2, 0.3],
-  [38.0, -0.05, -0.15, -0.52, 0.5, 0.15], [39.9, -0.05, -0.15, -0.52, 0.5, 0.15], [40.7, -0.24, -0.28, -0.40, -0.2, 0.3], [44.6, -0.22, -0.26, -0.40, -0.2, 0.3],
+  K(0, LOFF), K(19.8, LOFF), [20.6, -0.10, -0.04, -0.68, 0.6, 1.0], [22.0, -0.10, -0.04, -0.68, 0.6, 1.0], K(22.8, LOFF), K(26.2, LOFF),
+  [26.9, -0.02, -0.30, -0.38, 0.2, 0.7], [28.8, -0.02, -0.30, -0.38, 0.2, 0.7], K(29.6, LOFF), K(32.9, LOFF),
+  [33.3, -0.04, -0.02, -0.62, 0.45, 0.15], [33.5, -0.02, 0.08, -0.68, 0.5, 0.95], [34.3, -0.02, 0.04, -0.60, 0.5, 0.95], [34.85, -0.06, -0.12, -0.40, 0.4, 0.9], K(35.3, LOFF), K(37.6, LOFF),
+  [38.0, -0.05, -0.15, -0.52, 0.5, 0.15], [39.9, -0.05, -0.15, -0.52, 0.5, 0.15], K(40.5, LOFF), K(45.0, LOFF),
   [45.8, -0.02, -0.22, -0.50, 0.3, 0.1], [48.3, -0.02, -0.22, -0.50, 0.3, 0.1], [48.7, -0.12, -0.28, -0.42, 0.1, 0.8], [60.0, -0.12, -0.28, -0.42, 0.1, 0.8],
-  [60.8, -0.20, -0.26, -0.40, 0, 0.5], [63.0, -0.20, -0.26, -0.40, 0, 0.5], [63.5, -0.04, -0.02, -0.52, 0.5, 0.3], [63.9, -0.04, -0.02, -0.52, 0.5, 0.85],
-  [64.5, -0.04, -0.07, -0.36, 0.2, 0.85], [66.4, -0.04, -0.07, -0.36, 0.2, 0.85], [67.4, -0.20, -0.30, -0.40, 0, 0.9], [84.1, -0.20, -0.30, -0.40, 0, 0.9],
-  [84.35, -0.10, -0.16, -0.36, 0, 1.0], [84.95, -0.08, -0.10, -0.52, 0.3, 0.4], [85.4, -0.08, -0.06, -0.55, 0.2, 0.85], [86.1, -0.30, -0.12, -0.34, -0.4, 0.9],
-  [105.5, -0.30, -0.12, -0.34, -0.4, 0.9],
+  K(60.5, LOFF), K(63.0, LOFF), [63.5, -0.04, -0.02, -0.52, 0.5, 0.3], [63.9, -0.04, -0.02, -0.52, 0.5, 0.85],
+  [64.5, -0.04, -0.07, -0.36, 0.2, 0.85], [66.2, -0.04, -0.07, -0.36, 0.2, 0.85], K(67.0, LOFF), K(84.8, LOFF),
+  [85.2, -0.08, -0.06, -0.55, 0.2, 0.85], [86.1, -0.30, -0.12, -0.34, -0.4, 0.9], [105.5, -0.30, -0.12, -0.34, -0.4, 0.9],
 ];
-// tay phải + điện thoại: [t, x, y, z, tilt]
+// tay phải + điện thoại: [t, x, y, z, tilt] – chỉ giơ lên khi cảnh dùng điện thoại; còn lại buông ra ngoài mép khung
 const RIGHT: number[][] = [
-  [0, 0.15, -0.14, -0.34, 0.35], [21, 0.15, -0.14, -0.34, 0.35], [22.0, 0.10, -0.10, -0.33, 0.55], [29.7, 0.10, -0.10, -0.33, 0.55], [31.8, 0.15, -0.17, -0.34, 0.45],
-  [43.3, 0.14, -0.17, -0.34, 0.55], [44.2, 0.15, -0.20, -0.34, 0.95], [60.0, 0.15, -0.20, -0.34, 0.95], [62.6, 0.15, -0.18, -0.34, 0.4],
-  [66.8, 0.14, -0.16, -0.34, 0.3], [71.3, 0.08, -0.08, -0.32, 0.62], [76.0, 0.08, -0.08, -0.32, 0.62], [78.3, 0.15, -0.18, -0.34, 0.4],
-  [80.0, 0.12, -0.04, -0.30, 0.9], [83.0, 0.12, -0.12, -0.30, 0.6], [84.2, 0.15, -0.18, -0.34, 0.4], [86.5, 0.10, -0.10, -0.32, 0.55],
-  [94.4, 0.08, -0.08, -0.30, 0.65], [98.0, 0.09, -0.10, -0.32, 0.55], [105.5, 0.09, -0.10, -0.32, 0.55],
+  [0, 0.15, -0.14, -0.34, 0.35], [8.2, 0.15, -0.14, -0.34, 0.35], K(9.0, ROFF), K(22.0, ROFF),
+  [22.5, 0.10, -0.10, -0.33, 0.55], [29.4, 0.10, -0.10, -0.33, 0.55], K(30.3, ROFF), K(35.0, ROFF),
+  [35.8, 0.12, -0.17, -0.34, 0.5], [43.0, 0.14, -0.17, -0.34, 0.55], K(43.9, ROFF), K(71.0, ROFF),
+  [71.6, 0.08, -0.08, -0.32, 0.62], [76.0, 0.09, -0.09, -0.32, 0.62], [78.8, 0.14, -0.14, -0.33, 0.5], K(79.8, ROFF), K(86.0, ROFF),
+  [86.6, 0.10, -0.10, -0.32, 0.55], [90.2, 0.10, -0.10, -0.32, 0.55], [90.9, 0.34, -0.02, -0.26, 1.25], [94.4, 0.34, -0.02, -0.26, 1.25],
+  [95.0, 0.08, -0.08, -0.30, 0.65], [98.0, 0.09, -0.10, -0.32, 0.55], K(98.8, ROFF),
 ];
+// tay phải không cầm điện thoại: chỉ vào khung khi cùng tay trái đẩy/kéo cửa hoặc tì lên tủ
+const RF_WIN: [number, number][] = [[63.4, 64.4], [84.9, 85.9]];
+const rightFreeVis = (t: number) => RF_WIN.reduce((m, [a, b]) => Math.max(m, smooth(t, a - 0.25, a + 0.1) * (1 - smooth(t, b - 0.1, b + 0.3))), 0);
 
 const arm = (a: THREE.Vector3, b: THREE.Vector3) => {
   const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), b.clone().sub(a).normalize());
@@ -770,8 +785,22 @@ const PovHands: React.FC<{ t: number }> = ({ t }) => {
   ly += 0.004 * Math.sin(t * 1.7);
   const rA = arm(new THREE.Vector3(px + 0.03, py - 0.06, pz + 0.02), new THREE.Vector3(0.3, -0.5, -0.05));
   const lA = arm(new THREE.Vector3(lx, ly - 0.03, lz + 0.05), new THREE.Vector3(-0.32, -0.5, -0.05));
-  const holdNote = t >= 63.9;
+  const holdNote = t >= 63.9 && t < 66.8;
   const holdCollar = t >= T_GRAB && t < T_POCKET;
+  const handParts = (cu: number, m: 1 | -1) => (
+    <>
+      <mesh geometry={G.sphere(1)} material={skin} scale={[0.045, 0.014 + 0.01 * (1 - cu), 0.05]} />
+      {[0, 1, 2, 3].map((k) => (
+        <group key={k} position={[m * (-0.03 + k * 0.02), 0, -0.045]} rotation={[-cu * 1.35, 0, m * (k - 1.5) * 0.06]}>
+          <mesh geometry={G.capsule(0.009, 0.04)} material={skin} position={[0, 0, -0.025]} rotation={[Math.PI / 2, 0, 0]} />
+        </group>
+      ))}
+      <mesh geometry={G.capsule(0.01, 0.035)} material={skin} position={[m * 0.045, 0, -0.02]} rotation={[Math.PI / 2, 0, m * (-0.7 + 0.5 * cu)]} />
+    </>
+  );
+  const rfv = rightFreeVis(t);
+  const rfx = lerp(0.45, 0.10, rfv), rfy = lerp(-0.75, -0.12, rfv), rfz = lerp(-0.3, -0.5, rfv);
+  const rfA = arm(new THREE.Vector3(rfx, rfy - 0.03, rfz + 0.05), new THREE.Vector3(0.32, -0.5, -0.05));
   return (
     <group position={W3(pos[0], pos[1], pos[2])} rotation={new THREE.Euler(deg(pitch), -deg(yaw), deg(roll), "YXZ")}>
       {/* điện thoại bên phải */}
@@ -785,19 +814,19 @@ const PovHands: React.FC<{ t: number }> = ({ t }) => {
         </group>
       </group>
       <mesh geometry={G.capsule(0.045, rA.len)} material={sleeve} position={rA.pos} rotation={rA.rot} />
-      {/* tay trái: tựa chăn → gõ tường → kéo tay áo → chốt cửa → vòng cổ → mẩu giấy → khung cửa */}
-      <group position={[lx, ly, lz]} rotation={[lrx, 0.3, 0.15]}>
-        <mesh geometry={G.sphere(1)} material={skin} scale={[0.045, 0.014 + 0.01 * (1 - curl), 0.05]} />
-        {[0, 1, 2, 3].map((k) => (
-          <group key={k} position={[-0.03 + k * 0.02, 0, -0.045]} rotation={[-curl * 1.35, 0, (k - 1.5) * 0.06]}>
-            <mesh geometry={G.capsule(0.009, 0.04)} material={skin} position={[0, 0, -0.025]} rotation={[Math.PI / 2, 0, 0]} />
-          </group>
-        ))}
-        <mesh geometry={G.capsule(0.01, 0.035)} material={skin} position={[0.045, 0, -0.02]} rotation={[Math.PI / 2, 0, -0.7 + 0.5 * curl]} />
+      {/* tay trái: chỉ hiện khi gõ / kéo tay áo / mở chốt / vòng cổ / mẩu giấy / khung cửa */}
+      <group position={[lx, ly, lz]} rotation={[lrx, 0.3, 0.15 + 0.9 * smooth(t, 33.55, 33.75) * (1 - smooth(t, 34.6, 34.9))]}>
+        {handParts(curl, 1)}
         {holdNote && <mesh position={[0.0, 0.03, -0.06]} rotation={[0.9, 0.2, 0.3]}><boxGeometry args={[0.07, 0.07, 0.006]} /><meshBasicMaterial color="#f2d95c" /></mesh>}
         {holdCollar && <group position={[0, -0.03, -0.07]} rotation={[0.3, 0, 0]}><Collar at={[0, 0, 0]} /></group>}
       </group>
       <mesh geometry={G.capsule(0.045, lA.len)} material={sleeve} position={lA.pos} rotation={lA.rot} />
+      {rfv > 0.02 && (
+        <group>
+          <group position={[rfx, rfy, rfz]} rotation={[0.3, -0.3, -0.15]}>{handParts(0.7, -1)}</group>
+          <mesh geometry={G.capsule(0.045, rfA.len)} material={sleeve} position={rfA.pos} rotation={rfA.rot} />
+        </group>
+      )}
     </group>
   );
 };
@@ -824,7 +853,7 @@ export const NextdoorRaw: React.FC<{ at?: number }> = ({ at }) => {
       <AbsoluteFill style={{ background: inRoom > 0.5 ? "#8e98b8" : "#a39c86", mixBlendMode: "multiply", pointerEvents: "none" }} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 90% 80% at 50% 50%, rgba(0,0,0,0) 50%, rgba(2,4,10,.6) 100%)", pointerEvents: "none" }} />
       <AbsoluteFill style={{ background: "#000", opacity: dark, pointerEvents: "none" }} />
-      {t > 32.1 && t < 62.6 && <AbsoluteFill style={{ background: "radial-gradient(ellipse 38% 42% at 54% 46%, rgba(255,240,210,.20), rgba(255,240,210,0) 100%)", mixBlendMode: "screen", pointerEvents: "none" }} />}
+      {t > 35.6 && t < 62.6 && <AbsoluteFill style={{ background: "radial-gradient(ellipse 38% 42% at 54% 46%, rgba(255,240,210,.20), rgba(255,240,210,0) 100%)", mixBlendMode: "screen", pointerEvents: "none" }} />}
     </AbsoluteFill>
   );
 };
