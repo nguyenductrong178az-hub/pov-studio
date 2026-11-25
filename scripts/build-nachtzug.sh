@@ -16,7 +16,7 @@ fi
 python3 -I scripts/plan_tool.py locations/nachtzug-wagen2 >/dev/null   # Plan muss kollisionsfrei sein
 python3 -I scripts/nachtzug_timing.py   # SFX + plan times from the timeline
 python3 -I scripts/nachtzug_assets.py
-npx remotion render Nachtzug-Raw "$OUT/raw-$NAME.mp4" --scale="${SCALE:-2}" --crf=14 --concurrency=1 "${FRAMES[@]}" "${EXTRA[@]}"
+npx remotion render Nachtzug-Raw "$OUT/raw-$NAME.mp4" --scale="${SCALE:-1}" --crf=14 --concurrency=1 "${FRAMES[@]}" "${EXTRA[@]}"
 ffmpeg -v error -y -i "$OUT/raw-$NAME.mp4" "${SS[@]}" -i "$OUT/mix.wav" \
   -vf "setpts=PTS-STARTPTS+${FROM}/TB,v360=input=flat:ih_fov=130:iv_fov=100.6:output=fisheye:h_fov=115:v_fov=64.7:w=1920:h=1080:interp=lanczos,ass=$OUT/subs.ass,setpts=PTS-STARTPTS" \
   -r "$FPS" -c:v libx264 -crf 17 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest "$OUT/$NAME.mp4"

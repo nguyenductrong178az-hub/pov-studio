@@ -16,6 +16,9 @@
 - Alle 2 bis 4 s eine Dialogzeile.
 - Ende mit Dilemma: „Was würdest du tun?“ mit 2 Optionen.
 
+## Độ phân giải render (quy tắc của chủ kênh, 25.11.2026)
+- **Video đầy đủ luôn render ở 1920×1080 (Full HD), không dùng 4K.** Raw render `--scale=1`, `--concurrency=1`; script build dùng `SCALE=1` làm mặc định. Chỉ render 4K khi chủ kênh yêu cầu rõ cho video đó.
+
 ## Quy tắc sản xuất & Tuân thủ YouTube
 - **Định dạng:** Khung ngang 16:9 (`1920x1080`).
 - **Chống trùng lặp:** Mỗi video phải có cốt truyện riêng, góc quay và nhịp dựng khác biệt, lời thoại có cảm xúc; không sản xuất rập khuôn hàng loạt.
