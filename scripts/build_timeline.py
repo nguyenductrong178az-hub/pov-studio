@@ -69,6 +69,10 @@ def main():
     ap.add_argument("--crowd-vol", type=float, default=0.22)
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--max-tempo", type=float, default=1.08, help="max. Beschleunigung für Zeilen > 4 s")
+    ap.add_argument("--min-len", type=float, default=105, help="Mindestlänge in s (Standard 1:45)")
+    ap.add_argument("--max-len", type=float, default=135, help="Höchstlänge in s (Standard 2:15)")
+    ap.add_argument("--crowd-lanes", type=int, default=1, help="wie viele Gemurmel-Stimmen gleichzeitig sprechen dürfen")
+    ap.add_argument("--crowd-into-card", action="store_true", help="Gemurmel des letzten Beats darf unter der Endkarte weiterlaufen")
     a = ap.parse_args()
     sdir = (ROOT / a.scene_dir).resolve()
     scene = json.loads((sdir / "scene.json").read_text(encoding="utf-8"))
@@ -80,6 +84,7 @@ def main():
     pauses_in = script_pauses(sdir, scene)
     pauses = []
     prev_end = 0.0
+    prev_file_end = None  # echtes Ende der vorigen Audiodatei (nicht nur Ende der hörbaren Sprache)
     crowd = [l for l in rep["lines"] if l.get("kind") == "crowd"]
     warnings = []
 
@@ -88,6 +93,9 @@ def main():
     for l in dialog:
         dur, s0, e0 = measure(ROOT / l["file"])
         pz = pauses_in.get(l["id"])
+        if prev_file_end is not None:
+            # Regel: nächste Zeile beginnt ≥ gap nach dem ECHTEN Dateiende der vorigen (letzte Silbe nie abschneiden)
+            t = max(t, prev_file_end + a.gap + s0)
         if beat is not None and l.get("beat") != beat and not pz:
             t += a.beat_gap
         if pz:
@@ -116,6 +124,7 @@ def main():
         if speech > 4.0:
             warnings.append(f"Zeile {l['id']} ({l['speaker']}): {speech:.2f} s gesprochen – länger als 4 s")
         prev_end = t + speech
+        prev_file_end = start + dur
         # Takt: nächste Zeile frühestens 2 s nach Beginn dieser Zeile (kurze Ausrufe bekommen eine Pause)
         t += max(speech + a.gap, 2.0)
     dialog_end = out_lines[-1]["end"] if out_lines else 0
@@ -125,18 +134,21 @@ def main():
     # ---- Gemurmel: im eigenen Beat, nacheinander, leise
     beat_keys = sorted(beats)
     out_crowd, cursor = [], {}
+    last_beat = beat_keys[-1] if beat_keys else None
     for l in crowd:
         dur, s0, e0 = measure(ROOT / l["file"])
         b = l.get("beat")
         b0 = beats.get(b, 0.0)
-        nxt = next((beats[k] for k in beat_keys if k > b), card_start)
-        t0 = max(cursor.get(b, b0 + 1.2), b0 + 1.2)
+        nxt = next((beats[k] for k in beat_keys if k > b), total if (a.crowd_into_card and b == last_beat) else card_start)
+        lanes = cursor.setdefault(b, [b0 + 1.2] * max(1, a.crowd_lanes))
+        li = min(range(len(lanes)), key=lanes.__getitem__)
+        t0 = max(lanes[li], b0 + 1.2)
         if t0 + (e0 - s0) > nxt:
             warnings.append(f"Gemurmel {l['id']} ragt über Beat {b} hinaus ({t0:.1f}–{t0 + e0 - s0:.1f} s, Beat endet {nxt:.1f} s)")
         out_crowd.append({"id": l["id"], "speaker": l["speaker"], "text": l["text"], "file": l["file"], "beat": b,
                           "file_start": round(t0 - s0, 3), "start": round(t0, 3), "end": round(t0 + e0 - s0, 3),
-                          "volume": a.crowd_vol, "pan": -0.6 if int(l["id"][1:]) % 2 else 0.6})
-        cursor[b] = t0 + (e0 - s0) + 1.0
+                          "volume": a.crowd_vol, "pan": [-0.6, 0.6, -0.25, 0.25][int(l["id"][1:]) % 4]})
+        lanes[li] = t0 + (e0 - s0) + (1.0 if a.crowd_lanes <= 1 else 0.35)
 
     gaps = [round(b["start"] - x["end"], 2) for x, b in zip(out_lines, out_lines[1:])]
     cadence = [round(b["start"] - x["start"], 2) for x, b in zip(out_lines, out_lines[1:])]
@@ -145,8 +157,8 @@ def main():
            if not 1.99 <= c <= 4.0 + a.gap + max(a.beat_gap, plen.get(b["id"], 0)) + 0.15]
     for lid, c in bad:
         warnings.append(f"Takt nach Zeile {lid}: {c:.2f} s bis zur nächsten Zeile")
-    if not 105 <= total <= 135:
-        warnings.append(f"Gesamtlänge {total:.1f} s außerhalb 1:45–2:15")
+    if not a.min_len <= total <= a.max_len:
+        warnings.append(f"Gesamtlänge {total:.1f} s außerhalb {a.min_len:.0f}–{a.max_len:.0f} s")
     tl = {
         "fps": a.fps, "duration_s": total, "source": "echte Audiolängen (build_timeline.py)",
         "lines": [{k: v for k, v in x.items()} for x in out_lines],

@@ -1,0 +1,707 @@
+{
+  "fps": 30,
+  "duration_s": 93.82,
+  "source": "echte Audiolängen (build_timeline.py)",
+  "lines": [
+    {
+      "id": "01",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers",
+        "terrified"
+      ],
+      "text": "Three knocks. Midnight. Sixth night in a row.",
+      "file": "out/audio/nextdoor-01/01-me.mp3",
+      "beat": 1,
+      "file_start": 1.135,
+      "start": 1.3,
+      "end": 5.184,
+      "speech_s": 3.88,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "02",
+      "speaker": "PRUITT",
+      "name": "Mr. Pruitt (phone)",
+      "tags": [
+        "on speakerphone",
+        "groggy",
+        "annoyed"
+      ],
+      "text": "Kid, it's midnight.",
+      "file": "out/audio/nextdoor-01/02-pruitt.mp3",
+      "beat": 1,
+      "file_start": 5.719,
+      "start": 5.892,
+      "end": 7.687,
+      "speech_s": 1.79,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "03",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers",
+        "urgent"
+      ],
+      "text": "Mr. Pruitt, someone in 4C is pounding on my wall.",
+      "file": "out/audio/nextdoor-01/03-me.mp3",
+      "beat": 1,
+      "file_start": 8.292,
+      "start": 8.423,
+      "end": 11.951,
+      "speech_s": 3.53,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "04",
+      "speaker": "PRUITT",
+      "name": "Mr. Pruitt (phone)",
+      "tags": [
+        "flat",
+        "irritated"
+      ],
+      "text": "4C's empty since 2019. Only I got a key.",
+      "file": "out/audio/nextdoor-01/04-pruitt_fit.wav",
+      "beat": 1,
+      "file_start": 12.458,
+      "start": 12.458,
+      "end": 16.447,
+      "speech_s": 3.99,
+      "tempo": 1.0334,
+      "ok_transcript": true
+    },
+    {
+      "id": "05",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "desperate",
+        "quietly"
+      ],
+      "text": "I put every dollar into this deposit. I can't just leave.",
+      "file": "out/audio/nextdoor-01/05-me.mp3",
+      "beat": 1,
+      "file_start": 16.874,
+      "start": 17.012,
+      "end": 20.982,
+      "speech_s": 3.97,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "06",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers",
+        "shocked"
+      ],
+      "text": "Unknown number. \"Don't knock back.\"",
+      "file": "out/audio/nextdoor-01/06-me.mp3",
+      "beat": 2,
+      "file_start": 22.958,
+      "start": 23.082,
+      "end": 25.734,
+      "speech_s": 2.65,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "07",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers",
+        "panicked"
+      ],
+      "text": "\"Nice green hoodie. Go to sleep.\"",
+      "file": "out/audio/nextdoor-01/07-me.mp3",
+      "beat": 2,
+      "file_start": 26.34,
+      "start": 26.504,
+      "end": 29.031,
+      "speech_s": 2.53,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "08",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "breathing fast",
+        "whispers"
+      ],
+      "text": "They can see me.",
+      "file": "out/audio/nextdoor-01/08-me.mp3",
+      "beat": 2,
+      "file_start": 29.331,
+      "start": 29.331,
+      "end": 31.24,
+      "speech_s": 1.91,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "09",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers"
+      ],
+      "text": "No dust on the knob. And a brand-new padlock.",
+      "file": "out/audio/nextdoor-01/09-me.mp3",
+      "beat": 3,
+      "file_start": 33.377,
+      "start": 33.54,
+      "end": 36.9,
+      "speech_s": 3.36,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "10",
+      "speaker": "ROSA",
+      "name": "Mrs. Alvarez",
+      "tags": [
+        "whispers",
+        "frightened"
+      ],
+      "text": "Honey, get away from there. Not at midnight.",
+      "file": "out/audio/nextdoor-01/10-rosa.mp3",
+      "beat": 3,
+      "file_start": 37.386,
+      "start": 37.548,
+      "end": 40.731,
+      "speech_s": 3.18,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "11",
+      "speaker": "ROSA",
+      "name": "Mrs. Alvarez",
+      "tags": [
+        "whispers",
+        "grim"
+      ],
+      "text": "Every new tenant hears it. For a month.",
+      "file": "out/audio/nextdoor-01/11-rosa.mp3",
+      "beat": 3,
+      "file_start": 41.317,
+      "start": 41.531,
+      "end": 44.937,
+      "speech_s": 3.41,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "12",
+      "speaker": "ROSA",
+      "name": "Mrs. Alvarez",
+      "tags": [
+        "whispers",
+        "voice breaking"
+      ],
+      "text": "Then they're gone. Jenna left her cat.",
+      "file": "out/audio/nextdoor-01/12-rosa.mp3",
+      "beat": 4,
+      "file_start": 45.805,
+      "start": 46.051,
+      "end": 49.274,
+      "speech_s": 3.22,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "13",
+      "speaker": "ROSA",
+      "name": "Mrs. Alvarez",
+      "tags": [
+        "crying",
+        "whispers"
+      ],
+      "text": "She knocked on my door. I didn't open.",
+      "file": "out/audio/nextdoor-01/13-rosa.mp3",
+      "beat": 4,
+      "file_start": 49.736,
+      "start": 49.868,
+      "end": 53.735,
+      "speech_s": 3.87,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "14",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers"
+      ],
+      "text": "Jenna's note. \"It's not a smoke detector.\"",
+      "file": "out/audio/nextdoor-01/14-me.mp3",
+      "beat": 5,
+      "file_start": 55.899,
+      "start": 56.035,
+      "end": 59.255,
+      "speech_s": 3.22,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "15",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers",
+        "horrified"
+      ],
+      "text": "There's a lens in it. It's turning. Following me.",
+      "file": "out/audio/nextdoor-01/15-me_fit.wav",
+      "beat": 5,
+      "file_start": 59.752,
+      "start": 59.956,
+      "end": 63.94,
+      "speech_s": 3.98,
+      "tempo": 1.009,
+      "ok_transcript": true
+    },
+    {
+      "id": "16",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "shaking",
+        "whispers"
+      ],
+      "text": "\"Four-C Cam Four-B.\" Every unit has one.",
+      "file": "out/audio/nextdoor-01/16-me.mp3",
+      "beat": 5,
+      "file_start": 64.412,
+      "start": 64.412,
+      "end": 68.816,
+      "speech_s": 4.4,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "17",
+      "speaker": "PRUITT",
+      "name": "Mr. Pruitt (phone)",
+      "tags": [
+        "on speakerphone",
+        "calm",
+        "cold"
+      ],
+      "text": "Why were you out in the hallway, kid?",
+      "file": "out/audio/nextdoor-01/17-pruitt.mp3",
+      "beat": 6,
+      "file_start": 69.31,
+      "start": 69.486,
+      "end": 71.35,
+      "speech_s": 1.86,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "18",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "terrified",
+        "whispers"
+      ],
+      "text": "I never told you I left my room.",
+      "file": "out/audio/nextdoor-01/18-me.mp3",
+      "beat": 6,
+      "file_start": 71.961,
+      "start": 72.197,
+      "end": 74.193,
+      "speech_s": 2.0,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "19",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "shocked",
+        "out of breath"
+      ],
+      "text": "That came from 4C. The whole floor is awake.",
+      "file": "out/audio/nextdoor-01/19-me.mp3",
+      "beat": 6,
+      "file_start": 75.293,
+      "start": 75.293,
+      "end": 78.779,
+      "speech_s": 3.49,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "20",
+      "speaker": "DISPATCH",
+      "name": "911 (phone)",
+      "tags": [
+        "on speakerphone",
+        "fast",
+        "professional"
+      ],
+      "text": "911. Officers are twenty-five minutes out. Stay inside.",
+      "file": "out/audio/nextdoor-01/20-dispatch.mp3",
+      "beat": 6,
+      "file_start": 79.381,
+      "start": 79.381,
+      "end": 83.366,
+      "speech_s": 3.98,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "21",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers",
+        "desperate"
+      ],
+      "text": "The cameras are going dark. He's erasing Jenna.",
+      "file": "out/audio/nextdoor-01/21-me.mp3",
+      "beat": 6,
+      "file_start": 83.887,
+      "start": 84.023,
+      "end": 87.023,
+      "speech_s": 3.0,
+      "tempo": 1.0,
+      "ok_transcript": true
+    }
+  ],
+  "crowd": [
+    {
+      "id": "M01",
+      "speaker": "OKAFOR",
+      "text": "What on earth was that?",
+      "file": "out/audio/nextdoor-01/M01-okafor.mp3",
+      "beat": 6,
+      "file_start": 70.69,
+      "start": 70.69,
+      "end": 72.913,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M02",
+      "speaker": "BRIANNA",
+      "text": "Did something fall? My whole ceiling shook.",
+      "file": "out/audio/nextdoor-01/M02-brianna.mp3",
+      "beat": 6,
+      "file_start": 70.69,
+      "start": 70.69,
+      "end": 73.946,
+      "volume": 0.22,
+      "pan": -0.25
+    },
+    {
+      "id": "M03",
+      "speaker": "DEB",
+      "text": "Is everybody okay up here?",
+      "file": "out/audio/nextdoor-01/M03-deb.mp3",
+      "beat": 6,
+      "file_start": 70.565,
+      "start": 70.69,
+      "end": 72.536,
+      "volume": 0.22,
+      "pan": 0.25
+    },
+    {
+      "id": "M04",
+      "speaker": "TYLER",
+      "text": "That was 4C. Nobody lives in 4C.",
+      "file": "out/audio/nextdoor-01/M04-tyler.mp3",
+      "beat": 6,
+      "file_start": 72.886,
+      "start": 72.886,
+      "end": 76.562,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M05",
+      "speaker": "MRS_LEE",
+      "text": "Not again. Please, not again.",
+      "file": "out/audio/nextdoor-01/M05-mrs-lee.mp3",
+      "beat": 6,
+      "file_start": 73.263,
+      "start": 73.263,
+      "end": 76.491,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M06",
+      "speaker": "RAY",
+      "text": "Somebody call Pruitt.",
+      "file": "out/audio/nextdoor-01/M06-ray.mp3",
+      "beat": 6,
+      "file_start": 74.296,
+      "start": 74.296,
+      "end": 75.797,
+      "volume": 0.22,
+      "pan": -0.25
+    },
+    {
+      "id": "M07",
+      "speaker": "BRIANNA",
+      "text": "I did. He picked up on the first ring.",
+      "file": "out/audio/nextdoor-01/M07-brianna.mp3",
+      "beat": 6,
+      "file_start": 76.025,
+      "start": 76.147,
+      "end": 79.284,
+      "volume": 0.22,
+      "pan": 0.25
+    },
+    {
+      "id": "M08",
+      "speaker": "OKAFOR",
+      "text": "At midnight? He never picks up.",
+      "file": "out/audio/nextdoor-01/M08-okafor.mp3",
+      "beat": 6,
+      "file_start": 76.841,
+      "start": 76.841,
+      "end": 79.508,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M09",
+      "speaker": "DEB",
+      "text": "Do you smell that? Like burning plastic.",
+      "file": "out/audio/nextdoor-01/M09-deb.mp3",
+      "beat": 6,
+      "file_start": 76.912,
+      "start": 76.912,
+      "end": 80.266,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M10",
+      "speaker": "TYLER",
+      "text": "Since when is there a new lock on that door?",
+      "file": "out/audio/nextdoor-01/M10-tyler.mp3",
+      "beat": 6,
+      "file_start": 79.634,
+      "start": 79.634,
+      "end": 82.358,
+      "volume": 0.22,
+      "pan": -0.25
+    },
+    {
+      "id": "M11",
+      "speaker": "MRS_LEE",
+      "text": "Don't look at it. Just go back inside.",
+      "file": "out/audio/nextdoor-01/M11-mrs-lee.mp3",
+      "beat": 6,
+      "file_start": 79.71,
+      "start": 79.858,
+      "end": 82.693,
+      "volume": 0.22,
+      "pan": 0.25
+    },
+    {
+      "id": "M12",
+      "speaker": "RAY",
+      "text": "Wait, my Wi-Fi just dropped.",
+      "file": "out/audio/nextdoor-01/M12-ray.mp3",
+      "beat": 6,
+      "file_start": 80.616,
+      "start": 80.616,
+      "end": 82.679,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M13",
+      "speaker": "BRIANNA",
+      "text": "Mine too. My phone says no network.",
+      "file": "out/audio/nextdoor-01/M13-brianna.mp3",
+      "beat": 6,
+      "file_start": 82.575,
+      "start": 82.708,
+      "end": 85.891,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M14",
+      "speaker": "OKAFOR",
+      "text": "My smoke detector just stopped blinking.",
+      "file": "out/audio/nextdoor-01/M14-okafor.mp3",
+      "beat": 6,
+      "file_start": 82.882,
+      "start": 83.029,
+      "end": 85.446,
+      "volume": 0.22,
+      "pan": -0.25
+    },
+    {
+      "id": "M15",
+      "speaker": "DEB",
+      "text": "So did mine. Isn't that weird?",
+      "file": "out/audio/nextdoor-01/M15-deb.mp3",
+      "beat": 6,
+      "file_start": 83.043,
+      "start": 83.043,
+      "end": 85.652,
+      "volume": 0.22,
+      "pan": 0.25
+    },
+    {
+      "id": "M16",
+      "speaker": "TYLER",
+      "text": "Okay. This building is cursed.",
+      "file": "out/audio/nextdoor-01/M16-tyler.mp3",
+      "beat": 6,
+      "file_start": 85.796,
+      "start": 85.796,
+      "end": 89.243,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M17",
+      "speaker": "RAY",
+      "text": "Should we knock? Somebody could be hurt in there.",
+      "file": "out/audio/nextdoor-01/M17-ray.mp3",
+      "beat": 6,
+      "file_start": 85.837,
+      "start": 86.002,
+      "end": 88.79,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M18",
+      "speaker": "MRS_LEE",
+      "text": "No. Please. Nobody knocks.",
+      "file": "out/audio/nextdoor-01/M18-mrs-lee.mp3",
+      "beat": 6,
+      "file_start": 86.241,
+      "start": 86.241,
+      "end": 89.794,
+      "volume": 0.22,
+      "pan": -0.25
+    },
+    {
+      "id": "M19",
+      "speaker": "BRIANNA",
+      "text": "Where's the new kid from 4B?",
+      "file": "out/audio/nextdoor-01/M19-brianna.mp3",
+      "beat": 6,
+      "file_start": 88.933,
+      "start": 89.14,
+      "end": 91.128,
+      "volume": 0.22,
+      "pan": 0.25
+    },
+    {
+      "id": "M20",
+      "speaker": "DEB",
+      "text": "Right there. Look at him. He's white as a sheet.",
+      "file": "out/audio/nextdoor-01/M20-deb.mp3",
+      "beat": 6,
+      "file_start": 89.421,
+      "start": 89.593,
+      "end": 93.13,
+      "volume": 0.22,
+      "pan": -0.6
+    }
+  ],
+  "beats": {
+    "1": 1.3,
+    "2": 23.08,
+    "3": 33.54,
+    "4": 46.05,
+    "5": 56.03,
+    "6": 69.49
+  },
+  "pauses": [
+    {
+      "before": "01",
+      "label": "knock",
+      "start": 0.05,
+      "end": 1.25
+    },
+    {
+      "before": "06",
+      "label": "myknock",
+      "start": 21.032,
+      "end": 23.032
+    },
+    {
+      "before": "07",
+      "label": "buzz",
+      "start": 25.784,
+      "end": 26.454
+    },
+    {
+      "before": "09",
+      "label": "walk",
+      "start": 31.29,
+      "end": 33.49
+    },
+    {
+      "before": "10",
+      "label": "chain",
+      "start": 36.95,
+      "end": 37.498
+    },
+    {
+      "before": "14",
+      "label": "chain",
+      "start": 53.785,
+      "end": 55.985
+    },
+    {
+      "before": "17",
+      "label": "ring",
+      "start": 68.866,
+      "end": 69.436
+    },
+    {
+      "before": "19",
+      "label": "impact",
+      "start": 74.243,
+      "end": 75.243
+    }
+  ],
+  "events": {
+    "knock": 0.0,
+    "endcard": [
+      87.82,
+      93.82
+    ]
+  },
+  "checks": {
+    "line_count": 21,
+    "crowd_count": 20,
+    "max_gap_s": 2.3,
+    "cadence_s": [
+      2.53,
+      6.17
+    ],
+    "first_line_s": 1.3,
+    "warnings": [
+      "Zeile 16 (ME): 4.40 s gesprochen – länger als 4 s",
+      "Takt nach Zeile 16: 5.07 s bis zur nächsten Zeile"
+    ]
+  }
+}

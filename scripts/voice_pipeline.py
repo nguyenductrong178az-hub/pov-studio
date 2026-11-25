@@ -185,7 +185,7 @@ def load_scene(scene_dir: Path) -> dict:
         sc = json.loads((scene_dir / "scene.json").read_text(encoding="utf-8"))
         STT_ALIASES.update({k.lower(): v.lower() for k, v in sc.get("stt_aliases", {}).items()})
         scene = {"id": sc["id"], "language": sc["language"], "speakers": sc.get("speakers") or profiles,
-                 "fixed_voices": sc.get("voices", {})}
+                 "fixed_voices": sc.get("voices", {}), "avoid_voices": sc.get("avoid_voices", [])}
         lines = parse_script(scene_dir, sc | {"speakers": scene["speakers"]})
     # Kanal-Regel (CLAUDE.md): alle Stimmen im Video sind Englisch (US)
     if scene["language"] != CHANNEL_LANGUAGE:
@@ -244,7 +244,8 @@ def cmd_voices(scene_dir: Path, scene: dict) -> dict:
     fixed = scene.get("fixed_voices", {})
     if len(set(fixed.values())) != len(fixed):
         sys.exit("Fehler: dieselbe voice_id ist mehreren Figuren zugewiesen – jede Figur braucht eine eigene Stimme")
-    used: set[str] = set(fixed.values())
+    # avoid_voices: Stimmen anderer Figuren aus früheren Videos – neue Figuren dürfen nicht gleich klingen
+    used: set[str] = set(fixed.values()) | set(scene.get("avoid_voices", []))
     result = {"scene": scene["id"], "language": lang, "speakers": {}}
     for spk in scene["used_speakers"]:
         prof = scene["speakers"].get(spk, {"figure": spk.lower(), "persona": "–"})
@@ -352,7 +353,7 @@ SPELLING_EQUIV = {"so was": "sowas", "irgend was": "irgendwas", "gibt's": "gibts
                   "gonna": "going to", "wanna": "want to", "okay": "ok", "o k": "ok", "mr": "mister", "two 00": "two"}
 NUM_WORDS = {"0": "null", "1": "eins", "2": "zwei", "3": "drei", "4": "vier", "5": "fünf", "6": "sechs", "7": "sieben",
              "8": "acht", "9": "neun", "10": "zehn", "15": "fünfzehn", "20": "zwanzig", "30": "dreißig", "90": "neunzig"}
-NUM_WORDS_EN = {"2": "two", "10": "ten", "30": "thirty", "5": "five", "1": "one", "3": "three", "4": "four", "20": "twenty"}
+NUM_WORDS_EN = {"2": "two", "10": "ten", "30": "thirty", "5": "five", "1": "one", "3": "three", "4": "four", "20": "twenty", "25": "twenty five", "6": "six"}
 STT_ALIASES: dict[str, str] = {}  # pro Szene aus scene.json "stt_aliases" (z. B. Namens-Homophone: brand → brandt)
 
 
