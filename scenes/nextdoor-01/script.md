@@ -1,8 +1,8 @@
-# The Neighbor Next Door · Tập 1 „3:03" – kịch bản cuối (sau khi xem lại) – lời thoại: tiếng Anh (Mỹ)
+# The Neighbor Next Door · Tập 1 „Midnight" – kịch bản cuối (sau khi xem lại) – lời thoại: tiếng Anh (Mỹ)
 # Câu hỏi trung tâm: Căn 4C "bỏ trống từ 2019" – vậy ai đang sống ở đó, và họ muốn gì ở TÔI?
 # Điều TÔI có thể mất: căn hộ duy nhất TÔI thuê nổi (đã dồn hết tiền vào tiền cọc, hợp đồng 1 năm) – và sự an toàn:
 #   kẻ bên kia tường thấy TÔI, biết số điện thoại của TÔI, và chủ nhà nói chỉ ông ta có chìa khoá.
-# Bối cảnh: Maple Court Apartments, Dayton, Ohio. Toà nhà gạch 4 tầng từ thập niên 60, không thang máy. 3:03 AM, cuối tháng 11, ngoài trời 28 °F.
+# Bối cảnh: Maple Court Apartments, Dayton, Ohio. Toà nhà gạch 4 tầng từ thập niên 60, không thang máy. 12:00 AM (nửa đêm), cuối tháng 11, ngoài trời 28 °F.
 # TÔI (ME) ở căn 4B, mới dọn vào 6 ngày. Chỉ thấy tay và tay áo hoodie xanh lá (được gieo: "Green hoodie").
 # Độ dài mục tiêu 1:30 (theo yêu cầu của anh; CLAUDE.md ghi 1:45–2:15). Cú lật mỗi 15–20 s.
 # "#! pause <giây> <nhãn>" = khoảng lặng TRƯỚC câu kế tiếp cho hiệu ứng có nguồn nhìn thấy được:
@@ -12,13 +12,13 @@
 # Giọng qua điện thoại (PRUITT, DISPATCH): nguồn nhìn thấy được là điện thoại bật loa trong tay TÔI.
 
 ## Beat 1 · 0 s · Ba tiếng gõ
-# Khung 0: tay trái cầm điện thoại sáng "3:03 AM", phía sau là bức tường chung với 4C, khung ảnh đang rung. Tiếng gõ đầu tiên ở 0,2 s.
+# Khung 0: tay trái cầm điện thoại sáng "12:00 AM", phía sau là bức tường chung với 4C, khung ảnh đang rung. Tiếng gõ đầu tiên ở 0,2 s.
 # Gieo: (a) camera liếc lên trần ở ~8 s, đầu báo khói nháy đỏ. (b) Mẩu giấy vàng dán trên khung cửa tủ, chưa đọc được chữ (~10 s).
 # Người xem biết, TÔI chưa biết: không có gì, chỉ thấy chiếc đèn đỏ.
 #! pause 1.2 knock
-@ME [whispers, terrified]: Three knocks. 3:03. Sixth night in a row.
+@ME [whispers, terrified]: Three knocks. Midnight. Sixth night in a row.
 @ME [whispers]: The wall's shaking. Someone's right there.
-@PRUITT [on speakerphone, groggy, annoyed]: Kid, it's three in the morning.
+@PRUITT [on speakerphone, groggy, annoyed]: Kid, it's midnight.
 @ME [whispers, urgent]: Mr. Pruitt, someone in 4C is pounding on my wall.
 @PRUITT [flat, irritated]: 4C's been empty since 2019. Nobody has a key but me.
 @ME [desperate, quietly]: I put every dollar into this deposit. I can't just leave.
@@ -41,7 +41,7 @@
 @ME [whispers]: Dust on everything. Except the doorknob.
 @ME [whispers]: Brand-new padlock. And blue light under the door.
 #! pause 0.5 chain
-@ROSA [whispers, frightened]: Honey, get away from there. Not at three.
+@ROSA [whispers, frightened]: Honey, get away from there. Not at midnight.
 @ME [whispers]: Mrs. Alvarez? You hear it too?
 @ROSA [whispers, grim]: Every new tenant in 4B does. For about a month.
 

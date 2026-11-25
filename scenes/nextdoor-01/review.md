@@ -5,7 +5,7 @@ Mỗi chỗ tôi muốn lướt đi được ghi lại kèm cách sửa trong `s
 
 | # | Thời điểm (bản 1) | Người xem chán nghĩ gì | Sửa trong bản cuối |
 |---|---|---|---|
-| 1 | 0–4 s | "Every night at 3 AM…" – lại một giọng kể lể. Tiếng gõ tới giây thứ 4, quá trễ. | Tiếng gõ ở **0,2 s**, khung ảnh trên tường nảy lên theo từng tiếng. Khung 0 đã có điện thoại sáng "3:03" và bức tường đang rung. |
+| 1 | 0–4 s | "Every night at midnight…" – lại một giọng kể lể. Tiếng gõ tới giây thứ 4, quá trễ. | Tiếng gõ ở **0,2 s**, khung ảnh trên tường nảy lên theo từng tiếng. Khung 0 đã có điện thoại sáng "12:00 AM" và bức tường đang rung. |
 | 2 | 4–25 s | Cuộc gọi chủ nhà kéo dài 6 câu, toàn chào hỏi ("Who is this?", "Sorry to call so late"). | Còn **2 câu** của chủ nhà. Giữ một câu gieo cho cú lật cuối: "Nobody has a key but me." |
 | 3 | ~15 s | Tôi không biết nhân vật sợ mất gì. Chỉ là "ồn ào ban đêm". | Thêm điều có thể mất ở ~14 s: "I put every dollar into this deposit. I can't just leave." |
 | 4 | ~27 s | "I have a weird feeling someone is watching me" – NÓI ra cú lật, không CHO THẤY. | TÔI gõ lại ba tiếng → tin nhắn lạ: "Don't knock back." → "Nice green hoodie. Go to sleep." Người xem tự hiểu là bị nhìn. |
@@ -29,4 +29,4 @@ Mỗi chỗ tôi muốn lướt đi được ghi lại kèm cách sửa trong `s
 
 ## Còn lệch so với CLAUDE.md (do yêu cầu riêng của tập này)
 - Độ dài 1:30 thay vì 1:45–2:15.
-- Không có đám đông 15–25 câu: 3 giờ sáng trên hành lang chỉ có Rosa. Thêm tiếng người vô hình là phạm luật "không có âm thanh không có nguồn".
+- Không có đám đông 15–25 câu: 12 giờ đêm trên hành lang chỉ có Rosa. Thêm tiếng người vô hình là phạm luật "không có âm thanh không có nguồn".

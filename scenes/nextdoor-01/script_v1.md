@@ -1,8 +1,8 @@
-# The Neighbor Next Door · Tập 1 „3:03" – BẢN NHÁP 1 (đã bị thay bằng script.md sau khi xem lại, giữ để so sánh)
+# The Neighbor Next Door · Tập 1 „Midnight" – BẢN NHÁP 1 (đã bị thay bằng script.md sau khi xem lại, giữ để so sánh)
 # Dòng bắt đầu bằng # không được đọc. Thẻ cảm xúc tiếng Anh.
 
 ## Beat 1 · 0 s
-@ME [tired, quietly]: Every night at 3 AM, it's the same thing.
+@ME [tired, quietly]: Every night at midnight, it's the same thing.
 #! pause 1.2 knock
 @ME [nervous]: There it is again. Three knocks.
 @ME [quietly]: I moved in six days ago. It hasn't missed a night.

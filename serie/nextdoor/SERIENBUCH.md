@@ -1,14 +1,14 @@
 # Sổ tay series: „THE NEIGHBOR NEXT DOOR – What would you do?"
 
 ## Ý tưởng series (1 câu)
-TÔI vừa thuê căn 4B ở một toà chung cư cũ giá rẻ tại Mỹ. Mỗi đêm lúc 3:03, căn 4C "bỏ trống từ 2019" gõ đúng ba tiếng vào tường. Mỗi tập lột thêm một lớp của sự thật: căn 4C là nơi theo dõi mọi người thuê, và cả toà nhà là một cái bẫy.
+TÔI vừa thuê căn 4B ở một toà chung cư cũ giá rẻ tại Mỹ. Đêm nào căn 4C "bỏ trống từ 2019" gõ đúng ba tiếng vào tường. Mỗi tập lột thêm một lớp của sự thật: căn 4C là nơi theo dõi mọi người thuê, và cả toà nhà là một cái bẫy.
 
 ## Câu hỏi lớn của cả series
 Ai đang sống trong 4C, họ theo dõi người thuê để làm gì, và Jenna, người thuê trước của căn 4B, giờ ở đâu?
 
 ## Luật của series (áp dụng mọi tập, ngoài `CLAUDE.md`)
 - **Góc nhìn:** POV fisheye 0.5x của TÔI. Không bao giờ thấy mặt, chỉ thấy tay và tay áo hoodie xanh lá (cố định, là chi tiết kẻ theo dõi dùng để doạ TÔI).
-- **Giờ cố định:** mỗi tập bắt đầu lúc **3:03 AM** trên điện thoại, kèm ba tiếng gõ ngay trong giây đầu tiên (khung ảnh trên tường nảy lên).
+- **Mở đầu:** ba tiếng gõ ngay trong giây đầu tiên (khung ảnh trên tường nảy lên), giờ hiện trên điện thoại. Không có giờ cố định: mỗi tập tự chọn giờ (tập 1: 12:00 AM).
 - **Độ dài:** khoảng 1:30. 2–4 s một câu thoại, 15–20 s một cú lật, 5 cú lật mỗi tập.
 - **Kết:** thẻ "WHAT WOULD YOU DO?" với A/B, đồng hồ đếm ngược trên thẻ, và một tin nhắn mới chưa giải thích (mạch mở cho tập sau).
 - **Tông:** rùng mình chứ không máu me. Nỗi sợ đến từ việc bị nhìn, từ tiếng gõ, từ những thứ quen thuộc (đầu báo khói, Wi-Fi, chìa khoá). Không bạo lực trực tiếp, không yếu tố gợi dục. Camera chỉ "nhìn" để biết giờ giấc và thói quen.
@@ -42,7 +42,7 @@ Kiểm tra trùng với Figuren-Register (≥ 4/6 đặc điểm khác, thêm kh
 ## Kế hoạch tập
 | Tập | Tiêu đề | Hạt nhân thật | Câu hỏi trung tâm | Kết / dilemma |
 |---|---|---|---|---|
-| 01 | **3:03** | camera giấu trong nhà thuê | Căn bỏ trống – vậy ai đang sống ở đó? | Gọi 911 và chờ 25 phút, hay tự phá cửa 4C trước khi bằng chứng bị xoá? → "Jenna says hi." |
+| 01 | **Midnight** | camera giấu trong nhà thuê | Căn bỏ trống – vậy ai đang sống ở đó? | Gọi 911 và chờ 25 phút, hay tự phá cửa 4C trước khi bằng chứng bị xoá? → "Jenna says hi." |
 | 02 | **Jenna Says Hi** | tin nhắn giả danh / giả mạo số | Tin nhắn là của Jenna thật, hay kẻ trong 4C dụ TÔI? | Trả lời tin nhắn và đến chỗ hẹn, hay đưa điện thoại cho cảnh sát (mất liên lạc duy nhất với Jenna)? |
 | 03 | **Unit 4D** | căn hộ "ma" dùng để làm việc phi pháp | Sau cánh cửa chưa bao giờ mở có gì? | Cứu người đang bị giữ ngay bây giờ, hay chạy ra ngoài với bằng chứng? |
 | 04 | **The Lease** | hợp đồng thuê có điều khoản bẫy | Vì sao người thuê chỉ ở được một tháng? | Ký giấy im lặng để lấy lại tiền cọc, hay làm chứng chống Pruitt? |
