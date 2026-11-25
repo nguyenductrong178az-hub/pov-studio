@@ -1,0 +1,105 @@
+{
+  "fps": 30,
+  "duration_s": 26,
+  "lines": [
+    {
+      "id": "01",
+      "speaker": "TEACHER",
+      "start": 0.3,
+      "end": 3.9,
+      "text": "Industrielle Revolution. Schreibt das auf, das kommt im Test dran."
+    },
+    {
+      "id": "02",
+      "speaker": "CAROL",
+      "start": 4.2,
+      "end": 6.2,
+      "text": "Au! Was war das?!"
+    },
+    {
+      "id": "03",
+      "speaker": "RAFA",
+      "start": 6.4,
+      "end": 8.6,
+      "text": "Meins hat auch geklingelt!"
+    },
+    {
+      "id": "04",
+      "speaker": "LEO",
+      "start": 8.8,
+      "end": 11.4,
+      "text": "Chillt. Ist bestimmt nur ein Test."
+    },
+    {
+      "id": "05",
+      "speaker": "TEACHER",
+      "start": 11.6,
+      "end": 14.6,
+      "text": "Handys weg. Sofort. Alle!"
+    },
+    {
+      "id": "06",
+      "speaker": "BIA",
+      "start": 14.8,
+      "end": 17.6,
+      "text": "Frau Weber, da steht EXTREME GEFAHR!"
+    },
+    {
+      "id": "07",
+      "speaker": "THIAGO",
+      "start": 17.8,
+      "end": 20.4,
+      "text": "Was ist das für ein Geräusch?"
+    },
+    {
+      "id": "08",
+      "speaker": "LEO",
+      "start": 20.6,
+      "end": 23.6,
+      "text": "Oh mein Gott! Das war ein Kampfjet!"
+    }
+  ],
+  "events": {
+    "bang": 4.0,
+    "jet1": [
+      0,
+      4.6
+    ],
+    "jet2": [
+      21.5,
+      25.0
+    ],
+    "phoneBuzz": [
+      0,
+      3.8
+    ],
+    "weberWalk": [
+      11.6,
+      14.6
+    ],
+    "leoRise": [
+      20.6,
+      20.9
+    ],
+    "leoRun": [
+      20.9,
+      23.4
+    ]
+  },
+  "speaker_name": {
+    "TEACHER": "Frau Weber",
+    "CAROL": "Carol",
+    "RAFA": "Rafa",
+    "LEO": "Leo",
+    "BIA": "Bia",
+    "THIAGO": "Thiago"
+  },
+  "speaker_color": {
+    "TEACHER": "#3f8a83",
+    "CAROL": "#ef7b6b",
+    "RAFA": "#c8433a",
+    "LEO": "#d9b46a",
+    "BIA": "#9b7fe0",
+    "THIAGO": "#4fb3c8"
+  }
+}

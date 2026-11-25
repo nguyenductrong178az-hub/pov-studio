@@ -1,0 +1,693 @@
+{
+  "fps": 30,
+  "duration_s": 134.17,
+  "source": "echte Audiolängen (build_timeline.py)",
+  "lines": [
+    {
+      "id": "01",
+      "speaker": "STRANGER",
+      "name": "Stranger",
+      "tags": [
+        "desperate",
+        "shouting",
+        "muffled"
+      ],
+      "text": "Hey! Open up! Please, open the door!",
+      "file": "out/audio/nachtzug-01/01-jonas.mp3",
+      "beat": 1,
+      "file_start": 1.071,
+      "start": 1.2,
+      "end": 4.202,
+      "speech_s": 3.0,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "02",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "panicked"
+      ],
+      "text": "Out here in the woods? At two in the morning?",
+      "file": "out/audio/nachtzug-01/02-lotte.mp3",
+      "beat": 1,
+      "file_start": 4.502,
+      "start": 4.502,
+      "end": 7.54,
+      "speech_s": 3.04,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "03",
+      "speaker": "STRANGER",
+      "name": "Stranger",
+      "tags": [
+        "shivering"
+      ],
+      "text": "My truck's stuck! I can't feel my fingers!",
+      "file": "out/audio/nachtzug-01/03-jonas.mp3",
+      "beat": 1,
+      "file_start": 8.44,
+      "start": 8.44,
+      "end": 11.909,
+      "speech_s": 3.47,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "04",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "firm",
+        "tired"
+      ],
+      "text": "Nobody opens a door. That's the rule.",
+      "file": "out/audio/nachtzug-01/04-hanna.mp3",
+      "beat": 1,
+      "file_start": 12.209,
+      "start": 12.209,
+      "end": 15.213,
+      "speech_s": 3.0,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "05",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "upset"
+      ],
+      "text": "He's gonna freeze! Okay, I'm going live.",
+      "file": "out/audio/nachtzug-01/05-lotte.mp3",
+      "beat": 1,
+      "file_start": 15.513,
+      "start": 15.513,
+      "end": 19.221,
+      "speech_s": 3.71,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "06",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "calm",
+        "cold"
+      ],
+      "text": "Five below. He'll survive a few minutes.",
+      "file": "out/audio/nachtzug-01/06-brandt.mp3",
+      "beat": 1,
+      "file_start": 19.369,
+      "start": 19.521,
+      "end": 22.298,
+      "speech_s": 2.78,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "07",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "annoyed"
+      ],
+      "text": "Just a tree on the tracks. We'll be moving soon.",
+      "file": "out/audio/nachtzug-01/07-hanna.mp3",
+      "beat": 1,
+      "file_start": 22.598,
+      "start": 22.598,
+      "end": 25.947,
+      "speech_s": 3.35,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "08",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "talking into a radio",
+        "confused"
+      ],
+      "text": "Dispatch? What do you mean, no tree?",
+      "file": "out/audio/nachtzug-01/08-hanna.mp3",
+      "beat": 2,
+      "file_start": 26.41,
+      "start": 26.647,
+      "end": 29.204,
+      "speech_s": 2.56,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "09",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "shocked",
+        "quietly"
+      ],
+      "text": "The signal cable's gone. Cut right out.",
+      "file": "out/audio/nachtzug-01/09-hanna.mp3",
+      "beat": 2,
+      "file_start": 29.504,
+      "start": 29.504,
+      "end": 32.378,
+      "speech_s": 2.87,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "10",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "matter-of-fact"
+      ],
+      "text": "Copper thieves. Two miles of cable, that's real money.",
+      "file": "out/audio/nachtzug-01/10-brandt_fit.wav",
+      "beat": 2,
+      "file_start": 32.678,
+      "start": 32.678,
+      "end": 36.437,
+      "speech_s": 3.76,
+      "tempo": 1.0369,
+      "ok_transcript": true
+    },
+    {
+      "id": "11",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "scared"
+      ],
+      "text": "Then the guy out there is one of them!",
+      "file": "out/audio/nachtzug-01/11-lotte.mp3",
+      "beat": 2,
+      "file_start": 36.559,
+      "start": 36.737,
+      "end": 38.927,
+      "speech_s": 2.19,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "12",
+      "speaker": "STRANGER",
+      "name": "Stranger",
+      "tags": [
+        "pleading"
+      ],
+      "text": "No! I saw them! They're still out here!",
+      "file": "out/audio/nachtzug-01/12-jonas.mp3",
+      "beat": 2,
+      "file_start": 39.227,
+      "start": 39.227,
+      "end": 42.368,
+      "speech_s": 3.14,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "13",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "tense",
+        "whispers"
+      ],
+      "text": "Wait. What's he holding?",
+      "file": "out/audio/nachtzug-01/13-ich.mp3",
+      "beat": 3,
+      "file_start": 42.995,
+      "start": 43.268,
+      "end": 45.081,
+      "speech_s": 1.81,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "14",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "horrified"
+      ],
+      "text": "Bolt cutters! It was him!",
+      "file": "out/audio/nachtzug-01/14-lotte.mp3",
+      "beat": 3,
+      "file_start": 45.165,
+      "start": 45.381,
+      "end": 47.709,
+      "speech_s": 2.33,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "15",
+      "speaker": "STRANGER",
+      "name": "Stranger",
+      "tags": [
+        "desperate"
+      ],
+      "text": "They were in the snow! Look, I'm tossing them!",
+      "file": "out/audio/nachtzug-01/15-jonas.mp3",
+      "beat": 3,
+      "file_start": 48.009,
+      "start": 48.009,
+      "end": 51.02,
+      "speech_s": 3.01,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "16",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "sharp"
+      ],
+      "text": "It's a trick. That door stays shut.",
+      "file": "out/audio/nachtzug-01/16-brandt.mp3",
+      "beat": 3,
+      "file_start": 51.32,
+      "start": 51.32,
+      "end": 54.011,
+      "speech_s": 2.69,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "17",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "unsure"
+      ],
+      "text": "My chat keeps saying: just let him in!",
+      "file": "out/audio/nachtzug-01/17-lotte.mp3",
+      "beat": 3,
+      "file_start": 54.311,
+      "start": 54.311,
+      "end": 57.541,
+      "speech_s": 3.23,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "18",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "reading aloud"
+      ],
+      "text": "Dispatch says two miles of cable are missing.",
+      "file": "out/audio/nachtzug-01/18-hanna.mp3",
+      "beat": 4,
+      "file_start": 58.441,
+      "start": 58.441,
+      "end": 61.538,
+      "speech_s": 3.1,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "19",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "slowly",
+        "suspicious"
+      ],
+      "text": "Mr. Doyle... you knew that before they did.",
+      "file": "out/audio/nachtzug-01/19-ich.mp3",
+      "beat": 4,
+      "file_start": 61.681,
+      "start": 61.838,
+      "end": 65.682,
+      "speech_s": 3.84,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "20",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "unnervingly calm"
+      ],
+      "text": "Thirty years as a signalman. You learn to guess.",
+      "file": "out/audio/nachtzug-01/20-brandt.mp3",
+      "beat": 4,
+      "file_start": 65.857,
+      "start": 65.982,
+      "end": 69.645,
+      "speech_s": 3.66,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "21",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers"
+      ],
+      "text": "His phone just lit up: \"Train stopped. Keep them inside.\"",
+      "file": "out/audio/nachtzug-01/21-ich.mp3",
+      "beat": 4,
+      "file_start": 70.514,
+      "start": 70.645,
+      "end": 74.371,
+      "speech_s": 3.73,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "22",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "cold"
+      ],
+      "text": "Sit down. And put that phone away.",
+      "file": "out/audio/nachtzug-01/22-brandt.mp3",
+      "beat": 4,
+      "file_start": 74.671,
+      "start": 74.671,
+      "end": 77.37,
+      "speech_s": 2.7,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "23",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "afraid",
+        "quietly"
+      ],
+      "text": "Mr. Doyle... what did you do?",
+      "file": "out/audio/nachtzug-01/23-hanna.mp3",
+      "beat": 4,
+      "file_start": 77.415,
+      "start": 77.67,
+      "end": 80.275,
+      "speech_s": 2.6,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "24",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "threatening",
+        "quietly"
+      ],
+      "text": "My hand's on the emergency release. Nobody goes out.",
+      "file": "out/audio/nachtzug-01/24-brandt.mp3",
+      "beat": 5,
+      "file_start": 81.007,
+      "start": 81.175,
+      "end": 84.709,
+      "speech_s": 3.53,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "25",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "shaky voice"
+      ],
+      "text": "The police are at least an hour away.",
+      "file": "out/audio/nachtzug-01/25-hanna.mp3",
+      "beat": 5,
+      "file_start": 86.609,
+      "start": 86.609,
+      "end": 89.283,
+      "speech_s": 2.67,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "26",
+      "speaker": "STRANGER",
+      "name": "Stranger",
+      "tags": [
+        "weak",
+        "crying"
+      ],
+      "text": "Dad! Please! I want out of this!",
+      "file": "out/audio/nachtzug-01/26-jonas_fit.wav",
+      "beat": 5,
+      "file_start": 89.384,
+      "start": 89.583,
+      "end": 93.523,
+      "speech_s": 3.94,
+      "tempo": 1.0068,
+      "ok_transcript": true
+    },
+    {
+      "id": "27",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "shocked"
+      ],
+      "text": "Did he just say Dad?!",
+      "file": "out/audio/nachtzug-01/27-lotte.mp3",
+      "beat": 6,
+      "file_start": 94.423,
+      "start": 94.423,
+      "end": 96.397,
+      "speech_s": 1.97,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "28",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "voice breaking"
+      ],
+      "text": "Caleb... you were supposed to stay with the van.",
+      "file": "out/audio/nachtzug-01/28-brandt.mp3",
+      "beat": 6,
+      "file_start": 97.062,
+      "start": 97.197,
+      "end": 100.502,
+      "speech_s": 3.3,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "29",
+      "speaker": "STRANGER",
+      "name": "Stranger",
+      "tags": [
+        "weak"
+      ],
+      "text": "They left. They left me behind.",
+      "file": "out/audio/nachtzug-01/29-jonas.mp3",
+      "beat": 6,
+      "file_start": 100.544,
+      "start": 100.802,
+      "end": 103.783,
+      "speech_s": 2.98,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "30",
+      "speaker": "DANA",
+      "name": "Dana",
+      "tags": [
+        "urgent"
+      ],
+      "text": "His lips are blue. Ten minutes, tops.",
+      "file": "out/audio/nachtzug-01/30-hanna.mp3",
+      "beat": 6,
+      "file_start": 104.083,
+      "start": 104.083,
+      "end": 106.89,
+      "speech_s": 2.81,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "31",
+      "speaker": "DOYLE",
+      "name": "Doyle",
+      "tags": [
+        "desperate"
+      ],
+      "text": "If he comes in, they'll know he's talking.",
+      "file": "out/audio/nachtzug-01/31-brandt.mp3",
+      "beat": 6,
+      "file_start": 107.19,
+      "start": 107.19,
+      "end": 109.989,
+      "speech_s": 2.8,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "32",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "terrified",
+        "whispers"
+      ],
+      "text": "There's a van out there. No lights.",
+      "file": "out/audio/nachtzug-01/32-lotte.mp3",
+      "beat": 7,
+      "file_start": 112.018,
+      "start": 112.189,
+      "end": 115.179,
+      "speech_s": 2.99,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "33",
+      "speaker": "LEXI",
+      "name": "Lexi",
+      "tags": [
+        "trembling"
+      ],
+      "text": "My chat says: \"We see you. Car two.\"",
+      "file": "out/audio/nachtzug-01/33-lotte.mp3",
+      "beat": 7,
+      "file_start": 116.913,
+      "start": 117.179,
+      "end": 121.086,
+      "speech_s": 3.91,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "34",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "whispers"
+      ],
+      "text": "We're in car two.",
+      "file": "out/audio/nachtzug-01/34-ich.mp3",
+      "beat": 7,
+      "file_start": 121.207,
+      "start": 121.386,
+      "end": 122.495,
+      "speech_s": 1.11,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "35",
+      "speaker": "ME",
+      "name": "Me",
+      "tags": [
+        "desperate",
+        "torn"
+      ],
+      "text": "I'm right at the door. What do I do?",
+      "file": "out/audio/nachtzug-01/35-ich.mp3",
+      "beat": 7,
+      "file_start": 123.386,
+      "start": 123.386,
+      "end": 125.875,
+      "speech_s": 2.49,
+      "tempo": 1.0,
+      "ok_transcript": true
+    }
+  ],
+  "crowd": [],
+  "beats": {
+    "1": 1.2,
+    "2": 26.65,
+    "3": 43.27,
+    "4": 58.44,
+    "5": 81.17,
+    "6": 94.42,
+    "7": 112.19
+  },
+  "pauses": [
+    {
+      "before": "01",
+      "label": "knock",
+      "start": 0.05,
+      "end": 1.15
+    },
+    {
+      "before": "03",
+      "label": "knock",
+      "start": 7.59,
+      "end": 8.39
+    },
+    {
+      "before": "08",
+      "label": "radio",
+      "start": 25.997,
+      "end": 26.597
+    },
+    {
+      "before": "21",
+      "label": "buzz",
+      "start": 69.695,
+      "end": 70.595
+    },
+    {
+      "before": "25",
+      "label": "impact",
+      "start": 84.759,
+      "end": 86.559
+    },
+    {
+      "before": "28",
+      "label": "knock",
+      "start": 96.447,
+      "end": 97.147
+    },
+    {
+      "before": "32",
+      "label": "walk",
+      "start": 110.039,
+      "end": 112.139
+    },
+    {
+      "before": "33",
+      "label": "walk",
+      "start": 115.229,
+      "end": 117.129
+    }
+  ],
+  "events": {
+    "knock": 0.0,
+    "endcard": [
+      126.67,
+      134.17
+    ]
+  },
+  "checks": {
+    "line_count": 35,
+    "crowd_count": 0,
+    "max_gap_s": 2.2,
+    "cadence_s": [
+      2.0,
+      5.43
+    ],
+    "first_line_s": 1.2,
+    "warnings": []
+  }
+}

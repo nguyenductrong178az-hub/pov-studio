@@ -1,0 +1,8 @@
+node_modules/
+# Geheimnisse niemals einchecken
+.env
+.env.*
+*.key
+
+# File render lớn (MP4, ảnh kiểm tra) – không đưa lên git
+out/

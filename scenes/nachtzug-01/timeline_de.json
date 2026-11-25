@@ -1,0 +1,884 @@
+{
+  "fps": 30,
+  "duration_s": 133.16,
+  "source": "echte Audiolängen (build_timeline.py)",
+  "lines": [
+    {
+      "id": "01",
+      "speaker": "FREMDER",
+      "name": "Fremder",
+      "tags": [
+        "verzweifelt",
+        "schreiend",
+        "gedämpft"
+      ],
+      "text": "Hey! Aufmachen! Bitte, macht auf!",
+      "file": "out/audio/nachtzug-01/01-jonas.mp3",
+      "beat": 1,
+      "file_start": 0.5,
+      "start": 0.5,
+      "end": 4.053,
+      "speech_s": 3.55,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "02",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "panisch"
+      ],
+      "text": "Mitten im Wald? Um zwei Uhr nachts?",
+      "file": "out/audio/nachtzug-01/02-lotte.mp3",
+      "beat": 1,
+      "file_start": 4.353,
+      "start": 4.353,
+      "end": 7.265,
+      "speech_s": 2.91,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "03",
+      "speaker": "FREMDER",
+      "name": "Fremder",
+      "tags": [
+        "zitternd vor Kälte"
+      ],
+      "text": "Mein Auto steckt fest! Meine Finger sind taub!",
+      "file": "out/audio/nachtzug-01/03-jonas_fit.wav",
+      "beat": 1,
+      "file_start": 7.565,
+      "start": 7.565,
+      "end": 11.542,
+      "speech_s": 3.98,
+      "tempo": 1.0349,
+      "ok_transcript": true
+    },
+    {
+      "id": "04",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "bestimmt",
+        "müde"
+      ],
+      "text": "Keiner öffnet eine Tür. Das ist Vorschrift.",
+      "file": "out/audio/nachtzug-01/04-hanna.mp3",
+      "beat": 1,
+      "file_start": 11.842,
+      "start": 11.842,
+      "end": 15.081,
+      "speech_s": 3.24,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "05",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "aufgebracht"
+      ],
+      "text": "Der erfriert doch! Leute, ich geh live.",
+      "file": "out/audio/nachtzug-01/05-lotte.mp3",
+      "beat": 1,
+      "file_start": 15.381,
+      "start": 15.381,
+      "end": 18.615,
+      "speech_s": 3.23,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "06",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "ruhig",
+        "kalt"
+      ],
+      "text": "Minus fünfzehn. Das hält der schon aus.",
+      "file": "out/audio/nachtzug-01/06-brandt.mp3",
+      "beat": 1,
+      "file_start": 18.915,
+      "start": 18.915,
+      "end": 21.832,
+      "speech_s": 2.92,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "07",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "genervt"
+      ],
+      "text": "Nur ein Baum. Gleich geht's weiter.",
+      "file": "out/audio/nachtzug-01/07-hanna.mp3",
+      "beat": 1,
+      "file_start": 22.132,
+      "start": 22.132,
+      "end": 24.726,
+      "speech_s": 2.59,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "08",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "ins Funkgerät",
+        "verwirrt"
+      ],
+      "text": "Fahrdienstleitung? Was heißt hier, kein Baum?",
+      "file": "out/audio/nachtzug-01/08-hanna.mp3",
+      "beat": 2,
+      "file_start": 25.626,
+      "start": 25.626,
+      "end": 29.341,
+      "speech_s": 3.71,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "09",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "geschockt",
+        "leise"
+      ],
+      "text": "Das Signalkabel ist weg. Rausgeschnitten.",
+      "file": "out/audio/nachtzug-01/09-hanna.mp3",
+      "beat": 2,
+      "file_start": 29.641,
+      "start": 29.641,
+      "end": 32.592,
+      "speech_s": 2.95,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "10",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "sachlich"
+      ],
+      "text": "Kupferdiebe. Zwei Kilometer Kabel, das lohnt sich.",
+      "file": "out/audio/nachtzug-01/10-brandt.mp3",
+      "beat": 2,
+      "file_start": 32.892,
+      "start": 32.892,
+      "end": 36.863,
+      "speech_s": 3.97,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "11",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "ängstlich"
+      ],
+      "text": "Dann ist der da draußen einer von denen!",
+      "file": "out/audio/nachtzug-01/11-lotte.mp3",
+      "beat": 2,
+      "file_start": 37.163,
+      "start": 37.163,
+      "end": 39.47,
+      "speech_s": 2.31,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "12",
+      "speaker": "FREMDER",
+      "name": "Fremder",
+      "tags": [
+        "flehend"
+      ],
+      "text": "Nein! Ich hab sie gesehen! Die sind noch hier!",
+      "file": "out/audio/nachtzug-01/12-jonas.mp3",
+      "beat": 2,
+      "file_start": 39.77,
+      "start": 39.77,
+      "end": 43.07,
+      "speech_s": 3.3,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "13",
+      "speaker": "ICH",
+      "name": "Ich",
+      "tags": [
+        "angespannt",
+        "flüsternd"
+      ],
+      "text": "Moment. Was hat der da in der Hand?",
+      "file": "out/audio/nachtzug-01/13-ich.mp3",
+      "beat": 3,
+      "file_start": 43.774,
+      "start": 43.97,
+      "end": 46.384,
+      "speech_s": 2.41,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "14",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "entsetzt"
+      ],
+      "text": "Ein Bolzenschneider! Er war's!",
+      "file": "out/audio/nachtzug-01/14-lotte.mp3",
+      "beat": 3,
+      "file_start": 46.684,
+      "start": 46.684,
+      "end": 49.425,
+      "speech_s": 2.74,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "15",
+      "speaker": "FREMDER",
+      "name": "Fremder",
+      "tags": [
+        "verzweifelt"
+      ],
+      "text": "Der lag im Schnee! Hier, ich werf ihn weg!",
+      "file": "out/audio/nachtzug-01/15-jonas.mp3",
+      "beat": 3,
+      "file_start": 49.725,
+      "start": 49.725,
+      "end": 52.843,
+      "speech_s": 3.12,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "16",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "scharf"
+      ],
+      "text": "Das ist ein Trick. Die Tür bleibt zu.",
+      "file": "out/audio/nachtzug-01/16-brandt.mp3",
+      "beat": 3,
+      "file_start": 53.143,
+      "start": 53.143,
+      "end": 55.651,
+      "speech_s": 2.51,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "17",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "unsicher"
+      ],
+      "text": "Mein Chat schreibt: Lasst ihn endlich rein!",
+      "file": "out/audio/nachtzug-01/17-lotte.mp3",
+      "beat": 3,
+      "file_start": 55.951,
+      "start": 55.951,
+      "end": 59.212,
+      "speech_s": 3.26,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "18",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "liest vom Handy ab"
+      ],
+      "text": "Die Leitstelle schreibt: Zwei Kilometer Kabel fehlen.",
+      "file": "out/audio/nachtzug-01/18-hanna.mp3",
+      "beat": 4,
+      "file_start": 60.112,
+      "start": 60.112,
+      "end": 63.477,
+      "speech_s": 3.37,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "19",
+      "speaker": "ICH",
+      "name": "Ich",
+      "tags": [
+        "langsam",
+        "misstrauisch"
+      ],
+      "text": "Herr Brandt... das wussten Sie schon vorhin.",
+      "file": "out/audio/nachtzug-01/19-ich.mp3",
+      "beat": 4,
+      "file_start": 63.626,
+      "start": 63.777,
+      "end": 67.37,
+      "speech_s": 3.59,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "20",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "zu ruhig"
+      ],
+      "text": "Dreißig Jahre Stellwerk. Sowas schätzt man.",
+      "file": "out/audio/nachtzug-01/20-brandt.mp3",
+      "beat": 4,
+      "file_start": 67.67,
+      "start": 67.67,
+      "end": 71.301,
+      "speech_s": 3.63,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "21",
+      "speaker": "ICH",
+      "name": "Ich",
+      "tags": [
+        "flüsternd"
+      ],
+      "text": "Sein Handy leuchtet: „Zug steht. Halt sie drinnen.“",
+      "file": "out/audio/nachtzug-01/21-ich.mp3",
+      "beat": 4,
+      "file_start": 71.601,
+      "start": 71.601,
+      "end": 75.572,
+      "speech_s": 3.97,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "22",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "kalt"
+      ],
+      "text": "Setz dich hin. Und leg das Handy weg.",
+      "file": "out/audio/nachtzug-01/22-brandt.mp3",
+      "beat": 4,
+      "file_start": 75.872,
+      "start": 75.872,
+      "end": 78.599,
+      "speech_s": 2.73,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "23",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "verängstigt",
+        "leise"
+      ],
+      "text": "Herr Brandt... was haben Sie getan?",
+      "file": "out/audio/nachtzug-01/23-hanna.mp3",
+      "beat": 4,
+      "file_start": 78.899,
+      "start": 78.899,
+      "end": 81.816,
+      "speech_s": 2.92,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "24",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "drohend",
+        "leise"
+      ],
+      "text": "Meine Hand ist am Notgriff. Keiner geht raus.",
+      "file": "out/audio/nachtzug-01/24-brandt.mp3",
+      "beat": 5,
+      "file_start": 82.716,
+      "start": 82.716,
+      "end": 85.917,
+      "speech_s": 3.2,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "25",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "zittrige Stimme"
+      ],
+      "text": "Die Polizei braucht noch mindestens eine Stunde.",
+      "file": "out/audio/nachtzug-01/25-hanna.mp3",
+      "beat": 5,
+      "file_start": 86.217,
+      "start": 86.217,
+      "end": 89.297,
+      "speech_s": 3.08,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "26",
+      "speaker": "FREMDER",
+      "name": "Fremder",
+      "tags": [
+        "schwach",
+        "weinend"
+      ],
+      "text": "Papa! Bitte! Ich will raus aus der Sache!",
+      "file": "out/audio/nachtzug-01/26-jonas_fit.wav",
+      "beat": 5,
+      "file_start": 89.597,
+      "start": 89.597,
+      "end": 93.594,
+      "speech_s": 4.0,
+      "tempo": 1.0771,
+      "ok_transcript": true
+    },
+    {
+      "id": "27",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "geschockt"
+      ],
+      "text": "Er hat Papa gesagt?!",
+      "file": "out/audio/nachtzug-01/27-lotte.mp3",
+      "beat": 6,
+      "file_start": 94.494,
+      "start": 94.494,
+      "end": 96.064,
+      "speech_s": 1.57,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "28",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "Stimme bricht"
+      ],
+      "text": "Jonas... Du solltest doch beim Transporter bleiben.",
+      "file": "out/audio/nachtzug-01/28-brandt.mp3",
+      "beat": 6,
+      "file_start": 96.494,
+      "start": 96.494,
+      "end": 100.054,
+      "speech_s": 3.56,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "29",
+      "speaker": "FREMDER",
+      "name": "Fremder",
+      "tags": [
+        "schwach"
+      ],
+      "text": "Die sind weg. Die haben mich zurückgelassen.",
+      "file": "out/audio/nachtzug-01/29-jonas.mp3",
+      "beat": 6,
+      "file_start": 100.354,
+      "start": 100.354,
+      "end": 103.907,
+      "speech_s": 3.55,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "30",
+      "speaker": "HANNA",
+      "name": "Hanna",
+      "tags": [
+        "eindringlich"
+      ],
+      "text": "Seine Lippen sind blau. Zehn Minuten noch, höchstens.",
+      "file": "out/audio/nachtzug-01/30-hanna.mp3",
+      "beat": 6,
+      "file_start": 104.207,
+      "start": 104.207,
+      "end": 107.681,
+      "speech_s": 3.47,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "31",
+      "speaker": "BRANDT",
+      "name": "Brandt",
+      "tags": [
+        "verzweifelt"
+      ],
+      "text": "Wenn er reinkommt, wissen die, dass er redet.",
+      "file": "out/audio/nachtzug-01/31-brandt.mp3",
+      "beat": 6,
+      "file_start": 107.981,
+      "start": 107.981,
+      "end": 110.481,
+      "speech_s": 2.5,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "32",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "voller Angst",
+        "flüsternd"
+      ],
+      "text": "Da draußen... ein Transporter. Ganz ohne Licht.",
+      "file": "out/audio/nachtzug-01/32-lotte.mp3",
+      "beat": 7,
+      "file_start": 111.246,
+      "start": 111.381,
+      "end": 114.945,
+      "speech_s": 3.56,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "33",
+      "speaker": "LOTTE",
+      "name": "Lotte",
+      "tags": [
+        "bebend"
+      ],
+      "text": "Im Chat steht: „Wir sehen euch. Wagen zwei.“",
+      "file": "out/audio/nachtzug-01/33-lotte_fit.wav",
+      "beat": 7,
+      "file_start": 115.245,
+      "start": 115.245,
+      "end": 119.231,
+      "speech_s": 3.99,
+      "tempo": 1.0598,
+      "ok_transcript": true
+    },
+    {
+      "id": "34",
+      "speaker": "ICH",
+      "name": "Ich",
+      "tags": [
+        "flüsternd"
+      ],
+      "text": "Wir sind in Wagen zwei.",
+      "file": "out/audio/nachtzug-01/34-ich.mp3",
+      "beat": 7,
+      "file_start": 119.374,
+      "start": 119.531,
+      "end": 121.167,
+      "speech_s": 1.64,
+      "tempo": 1.0,
+      "ok_transcript": true
+    },
+    {
+      "id": "35",
+      "speaker": "ICH",
+      "name": "Ich",
+      "tags": [
+        "verzweifelt",
+        "hin- und hergerissen"
+      ],
+      "text": "Ich steh direkt an der Tür. Was mach ich?",
+      "file": "out/audio/nachtzug-01/35-ich.mp3",
+      "beat": 7,
+      "file_start": 121.531,
+      "start": 121.531,
+      "end": 124.355,
+      "speech_s": 2.82,
+      "tempo": 1.0,
+      "ok_transcript": true
+    }
+  ],
+  "crowd": [
+    {
+      "id": "M01",
+      "speaker": "FAHRGAST_A",
+      "text": "Ach du lieber Himmel, der arme Mann.",
+      "file": "out/audio/nachtzug-01/M01-fahrgast-a.mp3",
+      "beat": 1,
+      "file_start": 1.7,
+      "start": 1.7,
+      "end": 4.651,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M02",
+      "speaker": "FAHRGAST_B",
+      "text": "Ist das ein Witz? Mitten in der Nacht?",
+      "file": "out/audio/nachtzug-01/M02-fahrgast-b.mp3",
+      "beat": 1,
+      "file_start": 5.651,
+      "start": 5.651,
+      "end": 8.377,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M03",
+      "speaker": "FAHRGAST_C",
+      "text": "Bloß nicht aufmachen. Man weiß ja nie.",
+      "file": "out/audio/nachtzug-01/M03-fahrgast-c.mp3",
+      "beat": 1,
+      "file_start": 9.162,
+      "start": 9.377,
+      "end": 11.953,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M04",
+      "speaker": "FAHRGAST_D",
+      "text": "Mir ist so kalt. Wann geht die Heizung wieder?",
+      "file": "out/audio/nachtzug-01/M04-fahrgast-d.mp3",
+      "beat": 1,
+      "file_start": 12.953,
+      "start": 12.953,
+      "end": 17.329,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M05",
+      "speaker": "FAHRGAST_A",
+      "text": "Hat jemand Empfang? Ich hab gar keinen.",
+      "file": "out/audio/nachtzug-01/M05-fahrgast-a.mp3",
+      "beat": 1,
+      "file_start": 18.168,
+      "start": 18.329,
+      "end": 21.524,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M06",
+      "speaker": "FAHRGAST_B",
+      "text": "Kabel klauen? Ernsthaft? Hier draußen?",
+      "file": "out/audio/nachtzug-01/M06-fahrgast-b.mp3",
+      "beat": 2,
+      "file_start": 26.83,
+      "start": 26.83,
+      "end": 30.182,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M07",
+      "speaker": "FAHRGAST_C",
+      "text": "Das kam doch letztens in den Nachrichten.",
+      "file": "out/audio/nachtzug-01/M07-fahrgast-c.mp3",
+      "beat": 2,
+      "file_start": 31.182,
+      "start": 31.182,
+      "end": 33.768,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M08",
+      "speaker": "FAHRGAST_D",
+      "text": "Und wir sitzen hier fest. Na toll.",
+      "file": "out/audio/nachtzug-01/M08-fahrgast-d.mp3",
+      "beat": 2,
+      "file_start": 34.636,
+      "start": 34.768,
+      "end": 37.343,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M09",
+      "speaker": "FAHRGAST_A",
+      "text": "Wie lange sollen wir denn noch warten?",
+      "file": "out/audio/nachtzug-01/M09-fahrgast-a.mp3",
+      "beat": 2,
+      "file_start": 38.343,
+      "start": 38.343,
+      "end": 40.277,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M10",
+      "speaker": "FAHRGAST_B",
+      "text": "Ich hab's gesehen, der hatte echt was in der Hand.",
+      "file": "out/audio/nachtzug-01/M10-fahrgast-b.mp3",
+      "beat": 3,
+      "file_start": 45.17,
+      "start": 45.17,
+      "end": 48.252,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M11",
+      "speaker": "FAHRGAST_D",
+      "text": "Weg vom Fenster, schnell!",
+      "file": "out/audio/nachtzug-01/M11-fahrgast-d.mp3",
+      "beat": 3,
+      "file_start": 49.252,
+      "start": 49.252,
+      "end": 51.093,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M12",
+      "speaker": "FAHRGAST_C",
+      "text": "Ich ruf jetzt die Polizei an.",
+      "file": "out/audio/nachtzug-01/M12-fahrgast-c.mp3",
+      "beat": 3,
+      "file_start": 51.88,
+      "start": 52.093,
+      "end": 53.77,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M13",
+      "speaker": "FAHRGAST_A",
+      "text": "Der zittert ja am ganzen Körper.",
+      "file": "out/audio/nachtzug-01/M13-fahrgast-a.mp3",
+      "beat": 3,
+      "file_start": 54.44,
+      "start": 54.77,
+      "end": 56.83,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M14",
+      "speaker": "FAHRGAST_B",
+      "text": "Der alte Mann? Echt jetzt?",
+      "file": "out/audio/nachtzug-01/M14-fahrgast-b.mp3",
+      "beat": 4,
+      "file_start": 61.141,
+      "start": 61.31,
+      "end": 63.494,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M15",
+      "speaker": "FAHRGAST_D",
+      "text": "Ich hab ihm vorhin noch meinen Tee angeboten.",
+      "file": "out/audio/nachtzug-01/M15-fahrgast-d.mp3",
+      "beat": 4,
+      "file_start": 64.359,
+      "start": 64.494,
+      "end": 67.119,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M16",
+      "speaker": "FAHRGAST_C",
+      "text": "Keine Verbindung. Die Polizei geht nicht ran.",
+      "file": "out/audio/nachtzug-01/M16-fahrgast-c.mp3",
+      "beat": 4,
+      "file_start": 68.119,
+      "start": 68.119,
+      "end": 71.188,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M17",
+      "speaker": "FAHRGAST_A",
+      "text": "Sein eigener Sohn. Das ist ja furchtbar.",
+      "file": "out/audio/nachtzug-01/M17-fahrgast-a.mp3",
+      "beat": 6,
+      "file_start": 95.69,
+      "start": 95.69,
+      "end": 99.924,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M18",
+      "speaker": "FAHRGAST_B",
+      "text": "Machen Sie doch endlich die Tür auf!",
+      "file": "out/audio/nachtzug-01/M18-fahrgast-b.mp3",
+      "beat": 6,
+      "file_start": 100.924,
+      "start": 100.924,
+      "end": 103.353,
+      "volume": 0.22,
+      "pan": 0.6
+    },
+    {
+      "id": "M19",
+      "speaker": "FAHRGAST_D",
+      "text": "Was ist das für ein Licht da draußen?",
+      "file": "out/audio/nachtzug-01/M19-fahrgast-d.mp3",
+      "beat": 7,
+      "file_start": 112.431,
+      "start": 112.58,
+      "end": 114.409,
+      "volume": 0.22,
+      "pan": -0.6
+    },
+    {
+      "id": "M20",
+      "speaker": "FAHRGAST_C",
+      "text": "Alle runter. Ganz leise jetzt.",
+      "file": "out/audio/nachtzug-01/M20-fahrgast-c.mp3",
+      "beat": 7,
+      "file_start": 115.409,
+      "start": 115.409,
+      "end": 117.551,
+      "volume": 0.22,
+      "pan": 0.6
+    }
+  ],
+  "beats": {
+    "1": 0.5,
+    "2": 25.63,
+    "3": 43.97,
+    "4": 60.11,
+    "5": 82.72,
+    "6": 94.49,
+    "7": 111.38
+  },
+  "events": {
+    "knock": 0.0,
+    "endcard": [
+      125.16,
+      133.16
+    ]
+  },
+  "checks": {
+    "line_count": 35,
+    "crowd_count": 20,
+    "max_gap_s": 0.9,
+    "cadence_s": [
+      2.0,
+      4.9
+    ],
+    "first_line_s": 0.5,
+    "warnings": []
+  }
+}

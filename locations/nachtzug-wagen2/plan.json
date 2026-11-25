@@ -1,0 +1,1065 @@
+{
+  "id": "nachtzug-wagen2",
+  "name": "RE 47 · Toa 2 (tàu khu vực, sàn thấp) – đứng giữa rừng",
+  "units": "mét",
+  "size": {
+    "w": 10.0,
+    "d": 2.8,
+    "h": 2.3
+  },
+  "draw_scale": 150,
+  "draw_outside": [
+    1.6,
+    0.6,
+    0.4,
+    1.6
+  ],
+  "origin": "Góc Tây-Nam trong toa (sàn toa = 0). x dọc toa về phía Đông (đuôi tàu), y ngang toa về phía Bắc (phía rừng/Jonas), z lên. Mặt tuyết bên ngoài ở z = −0,60 m.",
+  "yaw_note": "0° = Bắc (nhìn ra cửa sổ phía rừng), +90° = Đông (đuôi toa), −90° = Tây (về khu cửa và toa 1)",
+  "walls": [
+    {
+      "id": "nord",
+      "name": "Thành Bắc (phía rừng, Jonas đứng ngoài)",
+      "from": [
+        0,
+        2.8
+      ],
+      "to": [
+        10.0,
+        2.8
+      ],
+      "thickness": 0.08,
+      "material": "nhôm, ốp nhựa xám nhạt",
+      "note": "4 cửa sổ + cửa lên xuống; kính đóng băng ở mép"
+    },
+    {
+      "id": "sued",
+      "name": "Thành Nam (phía đường ray thứ hai)",
+      "from": [
+        0,
+        0
+      ],
+      "to": [
+        10.0,
+        0
+      ],
+      "thickness": 0.08,
+      "material": "nhôm, ốp nhựa xám nhạt",
+      "note": "4 cửa sổ + cửa lên xuống (đối diện)"
+    },
+    {
+      "id": "west",
+      "name": "Vách đầu Tây (sang toa 1)",
+      "from": [
+        0,
+        0
+      ],
+      "to": [
+        0,
+        2.8
+      ],
+      "thickness": 0.08,
+      "material": "vách nhựa, cửa kính",
+      "note": "Cửa thông sang toa 1"
+    },
+    {
+      "id": "ost",
+      "name": "Vách đầu Đông (buồng lái phía sau)",
+      "from": [
+        10.0,
+        0
+      ],
+      "to": [
+        10.0,
+        2.8
+      ],
+      "thickness": 0.08,
+      "material": "vách nhựa",
+      "note": "Cửa buồng lái sau – khoá"
+    }
+  ],
+  "doors": [
+    {
+      "id": "aussentuer-nord",
+      "kind": "trượt",
+      "wall": "nord",
+      "center": 3.0,
+      "width": 1.3,
+      "height": 1.95,
+      "hinge": "không bản lề (2 cánh trượt)",
+      "swing": "bật ra ngoài 5 cm rồi trượt dọc thân toa (cánh Tây về Tây, cánh Đông về Đông) – KHÔNG quay vào trong",
+      "inward": false,
+      "note": "Ô kính 0,5 × 0,9 m trên mỗi cánh, mép dưới cao 0,85 m; đang khoá (mất điện), chỉ mở được bằng Notentriegelung"
+    },
+    {
+      "id": "aussentuer-sued",
+      "kind": "trượt",
+      "wall": "sued",
+      "center": 3.0,
+      "width": 1.3,
+      "height": 1.95,
+      "hinge": "không bản lề (2 cánh trượt)",
+      "swing": "bật ra ngoài rồi trượt dọc thân toa – KHÔNG quay vào trong",
+      "inward": false,
+      "note": "Cửa đối diện, nhìn ra rừng tối; không dùng trong tập 1"
+    },
+    {
+      "id": "durchgang-west",
+      "kind": "trượt",
+      "wall": "west",
+      "center": 1.4,
+      "width": 0.9,
+      "height": 1.95,
+      "hinge": "không bản lề (1 cánh trượt)",
+      "swing": "trượt vào trong vách về phía Nam",
+      "inward": false,
+      "note": "Cửa kính sang toa 1 (toa 1 trống, tối)"
+    },
+    {
+      "id": "fuehrerstand-ost",
+      "kind": "trượt",
+      "wall": "ost",
+      "center": 1.4,
+      "width": 0.8,
+      "height": 1.95,
+      "hinge": "không bản lề (1 cánh trượt)",
+      "swing": "trượt vào vách về phía Bắc",
+      "inward": false,
+      "note": "Buồng lái phía sau – khoá"
+    }
+  ],
+  "windows": [
+    {
+      "id": "fenster-nord-A",
+      "wall": "nord",
+      "center": 1.1,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Rừng tuyết ban đêm, đường lâm nghiệp phía xa"
+    },
+    {
+      "id": "fenster-nord-B",
+      "wall": "nord",
+      "center": 4.9,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Rừng tuyết ban đêm, đường lâm nghiệp phía xa"
+    },
+    {
+      "id": "fenster-nord-C",
+      "wall": "nord",
+      "center": 6.9,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Rừng tuyết ban đêm, đường lâm nghiệp phía xa"
+    },
+    {
+      "id": "fenster-nord-D",
+      "wall": "nord",
+      "center": 8.9,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Rừng tuyết ban đêm, đường lâm nghiệp phía xa"
+    },
+    {
+      "id": "fenster-sued-A",
+      "wall": "sued",
+      "center": 1.1,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Đường ray thứ hai, rừng tối"
+    },
+    {
+      "id": "fenster-sued-B",
+      "wall": "sued",
+      "center": 4.9,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Đường ray thứ hai, rừng tối"
+    },
+    {
+      "id": "fenster-sued-C",
+      "wall": "sued",
+      "center": 6.9,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Đường ray thứ hai, rừng tối"
+    },
+    {
+      "id": "fenster-sued-D",
+      "wall": "sued",
+      "center": 8.9,
+      "width": 1.6,
+      "sill": 0.75,
+      "height": 0.95,
+      "opening": "Kính cố định, không mở được",
+      "inward_radius": 0,
+      "view": "Đường ray thứ hai, rừng tối"
+    }
+  ],
+  "stairs": [
+    "Bậc lên xuống ngoài cửa Bắc: bậc gập (đang thu vào), mép dưới cửa cao 0,60 m so với mặt tuyết – Jonas đứng dưới, đầu ngang ô kính dưới"
+  ],
+  "stairs_note": "",
+  "furniture": [
+    {
+      "id": "bank-A-w-n",
+      "type": "Ghế băng đôi",
+      "x": 0.2,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        0.45,
+        2.3
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-A-n",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 0.95,
+      "y": 2.2,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-A-o-n",
+      "type": "Ghế băng đôi",
+      "x": 1.5,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        1.75,
+        2.3
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "bank-A-w-s",
+      "type": "Ghế băng đôi",
+      "x": 0.2,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        0.45,
+        0.5
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-A-s",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 0.95,
+      "y": 0.05,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-A-o-s",
+      "type": "Ghế băng đôi",
+      "x": 1.5,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        1.75,
+        0.5
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "bank-B-w-n",
+      "type": "Ghế băng đôi",
+      "x": 4.0,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        4.25,
+        2.3
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-B-n",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 4.75,
+      "y": 2.2,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-B-o-n",
+      "type": "Ghế băng đôi",
+      "x": 5.3,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        5.55,
+        2.3
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "bank-B-w-s",
+      "type": "Ghế băng đôi",
+      "x": 4.0,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        4.25,
+        0.5
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-B-s",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 4.75,
+      "y": 0.05,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-B-o-s",
+      "type": "Ghế băng đôi",
+      "x": 5.3,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        5.55,
+        0.5
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "bank-C-w-n",
+      "type": "Ghế băng đôi",
+      "x": 6.0,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        6.25,
+        2.3
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-C-n",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 6.75,
+      "y": 2.2,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-C-o-n",
+      "type": "Ghế băng đôi",
+      "x": 7.3,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        7.55,
+        2.3
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "bank-C-w-s",
+      "type": "Ghế băng đôi",
+      "x": 6.0,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        6.25,
+        0.5
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-C-s",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 6.75,
+      "y": 0.05,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-C-o-s",
+      "type": "Ghế băng đôi",
+      "x": 7.3,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        7.55,
+        0.5
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "bank-D-w-n",
+      "type": "Ghế băng đôi",
+      "x": 8.0,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        8.25,
+        2.3
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-D-n",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 8.75,
+      "y": 2.2,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-D-o-n",
+      "type": "Ghế băng đôi",
+      "x": 9.3,
+      "y": 1.75,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        9.55,
+        2.3
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "bank-D-w-s",
+      "type": "Ghế băng đôi",
+      "x": 8.0,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        8.25,
+        0.5
+      ],
+      "note": "quay mặt về phía Đông"
+    },
+    {
+      "id": "tisch-D-s",
+      "type": "Bàn gập nhỏ (gắn tường)",
+      "x": 8.75,
+      "y": 0.05,
+      "w": 0.3,
+      "d": 0.55,
+      "h": 0.72,
+      "note": "gắn vào thành toa dưới cửa sổ"
+    },
+    {
+      "id": "bank-D-o-s",
+      "type": "Ghế băng đôi",
+      "x": 9.3,
+      "y": 0.05,
+      "w": 0.5,
+      "d": 1.0,
+      "h": 1.05,
+      "seat": [
+        9.55,
+        0.5
+      ],
+      "note": "quay mặt về phía Tây"
+    },
+    {
+      "id": "notentriegelung",
+      "type": "Tay nắm mở cửa khẩn cấp (Notentriegelung)",
+      "x": 3.75,
+      "y": 2.72,
+      "w": 0.15,
+      "d": 0.08,
+      "h": 1.35,
+      "mounted": 1.15,
+      "note": "Hộp đỏ có nắp nhựa, gắn tường Bắc cạnh cửa, cao 1,15–1,35 m; kéo xuống → cửa mở khi tàu đứng"
+    },
+    {
+      "id": "tueroeffner-innen",
+      "type": "Nút mở cửa (bên trong)",
+      "x": 3.67,
+      "y": 2.74,
+      "w": 0.06,
+      "d": 0.06,
+      "h": 1.1,
+      "mounted": 1.0,
+      "note": "Nút tròn phát sáng xanh; bị khoá vì mất điện"
+    },
+    {
+      "id": "notlicht-1",
+      "type": "Đèn khẩn cấp (trần)",
+      "x": 2.6,
+      "y": 1.3,
+      "w": 0.8,
+      "d": 0.2,
+      "h": 2.3,
+      "mounted": 2.2,
+      "note": "Dải đèn cam mờ – nguồn sáng duy nhất trong toa"
+    },
+    {
+      "id": "notlicht-2",
+      "type": "Đèn khẩn cấp (trần)",
+      "x": 6.6,
+      "y": 1.3,
+      "w": 0.8,
+      "d": 0.2,
+      "h": 2.3,
+      "mounted": 2.2,
+      "note": "Dải đèn cam mờ"
+    }
+  ],
+  "outside_objects": [
+    {
+      "id": "signalmast",
+      "type": "Cột tín hiệu (tắt)",
+      "x": -1.3,
+      "y": 3.5,
+      "w": 0.3,
+      "d": 0.3,
+      "h": 4.5,
+      "color": "#8a8f96",
+      "note": "Đèn tín hiệu tối – vì cáp đã bị cắt"
+    },
+    {
+      "id": "baum-1",
+      "type": "Cây vân sam phủ tuyết",
+      "x": -2.5,
+      "y": 7.0,
+      "w": 0.8,
+      "d": 0.8,
+      "h": 12,
+      "color": "#7fa08a"
+    },
+    {
+      "id": "baum-2",
+      "type": "Cây vân sam phủ tuyết",
+      "x": 1.0,
+      "y": 8.5,
+      "w": 0.8,
+      "d": 0.8,
+      "h": 14,
+      "color": "#7fa08a"
+    },
+    {
+      "id": "baum-3",
+      "type": "Cây vân sam phủ tuyết",
+      "x": 6.5,
+      "y": 7.5,
+      "w": 0.8,
+      "d": 0.8,
+      "h": 13,
+      "color": "#7fa08a"
+    },
+    {
+      "id": "baum-4",
+      "type": "Cây vân sam phủ tuyết",
+      "x": 11.0,
+      "y": 6.0,
+      "w": 0.8,
+      "d": 0.8,
+      "h": 12,
+      "color": "#7fa08a"
+    },
+    {
+      "id": "auto-jonas",
+      "type": "Xe ô tô của Jonas (kẹt tuyết, không thấy trong tập 1)",
+      "x": 14.0,
+      "y": 18.0,
+      "w": 4.2,
+      "d": 1.8,
+      "h": 1.5,
+      "color": "#c9c9c9",
+      "note": "Chỉ nhắc trong lời thoại"
+    },
+    {
+      "id": "transporter",
+      "type": "Xe tải nhỏ không đèn (băng trộm cáp)",
+      "x": 0.6,
+      "y": 15.0,
+      "w": 5.4,
+      "d": 2.1,
+      "h": 2.4,
+      "color": "#3a3a40",
+      "note": "Xuất hiện trên đường rừng từ 111,4 s; trước đó không có; đứng ngay sau Jonas khi nhìn từ cửa Bắc"
+    }
+  ],
+  "outside": {
+    "thời gian": "02:00 đêm, bão tuyết nhẹ, −15 °C; tuyết rơi chéo từ Tây sang Đông",
+    "ánh sáng": "Trong toa chỉ có 2 dải đèn khẩn cấp màu cam; ngoài trời tối xanh, tuyết phản sáng nhẹ; đèn pin điện thoại của ICH là nguồn sáng chính hướng vào Jonas",
+    "mặt đất": "Taluy tuyết dốc nhẹ từ thân toa ra 4 m, sau đó rừng vân sam; đường lâm nghiệp chạy song song cách toa ≈ 15–17 m",
+    "xe tải": "Xe tải nhỏ màu than chì, KHÔNG bật đèn, dừng trên đường rừng từ beat 7",
+    "tầm nhìn": "Từ ghế ICH: Jonas ở cửa sổ B yaw ≈ −54°, cửa Bắc yaw ≈ −79°; khi ICH đứng ở cửa (3,12; 2,25): Jonas yaw ≈ +10°, xe tải yaw ≈ +2° (ngay phía sau Jonas)"
+  },
+  "characters": {
+    "ICH": {
+      "figure": "pov",
+      "radius": 0.25,
+      "seat": "bank-B-o-n",
+      "note": "Ngồi ghế băng Đông khoang B, sát cửa sổ, quay mặt về phía Tây (thấy Brandt và cửa); tầm mắt ngồi 1,20 m"
+    },
+    "BRANDT": {
+      "figure": "brandt",
+      "radius": 0.24,
+      "seat": "bank-B-w-n",
+      "note": "Ngồi đối diện ICH, lưng quay về cửa; điện thoại để trên bàn tisch-B-n"
+    },
+    "LOTTE": {
+      "figure": "lotte",
+      "radius": 0.22,
+      "seat": "bank-B-w-s",
+      "note": "Ngồi chéo bên kia lối đi, quay mặt về phía Đông, điện thoại livestream"
+    },
+    "HANNA": {
+      "figure": "hanna",
+      "radius": 0.24,
+      "start": [
+        8.9,
+        1.4
+      ],
+      "note": "Trưởng tàu: đi từ cuối toa lên, đứng sát cửa Bắc (beat 1–4), lùi về lối đi phía Tây (beat 5)"
+    },
+    "FREMDER": {
+      "figure": "jonas",
+      "radius": 0.26,
+      "start": [
+        4.6,
+        3.2
+      ],
+      "note": "Jonas, NGOÀI toa trong tuyết, đập vào cửa sổ khoang B ngay cạnh ICH; từ beat 5 chạy sang cánh Đông của cửa Bắc. Mặt đất thấp hơn sàn toa 0,6 m"
+    },
+    "FAHRGAST_A": {
+      "figure": "–",
+      "radius": 0.22,
+      "offscreen": true,
+      "start": [
+        6.25,
+        2.3
+      ],
+      "note": "Chỉ có giọng – ngồi khoang C sau lưng máy quay"
+    },
+    "FAHRGAST_B": {
+      "figure": "–",
+      "radius": 0.22,
+      "offscreen": true,
+      "start": [
+        7.55,
+        0.5
+      ],
+      "note": "Chỉ có giọng – khoang C"
+    },
+    "FAHRGAST_C": {
+      "figure": "–",
+      "radius": 0.22,
+      "offscreen": true,
+      "start": [
+        8.25,
+        0.5
+      ],
+      "note": "Chỉ có giọng – khoang D"
+    },
+    "FAHRGAST_D": {
+      "figure": "–",
+      "radius": 0.22,
+      "offscreen": true,
+      "start": [
+        9.55,
+        2.3
+      ],
+      "note": "Chỉ có giọng – khoang D"
+    }
+  },
+  "paths": [
+    {
+      "id": "weg-hanna",
+      "who": "HANNA",
+      "lines": "04",
+      "time": "9,3–13,3 s",
+      "t0": 9.34,
+      "t1": 13.34,
+      "points": [
+        [
+          8.9,
+          1.4
+        ],
+        [
+          3.3,
+          1.4
+        ],
+        [
+          3.2,
+          2.4
+        ]
+      ],
+      "note": "Từ cuối toa dọc lối giữa lên khu cửa, đứng sát cửa Bắc nhìn ra, nói vào bộ đàm"
+    },
+    {
+      "id": "weg-brandt",
+      "who": "BRANDT",
+      "lines": "24",
+      "time": "81,2–84,4 s",
+      "t0": 81.17,
+      "t1": 84.37,
+      "points": [
+        [
+          4.25,
+          2.3
+        ],
+        [
+          4.25,
+          1.4
+        ],
+        [
+          3.78,
+          1.4
+        ],
+        [
+          3.78,
+          2.5
+        ]
+      ],
+      "note": "Đứng dậy, ra lối đi, đến đứng cạnh cửa, tay đặt lên Notentriegelung"
+    },
+    {
+      "id": "weg-ich",
+      "who": "ICH",
+      "lines": "32–35",
+      "time": "110,0–117,1 s",
+      "t0": 110.039,
+      "t1": 117.069,
+      "points": [
+        [
+          5.55,
+          2.3
+        ],
+        [
+          5.55,
+          1.4
+        ],
+        [
+          3.2,
+          1.4
+        ],
+        [
+          3.12,
+          2.25
+        ]
+      ],
+      "note": "ICH đứng dậy, đi đến cửa (đứng cạnh Brandt) – máy quay đi theo"
+    },
+    {
+      "id": "weg-jonas",
+      "who": "FREMDER",
+      "area": "ngoài",
+      "lines": "15",
+      "time": "48,0–52,1 s",
+      "t0": 48.009,
+      "t1": 52.129,
+      "points": [
+        [
+          4.6,
+          3.2
+        ],
+        [
+          5.05,
+          3.7
+        ],
+        [
+          4.6,
+          3.25
+        ]
+      ],
+      "note": "Lùi ra, ném kìm cộng lực vào tuyết, quay lại cửa sổ B"
+    },
+    {
+      "id": "weg-jonas-tuer",
+      "who": "FREMDER",
+      "area": "ngoài",
+      "lines": "25–26",
+      "time": "86,6–89,1 s",
+      "t0": 86.559,
+      "t1": 89.059,
+      "points": [
+        [
+          4.6,
+          3.25
+        ],
+        [
+          3.3,
+          3.25
+        ]
+      ],
+      "note": "Thấy Brandt ở tay nắm cửa → chạy sang cánh Đông của cửa Bắc, đập vào kính cửa"
+    },
+    {
+      "id": "weg-hanna-zurueck",
+      "who": "HANNA",
+      "lines": "24",
+      "time": "81,7–83,7 s",
+      "t0": 81.67,
+      "t1": 83.67,
+      "points": [
+        [
+          3.2,
+          2.4
+        ],
+        [
+          2.9,
+          1.6
+        ],
+        [
+          2.5,
+          1.45
+        ]
+      ],
+      "note": "Lùi khỏi cửa khi Brandt đặt tay lên Notentriegelung – chừa chỗ cho Brandt và sau đó ICH"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "K1",
+      "lines": "01–07",
+      "time": "0,0–26,0 s",
+      "t0": 0.0,
+      "t1": 25.997,
+      "pos": [
+        5.55,
+        2.3,
+        1.2
+      ],
+      "yaw": -54,
+      "pitch": 0,
+      "fov": 115,
+      "sees": "GIỮA KHUNG: Jonas đập tay vào cửa sổ khoang B ngay cạnh ICH (thấy từ khung hình 0); cửa đỏ và Brandt (lưng quay ra cửa) bên trái",
+      "hands": "Tay phải giơ điện thoại bật đèn pin chiếu vào ô kính; tay trái bám mép bàn"
+    },
+    {
+      "id": "K2",
+      "lines": "08–12",
+      "time": "26,0–43,3 s",
+      "t0": 25.997,
+      "t1": 43.27,
+      "pos": [
+        5.55,
+        2.3,
+        1.2
+      ],
+      "yaw": [
+        -56,
+        -62
+      ],
+      "pitch": 0,
+      "fov": 115,
+      "sees": "GIỮA KHUNG: Jonas sau cửa sổ B; Hanna cầm bộ đàm ở khu cửa (trái), Brandt gần",
+      "hands": "Điện thoại quay phim (chấm đỏ REC), tay trái xoay theo"
+    },
+    {
+      "id": "K3",
+      "lines": "13–17",
+      "time": "43,3–58,4 s",
+      "t0": 43.27,
+      "t1": 58.44,
+      "pos": [
+        5.2,
+        2.4,
+        1.25
+      ],
+      "yaw": -50,
+      "pitch": -3,
+      "fov": 115,
+      "sees": "GIỮA KHUNG: Jonas giơ kìm cộng lực sau cửa sổ B, rồi lùi ra ném vào tuyết",
+      "hands": "Tay trái chống lên kính cửa sổ khoang B, tay phải đèn pin"
+    },
+    {
+      "id": "K4",
+      "lines": "18–23",
+      "time": "58,4–81,2 s",
+      "t0": 58.44,
+      "t1": 81.17,
+      "pos": [
+        5.45,
+        2.3,
+        1.2
+      ],
+      "yaw": [
+        -70,
+        -90
+      ],
+      "pitch": -32,
+      "fov": 115,
+      "sees": "GIỮA KHUNG: điện thoại của Brandt trên bàn sáng lên „Zug steht. Halt sie drinnen.“ → ngẩng lên mặt Brandt",
+      "hands": "Tay trái với về phía điện thoại của Brandt, rụt lại khi Brandt nói „leg das Handy weg“",
+      "pitch_to": 0
+    },
+    {
+      "id": "K5",
+      "lines": "24–26",
+      "time": "81,2–94,4 s",
+      "t0": 81.17,
+      "t1": 94.42,
+      "pos": [
+        5.55,
+        2.3,
+        1.2
+      ],
+      "yaw": [
+        -80,
+        -82
+      ],
+      "pitch": 0,
+      "fov": 115,
+      "sees": "GIỮA KHUNG: Brandt đứng cạnh cửa, tay trên hộp đỏ Notentriegelung; Jonas chạy sang cửa",
+      "hands": "Điện thoại hạ thấp, tay run"
+    },
+    {
+      "id": "K6",
+      "lines": "27–31",
+      "time": "94,4–110,0 s",
+      "t0": 94.42,
+      "t1": 110.039,
+      "pos": [
+        5.4,
+        2.35,
+        1.2
+      ],
+      "yaw": -62,
+      "pitch": -2,
+      "fov": 115,
+      "sees": "GIỮA KHUNG: mặt Jonas sát kính cánh cửa Đông, môi tím, tuyết bám; Brandt quay lại nhìn con",
+      "hands": "Đèn pin chiếu vào Jonas, tay trái nắm chặt mép bàn"
+    },
+    {
+      "id": "K7",
+      "lines": "32–35",
+      "time": "110,0–126,7 s",
+      "t0": 110.039,
+      "t1": 126.67,
+      "pos": [
+        3.12,
+        2.25,
+        1.6
+      ],
+      "yaw": [
+        -60,
+        -15
+      ],
+      "pitch": -4,
+      "fov": 115,
+      "sees": "ICH đi tới cửa (máy quay theo weg-ich). GIỮA KHUNG: ô kính cửa – Jonas phía dưới, xa xa chiếc xe tải không đèn trên đường rừng",
+      "hands": "Tay trái bám lưng ghế khi đi, rồi đặt lên mép cửa; tay phải cầm điện thoại có chat „Wir sehen euch. Wagen zwei.“",
+      "path": [
+        [
+          5.55,
+          2.3
+        ],
+        [
+          5.55,
+          1.4
+        ],
+        [
+          3.2,
+          1.4
+        ],
+        [
+          3.12,
+          2.25
+        ]
+      ]
+    },
+    {
+      "id": "K8",
+      "lines": "thẻ kết",
+      "time": "126,7–134,2 s",
+      "t0": 126.67,
+      "t1": 134.17,
+      "pos": [
+        3.12,
+        2.25,
+        1.6
+      ],
+      "yaw": -15,
+      "pitch": -6,
+      "fov": 115,
+      "sees": "Hình dừng mờ: cửa + Jonas + xe tải; thẻ „Was würdest du tun?“ A/B",
+      "hands": "Tay phải lơ lửng ngay trên hộp Notentriegelung (lựa chọn)"
+    }
+  ],
+  "moves": [],
+  "seated_turns": {
+    "_info": "Khi ngồi chỉ xoay đầu/thân trên – chân giữ trong khoảng giữa hai ghế băng.",
+    "BRANDT": "B1–B4: quay đầu ra sau nhìn cửa (thân trên tối đa 70°)",
+    "LOTTE": "Quay đầu sang ICH và ra cửa, cầm điện thoại livestream"
+  },
+  "draw_overview": {
+    "scale": 38,
+    "outside": [
+      9,
+      1.5,
+      10,
+      22
+    ]
+  }
+}

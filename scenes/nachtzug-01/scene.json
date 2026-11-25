@@ -1,0 +1,171 @@
+{
+  "id": "nachtzug-01",
+  "title": "Tàu đêm · Tập 1: Copper (lời thoại tiếng Anh)",
+  "language": "en",
+  "accent": "american",
+  "script": [
+    "script.md"
+  ],
+  "crowd_note": "crowd.md KHÔNG được thu âm/trộn: hành khách khác không xuất hiện trong hình (quy tắc: không có âm thanh không có nguồn nhìn thấy).",
+  "display_names": {
+    "ME": {
+      "name": "Me"
+    },
+    "DANA": {
+      "name": "Dana"
+    },
+    "DOYLE": {
+      "name": "Doyle"
+    },
+    "LEXI": {
+      "name": "Lexi"
+    },
+    "STRANGER": {
+      "name": "Stranger"
+    }
+  },
+  "speakers": {
+    "ME": {
+      "figure": "ich",
+      "gender": "male",
+      "age": [
+        "young"
+      ],
+      "persona": "nhân vật góc nhìn thứ nhất, ~20 tuổi, ít nói, tinh ý, bị dồn ép",
+      "keywords": [
+        "young",
+        "soft",
+        "conversational",
+        "natural",
+        "calm"
+      ]
+    },
+    "DANA": {
+      "figure": "hanna",
+      "gender": "female",
+      "age": [
+        "middle_aged"
+      ],
+      "persona": "trưởng tàu, ~50 tuổi, mệt mỏi, làm đúng quy định, về sau sợ hãi",
+      "keywords": [
+        "mature",
+        "firm",
+        "warm",
+        "professional",
+        "tired"
+      ]
+    },
+    "DOYLE": {
+      "figure": "brandt",
+      "gender": "male",
+      "age": [
+        "old",
+        "middle_aged"
+      ],
+      "persona": "thợ tín hiệu đường sắt đã nghỉ hưu, bình thản, lạnh lùng, cuối cùng suy sụp",
+      "keywords": [
+        "deep",
+        "calm",
+        "mature",
+        "gravelly",
+        "serious",
+        "old"
+      ]
+    },
+    "LEXI": {
+      "figure": "lotte",
+      "gender": "female",
+      "age": [
+        "young"
+      ],
+      "persona": "cô gái 17 tuổi livestream mọi thứ, gan dạ nhưng hoảng loạn, nói nhanh",
+      "keywords": [
+        "young",
+        "energetic",
+        "expressive",
+        "girl",
+        "teen",
+        "fast"
+      ]
+    },
+    "STRANGER": {
+      "figure": "jonas",
+      "gender": "male",
+      "age": [
+        "young",
+        "middle_aged"
+      ],
+      "persona": "Caleb Doyle, ~28 tuổi, ngoài trời tuyết, tuyệt vọng, chết cóng",
+      "keywords": [
+        "emotional",
+        "raspy",
+        "desperate",
+        "young",
+        "expressive"
+      ]
+    },
+    "PASSENGER_A": {
+      "figure": "fahrgast-a",
+      "gender": "female",
+      "age": [
+        "old"
+      ],
+      "persona": "bà cụ, lo lắng, giàu lòng thương",
+      "keywords": [
+        "old",
+        "warm",
+        "soft",
+        "grandmother",
+        "gentle"
+      ]
+    },
+    "PASSENGER_B": {
+      "figure": "fahrgast-b",
+      "gender": "male",
+      "age": [
+        "young"
+      ],
+      "persona": "sinh viên, không tin nổi, bồn chồn",
+      "keywords": [
+        "young",
+        "casual",
+        "conversational",
+        "energetic"
+      ]
+    },
+    "PASSENGER_C": {
+      "figure": "fahrgast-c",
+      "gender": "male",
+      "age": [
+        "middle_aged"
+      ],
+      "persona": "người đi làm, đa nghi, khô khan",
+      "keywords": [
+        "calm",
+        "middle",
+        "serious",
+        "neutral",
+        "natural"
+      ]
+    },
+    "PASSENGER_D": {
+      "figure": "fahrgast-d",
+      "gender": "female",
+      "age": [
+        "middle_aged",
+        "young"
+      ],
+      "persona": "phụ nữ ~35, lạnh cóng, lo âu, cáu kỉnh",
+      "keywords": [
+        "natural",
+        "conversational",
+        "calm",
+        "clear"
+      ]
+    }
+  },
+  "stt_aliases": {
+    "doil": "doyle",
+    "kayleb": "caleb"
+  }
+}

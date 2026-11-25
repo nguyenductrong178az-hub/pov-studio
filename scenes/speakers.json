@@ -1,0 +1,106 @@
+{
+  "_info": "Stimmprofile je Sprecher-Tag – gelten für alle Videos und Sprachen. Figur → src/cast/cast.ts",
+  "speakers": {
+    "TEACHER": {
+      "figure": "weber",
+      "gender": "female",
+      "age": [
+        "middle_aged",
+        "old"
+      ],
+      "persona": "Lehrerin, gelangweilt, streng, trocken",
+      "keywords": [
+        "calm",
+        "mature",
+        "authoritative",
+        "serious",
+        "deep",
+        "narration",
+        "professional"
+      ]
+    },
+    "CAROL": {
+      "figure": "carol",
+      "gender": "female",
+      "age": [
+        "young"
+      ],
+      "persona": "Schülerin, schreckhaft, hell, emotional",
+      "keywords": [
+        "young",
+        "soft",
+        "emotional",
+        "expressive",
+        "girl",
+        "teen",
+        "bright"
+      ]
+    },
+    "RAFA": {
+      "figure": "rafa",
+      "gender": "male",
+      "age": [
+        "young"
+      ],
+      "persona": "Schüler, laut, energisch, überrascht",
+      "keywords": [
+        "energetic",
+        "excited",
+        "young",
+        "upbeat",
+        "expressive",
+        "casual"
+      ]
+    },
+    "LEO": {
+      "figure": "leo",
+      "gender": "male",
+      "age": [
+        "young"
+      ],
+      "persona": "Schüler, lässig, cool, später geschockt",
+      "keywords": [
+        "casual",
+        "relaxed",
+        "conversational",
+        "chill",
+        "young",
+        "friendly"
+      ]
+    },
+    "BIA": {
+      "figure": "bia",
+      "gender": "female",
+      "age": [
+        "young"
+      ],
+      "persona": "Schülerin, nervös, schnell, hoch",
+      "keywords": [
+        "young",
+        "nervous",
+        "fast",
+        "expressive",
+        "girl",
+        "teen",
+        "high"
+      ]
+    },
+    "THIAGO": {
+      "figure": "thiago",
+      "gender": "male",
+      "age": [
+        "young"
+      ],
+      "persona": "Schüler, still, misstrauisch, leise, tief",
+      "keywords": [
+        "quiet",
+        "deep",
+        "calm",
+        "soft",
+        "low",
+        "mysterious",
+        "whisper"
+      ]
+    }
+  }
+}
