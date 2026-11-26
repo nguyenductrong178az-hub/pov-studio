@@ -1,0 +1,471 @@
+{
+ "id": "maple-court-4b",
+ "name": "Maple Court Apartments · căn 4B (phòng một ngủ kiểu studio) – 12:00 AM",
+ "units": "mét",
+ "size": {
+  "w": 4.4,
+  "d": 5.0,
+  "h": 2.6
+ },
+ "draw_scale": 120,
+ "draw_outside": [
+  0.6,
+  1.0,
+  0.4,
+  0.6
+ ],
+ "origin": "Góc Tây-Nam trong căn hộ (sàn = 0). x về phía Đông, y về phía Bắc, z lên. Trong sơ đồ hành lang (maple-court-flur4), góc này nằm ở x = 5,0 m, y = 1,8 m (+ tường 0,15 m).",
+ "yaw_note": "0° = Bắc (cửa sổ, bãi đỗ xe), +90° = Đông (tủ quần áo), −90° = Tây (tường chung với 4C, đầu giường), ±180° = Nam (cửa ra hành lang)",
+ "walls": [
+  {
+   "id": "west",
+   "name": "Tường Tây – tường CHUNG với 4C (nơi phát ra ba tiếng gõ)",
+   "from": [
+    0,
+    0
+   ],
+   "to": [
+    0,
+    5.0
+   ],
+   "thickness": 0.12,
+   "material": "thạch cao trên khung gỗ, sơn màu kem đã ố",
+   "note": "Khung ảnh của người thuê trước (0,45 × 0,35 m) treo ở y = 3,7 m, cao 1,45 m – nảy lên theo từng tiếng gõ. Đầu giường áp vào đây. Không có ổ cắm, không có lỗ – kẻ theo dõi KHÔNG nhìn qua tường mà qua đầu báo khói."
+  },
+  {
+   "id": "nord",
+   "name": "Tường Bắc (tường ngoài nhà)",
+   "from": [
+    0,
+    5.0
+   ],
+   "to": [
+    4.4,
+    5.0
+   ],
+   "thickness": 0.3,
+   "material": "gạch, trát vữa",
+   "note": "Cửa sổ nhìn ra bãi đỗ xe sau nhà; bếp nhỏ ở góc Đông-Bắc"
+  },
+  {
+   "id": "ost",
+   "name": "Tường Đông (giáp hộp kỹ thuật: ống nước, ống gió)",
+   "from": [
+    4.4,
+    0
+   ],
+   "to": [
+    4.4,
+    5.0
+   ],
+   "thickness": 0.15,
+   "material": "thạch cao",
+   "note": "Tủ quần áo âm tường, mẩu giấy vàng dán trên khung cửa tủ"
+  },
+  {
+   "id": "sued",
+   "name": "Tường Nam (giáp hành lang tầng 4)",
+   "from": [
+    0,
+    0
+   ],
+   "to": [
+    4.4,
+    0
+   ],
+   "thickness": 0.15,
+   "material": "thạch cao, ván chân tường gỗ",
+   "note": "Cửa chính ra hành lang; mắt thần ở cao 1,55 m; móc xích cửa"
+  }
+ ],
+ "doors": [
+  {
+   "id": "tuer-4b",
+   "kind": "cửa bản lề",
+   "wall": "sued",
+   "center": 1.2,
+   "width": 0.9,
+   "height": 2.03,
+   "hinge": "phía Tây",
+   "swing": "vào trong căn hộ (kiểu cửa căn hộ Mỹ), cánh quay về phía Tây",
+   "inward": true,
+   "note": "Cửa gỗ sơn nâu, số 4B bằng đồng; khoá chốt + xích. Phía sau cửa: hành lang tầng 4, nhìn thẳng sang cửa 4A của Rosa (lệch Đông 0,2 m)."
+  }
+ ],
+ "windows": [
+  {
+   "id": "fenster-nord",
+   "wall": "nord",
+   "center": 1.6,
+   "width": 1.2,
+   "sill": 0.9,
+   "height": 1.25,
+   "opening": "Cửa sổ kéo lên xuống (double-hung), cánh không mở vào trong",
+   "inward_radius": 0,
+   "view": "Bãi đỗ xe sau nhà dưới ánh đèn natri cam, hai xe cũ phủ sương giá, bên kia đường là biển neon 'SUDS 24 HR LAUNDRY' (tiệm giặt đêm), cây phong trụi lá"
+  }
+ ],
+ "stairs": [],
+ "stairs_note": "Không có cầu thang trong căn hộ. Cầu thang chính ở đầu Đông hành lang (xem maple-court-flur4).",
+ "ceiling_objects": [
+  {
+   "id": "rauchmelder",
+   "type": "Đầu báo khói (thật ra là camera)",
+   "pos": [
+    2.2,
+    2.6,
+    2.6
+   ],
+   "note": "Tròn, trắng ngà, đường kính 13 cm. Đèn đỏ nháy 1 lần / 4 s. Từ 59,9 s: lộ thấu kính đen giữa lưới, xoay theo TÔI. Từ 75,3 s (sau tiếng 'rầm'): đèn đỏ tắt hẳn."
+  }
+ ],
+ "furniture": [
+  {
+   "id": "bett",
+   "type": "Giường đôi (đầu giường áp tường Tây)",
+   "x": 0.05,
+   "y": 3.0,
+   "w": 2.0,
+   "d": 1.4,
+   "h": 0.55,
+   "seat": [
+    1.6,
+    3.25
+   ],
+   "note": "Chăn kẻ ô xanh lá–xám, gối nhàu; điện thoại sạc ở mép giường"
+  },
+  {
+   "id": "nachttisch",
+   "type": "Tủ đầu giường",
+   "x": 0.05,
+   "y": 2.45,
+   "w": 0.45,
+   "d": 0.45,
+   "h": 0.6,
+   "note": "Đèn ngủ chụp vải vàng (nguồn sáng ấm duy nhất lúc đầu), cốc nước"
+  },
+  {
+   "id": "schrank",
+   "type": "Tủ quần áo âm tường (2 cánh trượt)",
+   "x": 3.75,
+   "y": 0.9,
+   "w": 0.6,
+   "d": 1.2,
+   "h": 2.1,
+   "note": "Mẩu giấy vàng 7,5 × 7,5 cm dán trên khung cửa tủ ở cao 1,6 m, phía Tây: 'IT'S NOT A SMOKE DETECTOR. – J'. Thấy từ giường ở khoảng 10 s (chữ quá nhỏ để đọc)."
+  },
+  {
+   "id": "tisch",
+   "type": "Bàn ăn nhỏ",
+   "x": 2.6,
+   "y": 2.6,
+   "w": 0.7,
+   "d": 0.7,
+   "h": 0.75,
+   "note": "Hộp các-tông chưa bóc (mới dọn vào 6 ngày), hoá đơn tiền cọc $1,300"
+  },
+  {
+   "id": "stuhl",
+   "type": "Ghế gỗ",
+   "x": 2.75,
+   "y": 3.35,
+   "w": 0.42,
+   "d": 0.42,
+   "h": 0.85,
+   "note": ""
+  },
+  {
+   "id": "kueche",
+   "type": "Bếp nhỏ (tủ bếp + bồn rửa)",
+   "x": 3.0,
+   "y": 4.4,
+   "w": 1.35,
+   "d": 0.55,
+   "h": 0.9,
+   "note": "Tủ lạnh nhỏ kêu ù ù (có nguồn: thấy được tủ lạnh) – chỉ dùng khi khung hình thấy nó"
+  }
+ ],
+ "characters": {
+  "ICH": {
+   "figure": "pov",
+   "radius": 0.25,
+   "seat": "bett",
+   "note": "TÔI, ~22, hoodie xanh lá. Ngồi mép giường, quay mặt về tường Tây; tầm mắt khi ngồi 1,05 m, khi đứng 1,60 m."
+  }
+ },
+ "paths": [
+  {
+   "id": "weg-tuer",
+   "who": "ICH",
+   "lines": "08",
+   "time": "31,8–33,2 s",
+   "t0": 31.75,
+   "t1": 33.2,
+   "points": [
+    [
+     1.6,
+     3.25
+    ],
+    [
+     1.6,
+     2.6
+    ],
+    [
+     1.2,
+     0.7
+    ],
+    [
+     1.2,
+     -0.15
+    ]
+   ],
+   "note": "Đứng dậy, đi ra cửa, tay trái mở chốt, tay phải cầm điện thoại bật đèn pin. 5 bước (sàn gỗ cũ, kêu cót két)."
+  },
+  {
+   "id": "weg-schrank",
+   "who": "ICH",
+   "lines": "13–14",
+   "time": "61,0–63,0 s",
+   "t0": 60.953,
+   "t1": 62.977,
+   "points": [
+    [
+     1.2,
+     -0.15
+    ],
+    [
+     1.2,
+     0.7
+    ],
+    [
+     3.2,
+     1.5
+    ]
+   ],
+   "note": "Vào lại, khép cửa sau lưng (tay trái đẩy cửa), đi thẳng tới tủ quần áo. 4 bước."
+  },
+  {
+   "id": "weg-tuer-2",
+   "who": "ICH",
+   "lines": "18–19",
+   "time": "76,1–78,1 s",
+   "t0": 76.148,
+   "t1": 78.148,
+   "points": [
+    [
+     3.2,
+     1.5
+    ],
+    [
+     1.2,
+     0.7
+    ],
+    [
+     1.2,
+     0.45
+    ]
+   ],
+   "note": "Sau tiếng 'rầm': lao ra cửa, giật cửa mở, đứng ở ngưỡng cửa. 4 bước nhanh."
+  },
+  {
+   "id": "weg-schwelle",
+   "who": "ICH",
+   "lines": "(khoảng lặng trước 19)",
+   "time": "85,3–86,1 s",
+   "t0": 85.305,
+   "t1": 86.145,
+   "points": [
+    [
+     1.2,
+     0.45
+    ],
+    [
+     1.2,
+     -0.33
+    ]
+   ],
+   "note": "Sau tiếng 'rầm': mở cửa, 2 bước ra đứng ở ngưỡng cửa 4B (bước chân nằm sau tiếng rầm, trước câu 19)."
+  }
+ ],
+ "cameras": [
+  {
+   "id": "A1",
+   "lines": "01–05",
+   "time": "0,0–21,0 s",
+   "t0": 0.0,
+   "t1": 21.032,
+   "pos": [
+    1.6,
+    3.25,
+    1.05
+   ],
+   "yaw": [
+    -74,
+    -90
+   ],
+   "pitch": 0,
+   "fov": 115,
+   "sees": "GIỮA KHUNG: tường Tây với khung ảnh đang nảy (khung 0). ~8 s: ngẩng lên trần (pitch +50, yaw −20) – đầu báo khói nháy đỏ, 1,5 s. ~10 s: liếc sang phải (yaw +125) – mẩu giấy vàng trên khung tủ, 1 s, rồi quay lại tường. Không giữ yên quá 8 s: nhún nhẹ theo nhịp thở.",
+   "hands": "Tay trái cầm điện thoại sáng '12:00 AM' (gọi Pruitt, bật loa, ở góc dưới phải theo quy tắc); tay phải nắm mép chăn, rồi chống lên giường khi nghiêng người về tường."
+  },
+  {
+   "id": "A2",
+   "lines": "06–08",
+   "time": "21,0–31,6 s",
+   "t0": 21.032,
+   "t1": 31.62,
+   "pos": [
+    0.9,
+    3.7,
+    1.15
+   ],
+   "yaw": [
+    -90,
+    -90
+   ],
+   "pitch": -10,
+   "fov": 115,
+   "sees": "GIỮA KHUNG: tường Tây cận hơn (quỳ trên giường). 21,0–23,0: khớp tay phải gõ 3 lần vào tường, rồi điện thoại rung. 23–29: cúi xuống đọc tin nhắn (pitch −35); ở mép trên khung, đèn đỏ đầu báo khói nháy đúng lúc tin nhắn đến (người xem thấy, TÔI không thấy). 'Nice green hoodie' → nhìn xuống tay áo xanh của mình.",
+   "hands": "Tay phải gõ tường rồi kéo tay áo hoodie; tay trái cầm điện thoại."
+  },
+  {
+   "id": "A3",
+   "lines": "08",
+   "time": "31,6–33,2 s",
+   "t0": 31.62,
+   "t1": 33.2,
+   "pos": [
+    1.6,
+    2.6,
+    1.6
+   ],
+   "yaw": [
+    180,
+    180
+   ],
+   "pitch": -5,
+   "fov": 115,
+   "path": [
+    [
+     1.6,
+     2.6
+    ],
+    [
+     1.2,
+     0.7
+    ],
+    [
+     1.2,
+     0.2
+    ]
+   ],
+   "sees": "GIỮA KHUNG: cửa 4B; camera nhún theo mỗi bước; tay mở chốt.",
+   "hands": "Tay trái vặn chốt, mở cửa vào trong; tay phải đèn pin."
+  },
+  {
+   "id": "A4",
+   "lines": "14–16",
+   "time": "61,0–76,0 s",
+   "t0": 60.953,
+   "t1": 76.048,
+   "pos": [
+    3.2,
+    1.5,
+    1.6
+   ],
+   "yaw": [
+    85,
+    -42
+   ],
+   "pitch": 0,
+   "fov": 115,
+   "sees": "Bước vào, đi thẳng tới tủ (bước chân trên sàn gỗ). Rồi GIỮA KHUNG mẩu giấy vàng trên khung tủ (cận, đọc được). Rồi ngẩng lên (yaw −42, pitch +48): đầu báo khói ở GIỮA KHUNG, thấu kính đen xoay theo, đèn đỏ. Rồi cúi xuống điện thoại (pitch −40): danh sách Wi-Fi '4C_CAM_4B', '4C_CAM_4A', '4C_CAM_4D'…",
+   "hands": "Tay phải bóc mẩu giấy, giữ trước mặt; rồi tay trái giơ điện thoại lên, ngón cái cuộn danh sách.",
+   "path": [
+    [
+     1.2,
+     0.05
+    ],
+    [
+     1.2,
+     0.7
+    ],
+    [
+     3.2,
+     1.5
+    ]
+   ]
+  },
+  {
+   "id": "A5",
+   "lines": "17–18",
+   "time": "76,0–83,3 s",
+   "t0": 76.048,
+   "t1": 83.255,
+   "pos": [
+    3.2,
+    1.5,
+    1.6
+   ],
+   "yaw": [
+    -125,
+    180
+   ],
+   "pitch": -5,
+   "fov": 115,
+   "sees": "Chuông điện thoại reo; TÔI đi từ tủ ra sát cửa 4B (4 bước), dừng ngay sau cánh cửa đóng: cửa 4B ở GIỮA KHUNG trong cuộc gọi của Pruitt ('Why were you out in the hallway, kid?') – như thể ông ta đứng ngay ngoài kia. Đầu báo khói ở mép trên khi ngẩng.",
+   "hands": "Tay trái điện thoại bật loa (màn hình 'MR. PRUITT – LANDLORD'), tay phải nắm chặt mẩu giấy.",
+   "path": [
+    [
+     3.2,
+     1.5
+    ],
+    [
+     1.2,
+     0.7
+    ],
+    [
+     1.2,
+     0.45
+    ]
+   ]
+  },
+  {
+   "id": "A6",
+   "lines": "19",
+   "time": "83,3–86,5 s",
+   "t0": 83.255,
+   "t1": 86.455,
+   "pos": [
+    1.2,
+    0.45,
+    1.6
+   ],
+   "yaw": [
+    180,
+    180
+   ],
+   "pitch": 0,
+   "fov": 115,
+   "sees": "1 s im lặng tuyệt đối, khung đứng yên trên cánh cửa 4B. Tiếng 'rầm': cả phòng rung, khung ảnh trên tường Tây rơi (mép trái), đèn đỏ đầu báo khói tắt. Tay trái mở cửa vào trong, 2 bước ra ngưỡng cửa: hành lang hiện ra, cửa 4C ở GIỮA KHUNG.",
+   "hands": "Tay trái giật cửa mở vào trong; tay phải điện thoại.",
+   "path": [
+    [
+     1.2,
+     0.45
+    ],
+    [
+     1.2,
+     0.06
+    ]
+   ]
+  }
+ ],
+ "moves": [],
+ "outside": {
+  "thời gian": "12:00 AM, cuối tháng 11, ngoài trời 28 °F, sương giá trên kính xe",
+  "ánh sáng": "Đèn ngủ vàng trên tủ đầu giường (nguồn ấm duy nhất), ánh cam đèn natri từ bãi đỗ xe qua cửa sổ Bắc, màn hình điện thoại xanh trắng; góc phòng chìm trong bóng tối xanh lạnh",
+  "âm thanh có nguồn": "tiếng gõ qua tường Tây, tủ lạnh ù (chỉ khi thấy), sàn gỗ kêu dưới chân TÔI",
+  "tầm nhìn": "Từ mép giường (1,6; 3,25): khung ảnh yaw ≈ −74°, đầu báo khói yaw ≈ −40° pitch +50°, mẩu giấy trên tủ yaw ≈ +125°, cửa 4B yaw ≈ −170°"
+ }
+}

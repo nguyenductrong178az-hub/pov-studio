@@ -1,0 +1,502 @@
+{
+ "id": "maple-court-flur4",
+ "name": "Maple Court Apartments · hành lang tầng 4 – 12:00 AM",
+ "units": "mét",
+ "size": {
+  "w": 12.0,
+  "d": 1.8,
+  "h": 2.6
+ },
+ "draw_scale": 95,
+ "draw_outside": [
+  0.6,
+  0.8,
+  0.6,
+  0.8
+ ],
+ "origin": "Góc Tây-Nam hành lang (sàn tầng 4 = 0). x về phía Đông, y về phía Bắc. Căn 4B: góc Tây-Nam của nó ở (5,0; 1,95).",
+ "yaw_note": "0° = Bắc (dãy cửa 4C, 4B), +90° = Đông (cầu thang), −90° = Tây (cửa sổ cuối hành lang, cửa thoát hiểm), ±180° = Nam (cửa 4D, 4A)",
+ "walls": [
+  {
+   "id": "nord",
+   "name": "Tường Bắc (dãy 4C – 4B)",
+   "from": [
+    0,
+    1.8
+   ],
+   "to": [
+    12.0,
+    1.8
+   ],
+   "thickness": 0.15,
+   "material": "thạch cao, giấy dán tường sọc xanh rêu đã bong mép, ván chân tường gỗ sẫm",
+   "note": "Đèn tường hình nến đồng giữa các cửa (x = 4,2 và 8,0), cao 1,9 m; đèn ở x = 4,2 chập chờn"
+  },
+  {
+   "id": "sued",
+   "name": "Tường Nam (dãy 4D – 4A)",
+   "from": [
+    0,
+    0
+   ],
+   "to": [
+    12.0,
+    0
+   ],
+   "thickness": 0.15,
+   "material": "như tường Bắc",
+   "note": "Hộp bình chữa cháy treo tường ở x = 8,8, cao 1,2 m"
+  },
+  {
+   "id": "west",
+   "name": "Đầu Tây",
+   "from": [
+    0,
+    0
+   ],
+   "to": [
+    0,
+    1.8
+   ],
+   "thickness": 0.3,
+   "material": "gạch",
+   "note": "Cửa sổ nhìn ra con hẻm, đèn EXIT đỏ phía trên cửa thoát hiểm"
+  },
+  {
+   "id": "ost",
+   "name": "Đầu Đông (giếng cầu thang)",
+   "from": [
+    12.0,
+    0
+   ],
+   "to": [
+    12.0,
+    1.8
+   ],
+   "thickness": 0.15,
+   "material": "thạch cao",
+   "note": "Cầu thang gỗ đi xuống tầng 3 chiếm x 10,4–12,0"
+  }
+ ],
+ "doors": [
+  {
+   "id": "tuer-4c",
+   "kind": "cửa bản lề",
+   "wall": "nord",
+   "center": 2.5,
+   "width": 0.9,
+   "height": 2.03,
+   "hinge": "phía Tây",
+   "swing": "vào trong căn 4C",
+   "inward": false,
+   "note": "MỐI NGUY. Sơn nâu như 4B nhưng bụi phủ khung cửa và số '4C' – CHỈ tay nắm sạch bóng. Ổ khoá móc mới tinh (bạc, sáng) trên chốt hasp. Khe dưới cửa: ánh sáng xanh lạnh chập chờn như màn hình; tắt ở 75,3 s. Phía sau: căn 4C (không thấy trong tập 1)."
+  },
+  {
+   "id": "tuer-4b",
+   "kind": "cửa bản lề",
+   "wall": "nord",
+   "center": 6.2,
+   "width": 0.9,
+   "height": 2.03,
+   "hinge": "phía Tây",
+   "swing": "vào trong căn 4B",
+   "inward": false,
+   "note": "Cửa của TÔI. Đôi giày thể thao trắng của Jenna vẫn để trên thảm chùi chân bên phải cửa (gieo cho câu 'Jenna left her…')."
+  },
+  {
+   "id": "tuer-4d",
+   "kind": "cửa bản lề",
+   "wall": "sued",
+   "center": 2.5,
+   "width": 0.9,
+   "height": 2.03,
+   "hinge": "phía Đông",
+   "swing": "vào trong căn 4D",
+   "inward": false,
+   "note": "Bà Lee (MRS_LEE). Đối diện 4C. Mở he hé từ 75,5 s."
+  },
+  {
+   "id": "tuer-4a",
+   "kind": "cửa bản lề",
+   "wall": "sued",
+   "center": 6.4,
+   "width": 0.9,
+   "height": 2.03,
+   "hinge": "phía Đông",
+   "swing": "vào trong căn 4A",
+   "inward": false,
+   "note": "Rosa. Mở hé có xích (khe 12 cm) ở 37,0 s, đóng ở 53,8 s, mở lại (bỏ xích) ở 76 s. Sau khe: hành lang nhỏ nhà Rosa, đèn vàng, ảnh Đức Mẹ, con mèo mướp Pickle (của Jenna) đi ngang."
+  }
+ ],
+ "windows": [
+  {
+   "id": "fenster-west",
+   "wall": "west",
+   "center": 0.9,
+   "width": 0.9,
+   "sill": 0.95,
+   "height": 1.2,
+   "opening": "Cửa sổ kéo, đóng",
+   "inward_radius": 0,
+   "view": "Con hẻm, cầu thang thoát hiểm bằng sắt bên ngoài, tuyết lất phất dưới đèn đường"
+  }
+ ],
+ "stairs": [
+  "Cầu thang gỗ ở đầu Đông (x 10,4–12,0, cả bề ngang 1,8 m): 16 bậc đi XUỐNG tầng 3, chiếu nghỉ giữa; lan can gỗ phía Bắc. Hàng xóm tầng 3 (Okafor, Ray, Tyler, Brianna, Deb) đi lên từ đây sau tiếng 'rầm' – đầu họ nhô lên trước, từng bậc một."
+ ],
+ "stairs_note": "",
+ "furniture": [
+  {
+   "id": "heizkoerper",
+   "type": "Lò sưởi gang dưới cửa sổ",
+   "x": 0.02,
+   "y": 0.45,
+   "w": 0.14,
+   "d": 0.9,
+   "h": 0.65,
+   "note": "Kêu lách cách (nguồn thấy được) – chỉ khi trong khung"
+  },
+  {
+   "id": "schuhe-jenna",
+   "type": "Đôi giày của Jenna trên thảm chùi chân",
+   "x": 6.72,
+   "y": 1.45,
+   "w": 0.34,
+   "d": 0.3,
+   "h": 0.12,
+   "note": "Giày thể thao trắng có dây hồng, bụi phủ. Không cản lối đi của TÔI."
+  },
+  {
+   "id": "fussmatte-4a",
+   "type": "Thảm chùi chân 'BIENVENIDOS'",
+   "x": 6.0,
+   "y": 0.02,
+   "w": 0.8,
+   "d": 0.35,
+   "h": 0.01,
+   "note": ""
+  }
+ ],
+ "characters": {
+  "ICH": {
+   "figure": "pov",
+   "radius": 0.25,
+   "start": [
+    6.2,
+    1.75
+   ],
+   "note": "Ra khỏi 4B lúc 31,3 s; về lại 4B lúc 54,6 s; đứng ở ngưỡng cửa 4B từ 76,5 s."
+  },
+  "ROSA": {
+   "figure": "rosa",
+   "radius": 0.23,
+   "start": [
+    6.4,
+    0.18
+   ],
+   "note": "Đứng sau khe cửa có xích của 4A (37,0–53,8 s): chỉ thấy nửa mặt, lô cuốn tóc, tay đưa vòng cổ mèo qua khe. Từ 76 s mở hẳn cửa, đứng ở ngưỡng."
+  },
+  "MRS_LEE": {
+   "figure": "mrs-lee",
+   "radius": 0.21,
+   "start": [
+    2.5,
+    0.22
+   ],
+   "appear": 84.555,
+   "note": "Bà cụ 4D, ló ra ở cửa đối diện 4C, tay nắm chặt cổ áo choàng. Không bước ra."
+  },
+  "TYLER": {
+   "figure": "tyler",
+   "radius": 0.25,
+   "start": [
+    3.5,
+    0.95
+   ],
+   "appear": 84.855,
+   "note": "Lên cầu thang trước nhất, chạy về phía 4C rồi khựng lại cách cửa 1 m (người đứng sững)."
+  },
+  "RAY": {
+   "figure": "ray",
+   "radius": 0.27,
+   "start": [
+    4.6,
+    1.15
+   ],
+   "appear": 86.955,
+   "note": "Đứng giữa hành lang, chống nạnh, gọi điện; ở 'Should we knock?' bước nửa bước về 4C (người muốn giúp)."
+  },
+  "DEB": {
+   "figure": "deb",
+   "radius": 0.25,
+   "start": [
+    7.6,
+    0.6
+   ],
+   "appear": 85.855,
+   "note": "Đứng gần 4A cạnh Rosa, tay đặt lên vai Rosa; nhìn TÔI ('Look at him')."
+  },
+  "BRIANNA": {
+   "figure": "brianna",
+   "radius": 0.23,
+   "start": [
+    8.6,
+    1.2
+   ],
+   "appear": 86.155,
+   "note": "Đứng gần đầu cầu thang, ôm điện thoại, lùi dần về phía cầu thang (người muốn chạy)."
+  },
+  "OKAFOR": {
+   "figure": "okafor",
+   "radius": 0.26,
+   "start": [
+    11.6,
+    0.6
+   ],
+   "appear": 85.855,
+   "note": "Lên cầu thang chậm, tay vịn lan can; dừng ở đầu cầu thang."
+  }
+ },
+ "paths": [
+  {
+   "id": "weg-4c",
+   "who": "ICH",
+   "lines": "08–09",
+   "time": "34,9–37,1 s",
+   "t0": 34.85,
+   "t1": 37.15,
+   "points": [
+    [
+     6.2,
+     1.75
+    ],
+    [
+     6.2,
+     1.4
+    ],
+    [
+     4.2,
+     1.2
+    ],
+    [
+     3.0,
+     1.1
+    ]
+   ],
+   "note": "Đi nhanh, khom người về phía 4C, 5 bước trên thảm cũ (có tiếng bước chân). Dừng cách cửa 4C 0,7 m."
+  },
+  {
+   "id": "weg-rosa",
+   "who": "ICH",
+   "lines": "10–11",
+   "time": "41,4–43,3 s",
+   "t0": 41.38,
+   "t1": 43.3,
+   "points": [
+    [
+     3.0,
+     1.1
+    ],
+    [
+     4.6,
+     0.95
+    ],
+    [
+     5.7,
+     0.85
+    ]
+   ],
+   "note": "Nghe tiếng xích, quay lại, bước về phía cửa 4A của Rosa. Dừng cách khe cửa 0,7 m."
+  },
+  {
+   "id": "weg-zurueck",
+   "who": "ICH",
+   "lines": "13–14",
+   "time": "60,2–61,0 s",
+   "t0": 60.217,
+   "t1": 60.953,
+   "points": [
+    [
+     5.7,
+     0.85
+    ],
+    [
+     6.2,
+     1.4
+    ],
+    [
+     6.2,
+     1.75
+    ]
+   ],
+   "note": "Rosa đóng cửa; TÔI quay về 4B (2 bước, tiếp tục trong sơ đồ 4B)."
+  },
+  {
+   "id": "weg-okafor",
+   "who": "OKAFOR",
+   "lines": "M01–M14",
+   "time": "85,9–90,9 s",
+   "t0": 85.855,
+   "t1": 90.855,
+   "points": [
+    [
+     11.6,
+     0.6
+    ],
+    [
+     10.6,
+     0.7
+    ],
+    [
+     9.9,
+     0.75
+    ]
+   ],
+   "note": "Lên những bậc cuối, dừng ở đầu cầu thang."
+  },
+  {
+   "id": "weg-tyler",
+   "who": "TYLER",
+   "lines": "M04",
+   "time": "84,9–86,9 s",
+   "t0": 84.855,
+   "t1": 86.855,
+   "points": [
+    [
+     10.3,
+     1.0
+    ],
+    [
+     6.8,
+     0.95
+    ],
+    [
+     3.5,
+     0.95
+    ]
+   ],
+   "note": "Chạy từ cầu thang qua trước cửa 4B (TÔI vẫn đang ở trong ngưỡng cửa, y ≥ 1,8) tới gần 4C."
+  }
+ ],
+ "cameras": [
+  {
+   "id": "F0",
+   "lines": "(khoảng lặng trước 09)",
+   "time": "34,9–37,2 s",
+   "t0": 34.85,
+   "t1": 37.22,
+   "pos": [
+    6.2,
+    1.6,
+    1.6
+   ],
+   "yaw": [
+    -100,
+    -55
+   ],
+   "pitch": -5,
+   "fov": 115,
+   "path": [
+    [
+     6.2,
+     1.75
+    ],
+    [
+     6.2,
+     1.4
+    ],
+    [
+     4.2,
+     1.2
+    ],
+    [
+     3.0,
+     1.1
+    ]
+   ],
+   "sees": "Ra khỏi 4B, đi nhanh về phía 4C: cửa 4C dần vào GIỮA KHUNG; bước chân trên thảm, camera nhún.",
+   "hands": "Tay trái kéo cửa 4B khép hờ sau lưng rồi vung theo bước; tay phải điện thoại bật đèn pin chiếu về phía trước."
+  },
+  {
+   "id": "F1",
+   "lines": "09",
+   "time": "37,2–40,7 s",
+   "t0": 37.22,
+   "t1": 40.68,
+   "pos": [
+    3.0,
+    1.1,
+    1.6
+   ],
+   "yaw": [
+    -35,
+    -35
+   ],
+   "pitch": -12,
+   "fov": 115,
+   "sees": "GIỮA KHUNG: cửa 4C – tay nắm sạch bóng giữa lớp bụi, ổ khoá móc mới tinh, khe sáng xanh dưới cửa. Camera nhìn xuống khe cửa rồi lên tay nắm.",
+   "hands": "Tay phải chìa ra gần tay nắm nhưng không chạm; tay trái điện thoại bật đèn pin chiếu vào ổ khoá."
+  },
+  {
+   "id": "F2",
+   "lines": "10–13",
+   "time": "40,7–61,0 s",
+   "t0": 40.68,
+   "t1": 60.953,
+   "pos": [
+    3.0,
+    1.1,
+    1.6
+   ],
+   "yaw": [
+    150,
+    170
+   ],
+   "pitch": -3,
+   "fov": 115,
+   "path": [
+    [
+     3.0,
+     1.1
+    ],
+    [
+     4.6,
+     0.95
+    ],
+    [
+     5.7,
+     0.85
+    ]
+   ],
+   "sees": "GIỮA KHUNG: khe cửa có xích của 4A, nửa mặt Rosa. 46–49 s: tay Rosa đưa vòng cổ mèo 'PICKLE – 4B' qua khe (cận). Cửa 4C ở mép phải khung khi TÔI ngoái lại (~44 s) – ánh xanh dưới khe vẫn sáng.",
+   "hands": "Tay trái giơ điện thoại hạ đèn pin xuống sàn (lịch sự), tay phải đỡ lấy vòng cổ mèo."
+  },
+  {
+   "id": "F3",
+   "lines": "19–21 + M01–M20 + thẻ kết",
+   "time": "86,5–105,4 s",
+   "t0": 86.455,
+   "t1": 105.43,
+   "pos": [
+    6.2,
+    1.62,
+    1.6
+   ],
+   "yaw": [
+    -80,
+    95
+   ],
+   "pitch": 0,
+   "fov": 115,
+   "sees": "76,5–80: GIỮA KHUNG cửa 4C (yaw −80): khe sáng xanh TẮT; bà Lee ló ra ở 4D, Tyler chạy qua rồi khựng trước 4C. 80–84: lia sang Đông (yaw +95): Ray, Deb cạnh Rosa, Brianna, Okafor ở đầu cầu thang, mọi người mặc đồ ngủ, đèn tường chập chờn. 84–87,8: cúi xuống điện thoại – các mạng '4C_CAM_…' biến mất từng cái; ngẩng lên lại cửa 4C ở GIỮA KHUNG. 87,8–93,8: thẻ kết phủ mờ lên cảnh hành lang (hàng xóm vẫn trong hình, tiếng xì xào tiếp tục).",
+   "hands": "Tay trái nắm khung cửa 4B (đứng ở ngưỡng), tay phải điện thoại bật loa gọi 911."
+  }
+ ],
+ "moves": [],
+ "outside": {
+  "thời gian": "12:00 AM, cuối tháng 11",
+  "ánh sáng": "Hai đèn tường hình nến đồng (vàng đục), đèn ở x = 4,2 chập chờn; đèn EXIT đỏ ở đầu Tây; ánh xanh lạnh từ khe dưới cửa 4C (tắt ở 75,3 s); đèn pin điện thoại của TÔI",
+  "mặt sàn": "Thảm hành lang đỏ sẫm, sờn thành vệt ở giữa; bước chân trầm, có tiếng sàn gỗ kêu dưới thảm",
+  "tầm nhìn": "Từ (3,0; 1,1): cửa 4C yaw ≈ −35°; cửa 4A yaw ≈ +150°. Từ ngưỡng cửa 4B (6,2; 1,62): cửa 4C yaw ≈ −83°, cầu thang yaw ≈ +95°"
+ }
+}

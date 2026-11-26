@@ -1,0 +1,37 @@
+{
+  "id": "nextdoor-01",
+  "title": "The Neighbor Next Door · Tập 1: Midnight",
+  "language": "en",
+  "accent": "american",
+  "script": ["script.md", "crowd.md"],
+  "voices": {"ME": "UgBBYS2sOqTuMpoF3BR0"},
+  "voices_note": "ME giữ giọng Mark của kênh (giống Tàu đêm). Các nhân vật khác không được trùng giọng với Tàu đêm → avoid_voices.",
+  "avoid_voices": ["GoGUcAZovo4MFeLxJdZd", "Nggzl2QAXh3OijoXD116", "qSeXEcewz7tA0Q0qk9fH", "TTyZrDYo6LQowrH8mixJ"],
+  "display_names": {
+    "ME": {"name": "Me"}, "PRUITT": {"name": "Mr. Pruitt (phone)"}, "ROSA": {"name": "Mrs. Alvarez"},
+    "DISPATCH": {"name": "911 (phone)"}
+  },
+  "stt_aliases": {"pruett": "pruitt", "pruit": "pruitt", "4c": "four c", "4b": "four b", "4a": "four a"},
+  "speakers": {
+    "ME": {"figure": "me", "gender": "male", "age": ["young"], "persona": "người thuê mới ~22 tuổi, thì thầm, sợ hãi nhưng tò mò",
+           "keywords": ["young", "soft", "conversational", "natural"]},
+    "PRUITT": {"figure": "pruitt", "gender": "male", "age": ["old", "middle_aged"], "persona": "chủ nhà ~62, cáu kỉnh, khàn, về sau lạnh lùng đáng sợ",
+               "keywords": ["gruff", "raspy", "deep", "old", "grumpy", "gravelly", "mature"]},
+    "ROSA": {"figure": "rosa", "gender": "female", "age": ["old"], "persona": "bà hàng xóm ~70, ấm áp nhưng hoảng sợ, mang mặc cảm tội lỗi",
+             "keywords": ["old", "elderly", "grandma", "warm", "gentle", "emotional", "raspy"]},
+    "DISPATCH": {"figure": "dispatch", "gender": "female", "age": ["middle_aged"], "persona": "tổng đài 911, nhanh, chuyên nghiệp, bình tĩnh",
+                 "keywords": ["professional", "calm", "clear", "confident", "news", "neutral"]},
+    "OKAFOR": {"figure": "okafor", "gender": "male", "age": ["old"], "persona": "ông hàng xóm ~65 tầng 3, ngái ngủ, đa nghi",
+               "keywords": ["old", "deep", "warm", "calm", "mature"]},
+    "BRIANNA": {"figure": "brianna", "gender": "female", "age": ["young"], "persona": "cô gái ~25, dễ hoảng",
+                "keywords": ["young", "expressive", "casual", "conversational", "bright"]},
+    "DEB": {"figure": "deb", "gender": "female", "age": ["middle_aged"], "persona": "phụ nữ ~50, lo lắng, hay để ý",
+            "keywords": ["warm", "mature", "conversational", "natural", "friendly"]},
+    "TYLER": {"figure": "tyler", "gender": "male", "age": ["young"], "persona": "chàng trai ~28, cười gượng khi sợ",
+              "keywords": ["young", "casual", "energetic", "upbeat", "conversational"]},
+    "MRS_LEE": {"figure": "mrs-lee", "gender": "female", "age": ["old"], "persona": "bà cụ ~80, biết điều gì đó, thì thầm",
+                "keywords": ["old", "elderly", "soft", "fragile", "whisper", "calm"]},
+    "RAY": {"figure": "ray", "gender": "male", "age": ["middle_aged"], "persona": "đàn ông ~45, cáu, thực tế",
+            "keywords": ["middle", "gruff", "confident", "casual", "deep"]}
+  }
+}

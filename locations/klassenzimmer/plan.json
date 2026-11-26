@@ -1,0 +1,925 @@
+{
+  "id": "klassenzimmer",
+  "name": "Lớp học 7b (tầng 2)",
+  "units": "mét",
+  "size": {
+    "w": 8.0,
+    "d": 7.5,
+    "h": 3.0
+  },
+  "origin": "Góc Tây-Nam (góc sau bên trái nhìn từ chỗ học sinh); trục x hướng Đông, trục y hướng Bắc (về phía bảng), trục z hướng lên",
+  "walls": [
+    {
+      "id": "nord",
+      "name": "Tường Bắc (tường có bảng)",
+      "from": [
+        0,
+        7.5
+      ],
+      "to": [
+        8,
+        7.5
+      ],
+      "thickness": 0.175,
+      "material": "trát vữa, xám xanh nhạt",
+      "note": "Bảng trắng; đồng hồ phía trên bảng (giữa x 4,0 m, cao 2,50 m)"
+    },
+    {
+      "id": "ost",
+      "name": "Tường Đông (giáp hành lang)",
+      "from": [
+        8,
+        7.5
+      ],
+      "to": [
+        8,
+        0
+      ],
+      "thickness": 0.175,
+      "material": "trát vữa",
+      "note": "Hai cửa ra hành lang, móc áo ở giữa"
+    },
+    {
+      "id": "sued",
+      "name": "Tường Nam (tường sau lớp)",
+      "from": [
+        8,
+        0
+      ],
+      "to": [
+        0,
+        0
+      ],
+      "thickness": 0.175,
+      "material": "trát vữa, bảng ghim phía trên tủ",
+      "note": "Dãy tủ; bảng ghim cao 1,20–2,20 m"
+    },
+    {
+      "id": "west",
+      "name": "Tường Tây (tường cửa sổ, tường ngoài)",
+      "from": [
+        0,
+        0
+      ],
+      "to": [
+        0,
+        7.5
+      ],
+      "thickness": 0.3,
+      "material": "tường ngoài nhà",
+      "note": "Ba cửa sổ nhìn ra sân trường; máy bay phản lực bay qua phía này"
+    }
+  ],
+  "doors": [
+    {
+      "id": "tuer-vorne",
+      "wall": "ost",
+      "center": 6.7,
+      "width": 1.0,
+      "height": 2.1,
+      "hinge": "phía Bắc",
+      "swing": "ra ngoài (về phía hành lang)",
+      "inward": false,
+      "note": "Hướng thoát hiểm; tay nắm ở phía Nam, ô kính 0,3 × 0,6 m"
+    },
+    {
+      "id": "tuer-hinten",
+      "wall": "ost",
+      "center": 1.1,
+      "width": 1.0,
+      "height": 2.1,
+      "hinge": "phía Nam",
+      "swing": "ra ngoài (về phía hành lang)",
+      "inward": false,
+      "note": "Lối thoát hiểm thứ hai; tay nắm ở phía Bắc"
+    }
+  ],
+  "windows": [
+    {
+      "id": "fenster-1",
+      "wall": "west",
+      "center": 1.6,
+      "width": 1.6,
+      "sill": 0.85,
+      "height": 1.6,
+      "opening": "Cửa mở quay/lật, cánh mở vào trong (bán kính 0,80 m, cao hơn mặt bàn)",
+      "inward_radius": 0.8,
+      "view": "Sân trường, cột bóng rổ, dãy nhà"
+    },
+    {
+      "id": "fenster-2",
+      "wall": "west",
+      "center": 3.75,
+      "width": 1.6,
+      "sill": 0.85,
+      "height": 1.6,
+      "opening": "Cửa mở quay/lật, cánh mở vào trong (bán kính 0,80 m, cao hơn mặt bàn)",
+      "inward_radius": 0.8,
+      "view": "Sân trường, sân thể thao, bầu trời trống – góc nhìn chính thấy máy bay"
+    },
+    {
+      "id": "fenster-3",
+      "wall": "west",
+      "center": 5.9,
+      "width": 1.6,
+      "sill": 0.85,
+      "height": 1.6,
+      "opening": "Cửa mở quay/lật, cánh mở vào trong (bán kính 0,80 m, cao hơn mặt bàn)",
+      "inward_radius": 0.8,
+      "view": "Tán cây, bầu trời, vệt khói máy bay"
+    }
+  ],
+  "stairs": [],
+  "stairs_note": "Trong phòng không có cầu thang. Cầu thang nằm ngoài hành lang, cách cửa trước khoảng 6 m về phía Bắc (sẽ có plan riêng khi có cảnh diễn ra ở đó).",
+  "furniture": [
+    {
+      "id": "tisch-r1-s1",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 0.85,
+      "y": 5.1,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r1-s1-l",
+      "type": "Ghế học sinh",
+      "x": 0.95,
+      "y": 4.55,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.175,
+        4.775
+      ]
+    },
+    {
+      "id": "stuhl-r1-s1-r",
+      "type": "Ghế học sinh",
+      "x": 1.6,
+      "y": 4.55,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.825,
+        4.775
+      ]
+    },
+    {
+      "id": "tisch-r1-s2",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 3.35,
+      "y": 5.1,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r1-s2-l",
+      "type": "Ghế học sinh",
+      "x": 3.45,
+      "y": 4.55,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        3.675,
+        4.775
+      ]
+    },
+    {
+      "id": "stuhl-r1-s2-r",
+      "type": "Ghế học sinh",
+      "x": 4.1,
+      "y": 4.55,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        4.325,
+        4.775
+      ]
+    },
+    {
+      "id": "tisch-r1-s3",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 5.85,
+      "y": 5.1,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r1-s3-l",
+      "type": "Ghế học sinh",
+      "x": 5.95,
+      "y": 4.55,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.175,
+        4.775
+      ]
+    },
+    {
+      "id": "stuhl-r1-s3-r",
+      "type": "Ghế học sinh",
+      "x": 6.6,
+      "y": 4.55,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.825,
+        4.775
+      ]
+    },
+    {
+      "id": "tisch-r2-s1",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 0.85,
+      "y": 3.9,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r2-s1-l",
+      "type": "Ghế học sinh",
+      "x": 0.95,
+      "y": 3.35,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.175,
+        3.575
+      ]
+    },
+    {
+      "id": "stuhl-r2-s1-r",
+      "type": "Ghế học sinh",
+      "x": 1.6,
+      "y": 3.35,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.825,
+        3.575
+      ]
+    },
+    {
+      "id": "tisch-r2-s2",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 3.35,
+      "y": 3.9,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r2-s2-l",
+      "type": "Ghế học sinh",
+      "x": 3.45,
+      "y": 3.35,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        3.675,
+        3.575
+      ]
+    },
+    {
+      "id": "stuhl-r2-s2-r",
+      "type": "Ghế học sinh",
+      "x": 4.1,
+      "y": 3.35,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        4.325,
+        3.575
+      ]
+    },
+    {
+      "id": "tisch-r2-s3",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 5.85,
+      "y": 3.9,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r2-s3-l",
+      "type": "Ghế học sinh",
+      "x": 5.95,
+      "y": 3.35,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.175,
+        3.575
+      ]
+    },
+    {
+      "id": "stuhl-r2-s3-r",
+      "type": "Ghế học sinh",
+      "x": 6.6,
+      "y": 3.35,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.825,
+        3.575
+      ]
+    },
+    {
+      "id": "tisch-r3-s1",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 0.85,
+      "y": 2.7,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r3-s1-l",
+      "type": "Ghế học sinh",
+      "x": 0.95,
+      "y": 2.15,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.175,
+        2.375
+      ]
+    },
+    {
+      "id": "stuhl-r3-s1-r",
+      "type": "Ghế học sinh",
+      "x": 1.6,
+      "y": 2.15,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.825,
+        2.375
+      ]
+    },
+    {
+      "id": "tisch-r3-s2",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 3.35,
+      "y": 2.7,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r3-s2-l",
+      "type": "Ghế học sinh",
+      "x": 3.45,
+      "y": 2.15,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        3.675,
+        2.375
+      ]
+    },
+    {
+      "id": "stuhl-r3-s2-r",
+      "type": "Ghế học sinh",
+      "x": 4.1,
+      "y": 2.15,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        4.325,
+        2.375
+      ]
+    },
+    {
+      "id": "tisch-r3-s3",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 5.85,
+      "y": 2.7,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r3-s3-l",
+      "type": "Ghế học sinh",
+      "x": 5.95,
+      "y": 2.15,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.175,
+        2.375
+      ]
+    },
+    {
+      "id": "stuhl-r3-s3-r",
+      "type": "Ghế học sinh",
+      "x": 6.6,
+      "y": 2.15,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.825,
+        2.375
+      ]
+    },
+    {
+      "id": "tisch-r4-s1",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 0.85,
+      "y": 1.5,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r4-s1-l",
+      "type": "Ghế học sinh",
+      "x": 0.95,
+      "y": 0.95,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.175,
+        1.175
+      ]
+    },
+    {
+      "id": "stuhl-r4-s1-r",
+      "type": "Ghế học sinh",
+      "x": 1.6,
+      "y": 0.95,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        1.825,
+        1.175
+      ]
+    },
+    {
+      "id": "tisch-r4-s2",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 3.35,
+      "y": 1.5,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r4-s2-l",
+      "type": "Ghế học sinh",
+      "x": 3.45,
+      "y": 0.95,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        3.675,
+        1.175
+      ]
+    },
+    {
+      "id": "stuhl-r4-s2-r",
+      "type": "Ghế học sinh",
+      "x": 4.1,
+      "y": 0.95,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        4.325,
+        1.175
+      ]
+    },
+    {
+      "id": "tisch-r4-s3",
+      "type": "Bàn học sinh (bàn đôi)",
+      "x": 5.85,
+      "y": 1.5,
+      "w": 1.3,
+      "d": 0.6,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "stuhl-r4-s3-l",
+      "type": "Ghế học sinh",
+      "x": 5.95,
+      "y": 0.95,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.175,
+        1.175
+      ]
+    },
+    {
+      "id": "stuhl-r4-s3-r",
+      "type": "Ghế học sinh",
+      "x": 6.6,
+      "y": 0.95,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 0.82,
+      "note": "",
+      "seat": [
+        6.825,
+        1.175
+      ]
+    },
+    {
+      "id": "lehrertisch",
+      "type": "Bàn giáo viên",
+      "x": 1.4,
+      "y": 6.2,
+      "w": 1.6,
+      "d": 0.8,
+      "h": 0.76,
+      "note": ""
+    },
+    {
+      "id": "lehrerstuhl",
+      "type": "Ghế giáo viên (ghế xoay)",
+      "x": 1.975,
+      "y": 7.02,
+      "w": 0.45,
+      "d": 0.45,
+      "h": 1.0,
+      "note": "",
+      "seat": [
+        2.2,
+        7.245
+      ]
+    },
+    {
+      "id": "tafel",
+      "type": "Bảng trắng (treo tường, mép dưới cao 0,90 m)",
+      "x": 2.5,
+      "y": 7.45,
+      "w": 3.0,
+      "d": 0.05,
+      "h": 2.1,
+      "note": "",
+      "mounted": 0.9
+    },
+    {
+      "id": "schraenke",
+      "type": "Dãy tủ (4 tủ × 1,00 m)",
+      "x": 0.3,
+      "y": 0.0,
+      "w": 4.0,
+      "d": 0.4,
+      "h": 1.0,
+      "note": ""
+    },
+    {
+      "id": "garderobe",
+      "type": "Móc treo áo khoác trên tường",
+      "x": 7.75,
+      "y": 2.2,
+      "w": 0.25,
+      "d": 3.4,
+      "h": 1.7,
+      "note": ""
+    },
+    {
+      "id": "muelleimer",
+      "type": "Thùng rác",
+      "x": 7.55,
+      "y": 5.75,
+      "w": 0.3,
+      "d": 0.3,
+      "h": 0.45,
+      "note": ""
+    },
+    {
+      "id": "heizkoerper-1",
+      "type": "Lò sưởi dưới cửa sổ",
+      "x": 0.0,
+      "y": 0.9,
+      "w": 0.15,
+      "d": 1.4,
+      "h": 0.6,
+      "note": ""
+    },
+    {
+      "id": "heizkoerper-2",
+      "type": "Lò sưởi dưới cửa sổ",
+      "x": 0.0,
+      "y": 3.05,
+      "w": 0.15,
+      "d": 1.4,
+      "h": 0.6,
+      "note": ""
+    },
+    {
+      "id": "heizkoerper-3",
+      "type": "Lò sưởi dưới cửa sổ",
+      "x": 0.0,
+      "y": 5.2,
+      "w": 0.15,
+      "d": 1.4,
+      "h": 0.6,
+      "note": ""
+    }
+  ],
+  "outside": {
+    "jet": "Máy bay chiến đấu bay thấp: lượt 1 từ Nam lên Bắc (0,0–4,5 s), song song tường Tây, cách tường 60 m, cao 20 m so với mặt đất (phòng ở tầng 2, sàn cao 6 m). Từ chỗ ICH thấy qua cửa sổ 1 → 2 → 3 ngay từ khung hình 0. Tiếng nổ lúc 4,0 s. Lượt 2 từ Bắc xuống Nam (21,5–25 s), thấy qua cửa sổ 2 khi máy quay bám theo Leo."
+  },
+  "characters": {
+    "ICH": {
+      "figure": "pov",
+      "radius": 0.25,
+      "seat": "stuhl-r4-s2-l",
+      "note": "Học sinh góc nhìn POV, hàng cuối giữa lớp, tầm mắt khi ngồi 1,15 m"
+    },
+    "TEACHER": {
+      "figure": "weber",
+      "radius": 0.25,
+      "start": [
+        4.0,
+        6.9
+      ],
+      "note": "Đứng trước bảng"
+    },
+    "CAROL": {
+      "figure": "carol",
+      "radius": 0.22,
+      "seat": "stuhl-r3-s1-r",
+      "note": "Dãy cạnh cửa sổ, ngay cạnh cửa sổ 2"
+    },
+    "RAFA": {
+      "figure": "rafa",
+      "radius": 0.25,
+      "seat": "stuhl-r3-s3-l",
+      "note": "Phía trước bên phải ICH"
+    },
+    "LEO": {
+      "figure": "leo",
+      "radius": 0.25,
+      "seat": "stuhl-r4-s2-r",
+      "note": "Bạn cùng bàn bên phải ICH"
+    },
+    "BIA": {
+      "figure": "bia",
+      "radius": 0.22,
+      "seat": "stuhl-r2-s2-r",
+      "note": "Ngồi trước ICH hai hàng, quay người lại"
+    },
+    "THIAGO": {
+      "figure": "thiago",
+      "radius": 0.25,
+      "seat": "stuhl-r4-s1-l",
+      "note": "Góc cuối lớp cạnh cửa sổ"
+    }
+  },
+  "paths": [
+    {
+      "id": "weg-weber",
+      "who": "TEACHER",
+      "lines": "05",
+      "time": "trong câu 05 (≈ 3 s, đi chậm, dứt khoát)",
+      "points": [
+        [
+          4.0,
+          6.9
+        ],
+        [
+          5.25,
+          6.0
+        ],
+        [
+          5.25,
+          2.9
+        ]
+      ],
+      "note": "Từ bảng đi xuống lối giữa dãy 2 và dãy 3, tới chỗ Rafa/Leo",
+      "t0": 11.6
+    },
+    {
+      "id": "weg-leo",
+      "who": "LEO",
+      "lines": "08",
+      "time": "từ câu 08 (≈ 2,5 s, chạy)",
+      "points": [
+        [
+          4.325,
+          1.175
+        ],
+        [
+          4.325,
+          0.68
+        ],
+        [
+          0.5,
+          0.68
+        ],
+        [
+          0.5,
+          3.6
+        ]
+      ],
+      "note": "Bật dậy, đẩy ghế ra sau, chạy dọc phía sau hàng cuối tới tường cửa sổ, rồi lên phía trước tới cửa sổ 2",
+      "t0": 20.9
+    }
+  ],
+  "cameras": [
+    {
+      "id": "K1",
+      "lines": "Intro + 01",
+      "time": "0,0–4,5 s",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": -22,
+      "pitch": -14,
+      "fov": 120,
+      "sees": "Điện thoại trong hai tay ở dưới khung hình (cảnh báo EXTREME GEFAHR), cô Weber ở bảng, cửa sổ 2 và 3 có máy bay (nguy hiểm thấy ngay ở khung hình 0)",
+      "hands": "cầm điện thoại đang rung"
+    },
+    {
+      "id": "K2",
+      "lines": "02 Carol",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": -55,
+      "pitch": -6,
+      "fov": 120,
+      "sees": "Carol giật mình, phía sau là cửa sổ 2",
+      "hands": "ngón cái trên màn hình điện thoại"
+    },
+    {
+      "id": "K3",
+      "lines": "03 Rafa",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": 62,
+      "pitch": -6,
+      "fov": 120,
+      "sees": "Rafa quay lại, giơ điện thoại lên",
+      "hands": "điện thoại hạ xuống một nửa"
+    },
+    {
+      "id": "K4",
+      "lines": "04 Leo",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": 92,
+      "pitch": -12,
+      "fov": 120,
+      "sees": "Leo rất gần (0,65 m), ngả người ra sau",
+      "hands": "điện thoại đặt trên bàn"
+    },
+    {
+      "id": "K5",
+      "lines": "05 Weber",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": [
+        4,
+        42
+      ],
+      "pitch": -2,
+      "fov": 120,
+      "sees": "Máy quay bám theo cô Weber đi dọc lối đi (weg-weber)",
+      "hands": "đẩy điện thoại xuống gầm bàn"
+    },
+    {
+      "id": "K6",
+      "lines": "06 Bia",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": 15,
+      "pitch": -4,
+      "fov": 120,
+      "sees": "Bia xoay người trên ghế, chìa màn hình ra",
+      "hands": "giơ điện thoại lên lại"
+    },
+    {
+      "id": "K7",
+      "lines": "07 Thiago",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": -88,
+      "pitch": -4,
+      "fov": 120,
+      "sees": "Thiago bên trái, nghiêng đầu về phía cửa sổ",
+      "hands": "một tay bám mép bàn"
+    },
+    {
+      "id": "K8",
+      "lines": "08 Leo",
+      "pos": [
+        3.675,
+        1.25,
+        1.15
+      ],
+      "yaw": [
+        95,
+        298
+      ],
+      "pitch": 2,
+      "fov": 120,
+      "sees": "Leo bật dậy; máy quay xoay QUA PHÍA SAU (180°) bám theo Leo chạy sau hàng cuối tới cửa sổ 2 (weg-leo); lượt bay thứ 2 của máy bay ngoài cửa sổ",
+      "hands": "nắm chặt mép bàn"
+    }
+  ],
+  "moves": [
+    {
+      "id": "stuhl-r4-s2-r",
+      "at": 20.6,
+      "dx": 0.52,
+      "dy": 0.0,
+      "note": "Leo đẩy ghế sang lối đi bên phải khi bật dậy"
+    }
+  ],
+  "seated_turns": {
+    "_info": "Khi ngồi, chỉ thân trên + đầu xoay; nếu cần quay hẳn người thì chân xoay ra phía có lối đi trống (đã kiểm tra không chạm bàn).",
+    "CAROL": "thân trên +0,75 rad về phía cửa sổ (giật mình lúc 4,0 s)",
+    "RAFA": "chân xoay sang Tây ra lối đi (x 5,25 trống), thân trên +0,42 rad, đầu quay về ICH",
+    "LEO": "chân giữ dưới bàn, thân trên +0,9 rad về phía ICH",
+    "BIA": "chân xoay sang Đông ra lối đi (x 5,25 trống), thân trên −1,2 rad về phía ICH",
+    "THIAGO": "thân trên +0,55 rad, đầu +0,4 rad về phía cửa sổ"
+  }
+}

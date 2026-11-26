@@ -1,0 +1,152 @@
+{
+  "id": "nachtzug-01",
+  "title": "Nachtzug · Folge 1: Kabelklau",
+  "language": "de",
+  "script": [
+    "script.md",
+    "crowd.md"
+  ],
+  "speakers": {
+    "ICH": {
+      "figure": "ich",
+      "gender": "male",
+      "age": [
+        "young"
+      ],
+      "persona": "Ich-Figur, ca. 20, leise, aufmerksam, unter Druck",
+      "keywords": [
+        "young",
+        "soft",
+        "conversational",
+        "natural",
+        "calm"
+      ]
+    },
+    "HANNA": {
+      "figure": "hanna",
+      "gender": "female",
+      "age": [
+        "middle_aged"
+      ],
+      "persona": "Zugbegleiterin, ~50, müde, pflichtbewusst, später ängstlich",
+      "keywords": [
+        "mature",
+        "firm",
+        "warm",
+        "professional",
+        "tired"
+      ]
+    },
+    "BRANDT": {
+      "figure": "brandt",
+      "gender": "male",
+      "age": [
+        "old",
+        "middle_aged"
+      ],
+      "persona": "Rentner, ehem. Stellwerker, ruhig, kalt, bricht am Ende ein",
+      "keywords": [
+        "deep",
+        "calm",
+        "mature",
+        "gravelly",
+        "serious",
+        "old"
+      ]
+    },
+    "LOTTE": {
+      "figure": "lotte",
+      "gender": "female",
+      "age": [
+        "young"
+      ],
+      "persona": "Teenagerin, 17, streamt alles, mutig-panisch, schnell",
+      "keywords": [
+        "young",
+        "energetic",
+        "expressive",
+        "girl",
+        "teen",
+        "fast"
+      ]
+    },
+    "FREMDER": {
+      "figure": "jonas",
+      "gender": "male",
+      "age": [
+        "young",
+        "middle_aged"
+      ],
+      "persona": "Jonas, ~28, draußen im Schnee, verzweifelt, frierend",
+      "keywords": [
+        "emotional",
+        "raspy",
+        "desperate",
+        "young",
+        "expressive"
+      ]
+    },
+    "FAHRGAST_A": {
+      "figure": "fahrgast-a",
+      "gender": "female",
+      "age": [
+        "old"
+      ],
+      "persona": "ältere Dame, besorgt, mitfühlend",
+      "keywords": [
+        "old",
+        "warm",
+        "soft",
+        "grandmother",
+        "gentle"
+      ]
+    },
+    "FAHRGAST_B": {
+      "figure": "fahrgast-b",
+      "gender": "male",
+      "age": [
+        "young"
+      ],
+      "persona": "Student, ungläubig, nervös",
+      "keywords": [
+        "young",
+        "casual",
+        "conversational",
+        "energetic"
+      ]
+    },
+    "FAHRGAST_C": {
+      "figure": "fahrgast-c",
+      "gender": "male",
+      "age": [
+        "middle_aged"
+      ],
+      "persona": "Pendler, misstrauisch, nüchtern",
+      "keywords": [
+        "calm",
+        "middle",
+        "serious",
+        "neutral",
+        "natural"
+      ]
+    },
+    "FAHRGAST_D": {
+      "figure": "fahrgast-d",
+      "gender": "female",
+      "age": [
+        "middle_aged",
+        "young"
+      ],
+      "persona": "Frau ~35, friert, ängstlich, genervt",
+      "keywords": [
+        "natural",
+        "conversational",
+        "calm",
+        "clear"
+      ]
+    }
+  },
+  "stt_aliases": {
+    "brand": "brandt"
+  }
+}

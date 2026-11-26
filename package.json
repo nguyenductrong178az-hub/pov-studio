@@ -1,0 +1,30 @@
+{
+  "name": "pov-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Animierte POV-Videos (1920x1080, 60 fps) mit Remotion + Three.js",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:test": "remotion render PovTest out/pov-test.mp4",
+    "render:sheets": "bash scripts/render-sheets.sh",
+    "render:ren": "bash scripts/render-ren.sh",
+    "render:juno": "bash scripts/render-juno.sh",
+    "render:cast": "bash scripts/render-cast.sh",
+    "voices": "python3 scripts/voice_pipeline.py all",
+    "render:stile": "bash scripts/render-stile.sh"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "^4.0.547",
+    "@remotion/three": "^4.0.547",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.547",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.1",
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2"
+  }
+}
