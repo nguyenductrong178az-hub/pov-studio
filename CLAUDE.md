@@ -236,6 +236,13 @@ Code: `src/cast/cast.ts` (Daten), `src/cast/Figure.tsx` (Baukasten). Render: `np
 - **Giảm số lần hiện màn hình có chữ/số (12:00, 911, Wi-Fi):** chỉ sáng màn hình khi phục vụ trực tiếp tình tiết sợ hãi/khẩn cấp; tránh lặp lại cùng một khung có điện thoại ở góc dưới phải.
 - Giữ nguyên bảng màu trầm tối, nét phẳng cel-shaded, ánh sáng căng thẳng của phim kinh dị POV.
 
+### Cầm đồ vật & viết chữ (chủ kênh 26.11.2026)
+- **Ống nghe điện thoại bàn:** tay cầm đúng phần thân giữa của ống nghe, các ngón vòng ôm phía dưới thân, ngón cái đặt phía trên; nhấc nhẹ khỏi đế/mặt bàn. Không để nắm tay đè ngang lên trên ống nghe.
+- **Cầm bút:** đúng tư thế viết, kẹp phần gần đầu bút giữa ngón cái, ngón trỏ và ngón giữa. Thân bút tuyệt đối không xuyên qua ngón tay hay nằm dưới lòng bàn tay.
+- **Chữ viết tay trên giấy kẻ ngang:** rõ ràng, thẳng hàng trên dòng kẻ, đúng nội dung (ví dụ "Mile 14"), không vẽ nét nguệch ngoạc.
+- Trước khi render cả cảnh: chụp ảnh thử cận cảnh (cắt phóng to) từng tư thế cầm để kiểm tra.
+- **Cách làm đã được chủ kênh duyệt (27.11.2026, Mile 14 C01–C04, `src/scenes/mile14/Office.tsx`):** reset mọi xương về tư thế nghỉ mỗi khung; IK hai khớp + giới hạn góc cổ tay (`WRIST_MAX` 0,35 rad), hướng bàn tay = vai → điểm kẹp; bút là con của đốt giữa ngón trỏ, kẹp giữa đầu ngón cái và trỏ, nghiêng ~40°; ngón cái dùng `thumbCurl` dấu [1,−1,1] với `THUMB_G` 0,5 (thử 8 tổ hợp dấu cạnh nhau rồi chọn); thân chồm tới 20 cm khi viết (cánh tay chỉ dài ~0,5 m), không hạ thấp thân; kiểm tra khung SAU fisheye. Chi tiết trong bộ nhớ dự án `pov-hand-grip-rules`.
+
 ## Quy tắc mở cửa & cầm điện thoại ở góc nhìn thứ nhất (bắt buộc, chủ kênh 25.11.2026)
 ### Mở cửa (cửa mở VÀO TRONG, rồi bước ra)
 1. **Mở hé dè chừng (hồi hộp):** tay đưa tới nắm tay nắm → xoay nhẹ → kéo/đẩy cho cửa hé một khe nhỏ, **dừng lại** một nhịp; qua khe lộ ra một vệt sáng mờ và bóng tối phía sau.

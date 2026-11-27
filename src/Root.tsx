@@ -14,6 +14,8 @@ import { NachtzugRaw, DURATION_S as NZ_DUR } from "./scenes/nachtzug/Scene";
 import { NextdoorRaw, DURATION_S as ND_DUR } from "./scenes/nextdoor/Scene";
 import { StilFigur, StilGesicht, StilPalette, STIL_IDS } from "./stile/Views";
 import { DURATION_S } from "./scenes/klassenzimmer/timeline";
+import { Mile14OfficeRaw, OFFICE_DURATION_S } from "./scenes/mile14/Office";
+import { Mile14Raw, DURATION_S as M14_DUR, TALK_DURATION_S as M14_TALK, CABIN_DURATION_S as M14_CABIN } from "./scenes/mile14/Scene";
 
 export const WIDTH = 1920;
 export const HEIGHT = 1080;
@@ -56,6 +58,14 @@ export const RemotionRoot: React.FC = () => (
     <Still id="Nachtzug-Probe" component={NachtzugRaw} defaultProps={{ at: 2.0 }} width={WIDTH} height={HEIGHT} />
     <Composition id="Nextdoor-Raw" component={NextdoorRaw} durationInFrames={Math.ceil(ND_DUR * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
     <Still id="Nextdoor-Probe" component={NextdoorRaw} defaultProps={{ at: 2.0 }} width={WIDTH} height={HEIGHT} />
+    <Composition id="Mile14-Test-Raw" component={Mile14Raw} durationInFrames={Math.ceil(M14_DUR * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
+    <Composition id="Mile14-C17-Raw" component={Mile14Raw} defaultProps={{ c17: true }} durationInFrames={Math.ceil(3.5 * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
+    <Composition id="Mile14-C17-Talk-Raw" component={Mile14Raw} defaultProps={{ c17: true, talk: true }} durationInFrames={Math.ceil(M14_TALK * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
+    <Composition id="Mile14-C20-Raw" component={Mile14Raw} defaultProps={{ cabin: true }} durationInFrames={Math.ceil(M14_CABIN * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
+    <Composition id="Mile14-C01-Raw" component={Mile14OfficeRaw} durationInFrames={Math.ceil(OFFICE_DURATION_S * FPS)} fps={FPS} width={WIDTH} height={HEIGHT} />
+    <Still id="Mile14-C01" component={Mile14OfficeRaw} defaultProps={{ at: 0.3 }} width={WIDTH} height={HEIGHT} />
+    <Still id="Mile14-C17" component={Mile14Raw} defaultProps={{ at: 2.2, c17: true }} width={WIDTH} height={HEIGHT} />
+    <Still id="Mile14-Probe" component={Mile14Raw} defaultProps={{ at: 1.0 }} width={WIDTH} height={HEIGHT} />
     <Composition id="Klassenzimmer-Raw" component={KlassenzimmerRaw} durationInFrames={DURATION_S * FPS} fps={FPS} width={WIDTH} height={HEIGHT} />
   </>
 );

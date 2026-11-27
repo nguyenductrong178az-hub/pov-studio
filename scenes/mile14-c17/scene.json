@@ -1,0 +1,15 @@
+{
+  "id": "mile14-c17",
+  "title": "Mile 14 · Tập 1 · thử cảnh C17–C19 (3D gần thật)",
+  "language": "en",
+  "accent": "american",
+  "script": ["script.md"],
+  "voices": {"ME": "UgBBYS2sOqTuMpoF3BR0"},
+  "voices_note": "ME giữ giọng Mark của kênh. COLE: giọng nam trung niên trầm, bình thản, không trùng giọng các tập trước.",
+  "avoid_voices": ["GoGUcAZovo4MFeLxJdZd", "Nggzl2QAXh3OijoXD116", "qSeXEcewz7tA0Q0qk9fH", "TTyZrDYo6LQowrH8mixJ"],
+  "speakers": {
+    "ME": {"figure": "me", "gender": "male", "age": ["young"], "persona": "phó cảnh sát trẻ, đêm mưa", "keywords": ["young", "natural"]},
+    "COLE": {"figure": "cole", "gender": "male", "age": ["middle_aged", "old"], "persona": "Cole, cảnh sát trưởng ~50, trầm, bình thản đến mức lạnh người",
+             "keywords": ["deep", "calm", "low", "gravelly", "mature", "measured", "warm"]}
+  }
+}
